@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
+
+  <url>
+    <loc>https://rugs.rugkari.com/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445</image:loc>
+      <image:title>Nexus Abstract hand-tufted pure New Zealand wool rug</image:title>
+      <image:caption>Hand-tufted vs machine-made rugs &#x2014; the definitive guide for Indian buyers</image:caption>
+      <image:geo_location>Bhadohi, Uttar Pradesh, India</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4695-kellywearstler-districtspruce-rug-1200x1800-roomset__38058.jpg?v=1777702455</image:loc>
+      <image:title>Elysian Abstract hand-tufted wool rug for Indian living rooms</image:title>
+      <image:caption>8 best hand-tufted rugs for your living room in India 2026</image:caption>
+      <image:geo_location>Bhadohi, Uttar Pradesh, India</image:geo_location>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/designer-rugs-bernabeifreeman-contour-lo-wr-1.jpg?v=1777702443</image:loc>
+      <image:title>How to remove coffee stains from wool rugs &#x2014; step-by-step guide</image:title>
+      <image:caption>Safe wool rug stain removal method that protects natural lanolin</image:caption>
+      <image:geo_location>Bhadohi, Uttar Pradesh, India</image:geo_location>
+    </image:image>
+  </url>
+
+</urlset>

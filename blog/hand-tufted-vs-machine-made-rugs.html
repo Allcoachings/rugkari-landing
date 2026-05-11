@@ -1,0 +1,1098 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5L4Z9CSQ');</script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/webp" href="data:image/webp;base64,UklGRloEAABXRUJQVlA4WAoAAAAwAAAAMQAAMAAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIuQEAAA2QlW1b2Gavg+JgVEHjoKmCNQpoFCRVED4FCQpCFJQq6DcFYwr2/Q6ogh2NDo7+w4iYAPwvb0UaRK1ZNVlJ0t/p1X7c2JnLqZmzlJZI8ke5cXxhtBOTFEpfWUk4nj8nF8q06wthW+63xxaKiGTp1r7dx37+JClCWUnS7fEc+9val2iGLPnw18PPc9we4AJos9qjPvVv3245D1uB2GXJ5Xbr+tVQCKHAq/7+edii5a/j7l8t4ObM8RJFa6kGSSHphKqVQCVUfQGjYRwgtajzQT60XtCkZ4F2zQNfMcGh9SgokhUDYGFxgS1CWUA7YXlqwyjZDHkt0gi1pq4I2rzg79ArOhSNXR6g7HvqUFY1WXrXNuAehZs5C5DFo3gcs+SJGtNXhlLq53K4lvv90ezTt6ddH7kamo9b4ODeZ6qGEZZtMOSDSC1YvLIInszkqrkfZ6LZkI8h1YIlwML7bTCuGmdmolX7yD7VknwQr1dyk3G1wJnJeQ+LsFSTAgcyM9F8vNcCNxnyARZhqUYkeDLDtq3gWkCzIc+8nGeqhuH9Nhi3BHAtoPXgInsyw/aS7IE9QPYlPgEdA3v8DgBWUDggqgAAADAFAJ0BKjIAMQA+GQyFQiEEQREEAGEtIAB8cgsrYJmb/XRB3rBkkPoXm/BtmqdgaYZgAP7/Uh/x0tGHYi9Gl4+s+7fd4frQ4QIN2/5f/ORPsS5p8qguys0ggt00x1wnP4erK+ViAqCagCPmFnhNk1gC5cwYWWA+u/VBosT9ynL/NP/6K9DqGihU6b7c+4x+VUnVK02qirW4lIV+fOg74Mr7/T9mGPDEAAAA" />
+  <link rel="apple-touch-icon" href="data:image/webp;base64,UklGRloEAABXRUJQVlA4WAoAAAAwAAAAMQAAMAAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIuQEAAA2QlW1b2Gavg+JgVEHjoKmCNQpoFCRVED4FCQpCFJQq6DcFYwr2/Q6ogh2NDo7+w4iYAPwvb0UaRK1ZNVlJ0t/p1X7c2JnLqZmzlJZI8ke5cXxhtBOTFEpfWUk4nj8nF8q06wthW+63xxaKiGTp1r7dx37+JClCWUnS7fEc+9val2iGLPnw18PPc9we4AJos9qjPvVv3245D1uB2GXJ5Xbr+tVQCKHAq/7+edii5a/j7l8t4ObM8RJFa6kGSSHphKqVQCVUfQGjYRwgtajzQT60XtCkZ4F2zQNfMcGh9SgokhUDYGFxgS1CWUA7YXlqwyjZDHkt0gi1pq4I2rzg79ArOhSNXR6g7HvqUFY1WXrXNuAehZs5C5DFo3gcs+SJGtNXhlLq53K4lvv90ezTt6ddH7kamo9b4ODeZ6qGEZZtMOSDSC1YvLIInszkqrkfZ6LZkI8h1YIlwML7bTCuGmdmolX7yD7VknwQr1dyk3G1wJnJeQ+LsFSTAgcyM9F8vNcCNxnyARZhqUYkeDLDtq3gWkCzIc+8nGeqhuH9Nhi3BHAtoPXgInsyw/aS7IE9QPYlPgEdA3v8DgBWUDggqgAAADAFAJ0BKjIAMQA+GQyFQiEEQREEAGEtIAB8cgsrYJmb/XRB3rBkkPoXm/BtmqdgaYZgAP7/Uh/x0tGHYi9Gl4+s+7fd4frQ4QIN2/5f/ORPsS5p8qguys0ggt00x1wnP4erK+ViAqCagCPmFnhNk1gC5cwYWWA+u/VBosT9ynL/NP/6K9DqGihU6b7c+4x+VUnVK02qirW4lIV+fOg74Mr7/T9mGPDEAAAA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hand-Tufted vs Machine-Made Rugs: The Definitive Guide (2026) | Rugkari</title>
+  <meta name="description" content="Everything you need to know before buying a rug in India. Hand-tufted vs machine-made: how they're made, how to tell them apart, which lasts longer, and which is worth your money." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Rugkari" />
+  <meta property="og:url" content="https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs" />
+  <meta property="og:title" content="Hand-Tufted vs Machine-Made Rugs: The Definitive Guide — Rugkari" />
+  <meta property="og:description" content="The complete breakdown of hand-tufted vs machine-made rugs — materials, process, durability, and value. Everything Indian buyers need to know." />
+  <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@rugkari" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs#article",
+        "headline": "Hand-Tufted vs Machine-Made Rugs: The Definitive Guide for Indian Buyers (2026)",
+        "description": "A complete comparison of hand-tufted and machine-made rugs — covering the manufacturing process, material quality, durability, cost, and how to tell them apart before you buy.",
+        "image": "https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445",
+        "datePublished": "2026-05-05",
+        "dateModified": "2026-05-05",
+        "author": { "@type": "Organization", "name": "Rugkari", "url": "https://rugkari.com/" },
+        "publisher": { "@type": "Organization", "name": "Rugkari", "logo": { "@type": "ImageObject", "url": "https://rugkari.com/cdn/shop/files/rugkari-logo.webp" } },
+        "mainEntityOfPage": "https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs",
+        "keywords": ["hand-tufted vs machine-made rugs", "hand tufted rug", "machine made rug", "how to identify hand tufted rug", "best rugs India", "wool rug buying guide"],
+        "articleSection": "Buying Guide"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Rugkari", "item": "https://rugkari.com/" },
+          { "@type": "ListItem", "position": 2, "name": "The Rug Guide", "item": "https://rugs.rugkari.com/" },
+          { "@type": "ListItem", "position": 3, "name": "Hand-Tufted vs Machine-Made Rugs", "item": "https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs" }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Featured Hand-Tufted Rugs — Rugkari Collection",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Nexus Abstract Hand-Tufted Pure New Zealand Wool Rug", "url": "https://rugkari.com/products/nexus-abstract-pure-new-zealand-wool-rug", "brand": { "@type": "Brand", "name": "Rugkari" } } },
+          { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Galleria Geometric Hand-Tufted Pure New Zealand Wool Rug", "url": "https://rugkari.com/products/galleria-geometric-pure-new-zealand-wool-rug", "brand": { "@type": "Brand", "name": "Rugkari" } } },
+          { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Alchemy Abstract Hand-Tufted Pure New Zealand Wool Rug", "url": "https://rugkari.com/products/alchemy-abstract-pure-new-zealand-wool-rug", "brand": { "@type": "Brand", "name": "Rugkari" } } },
+          { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Mandolin Geometric Hand-Tufted Pure New Zealand Wool Rug", "url": "https://rugkari.com/products/mandolin-geometric-pure-new-zealand-wool-rug", "brand": { "@type": "Brand", "name": "Rugkari" } } },
+          { "@type": "ListItem", "position": 5, "item": { "@type": "Product", "name": "Elysian Abstract Hand-Tufted Pure New Zealand Wool Rug", "url": "https://rugkari.com/products/elysian-abstract-pure-new-zealand-wool-rug", "brand": { "@type": "Brand", "name": "Rugkari" } } }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between hand-tufted and machine-made rugs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hand-tufted rugs are made by skilled artisans who use a tufting gun to push yarn loops through a canvas backing, then secure the pile with a latex adhesive and a secondary backing. Each rug takes hours to days to complete and uses premium natural fibres like pure New Zealand wool. Machine-made rugs are mass-produced by automated power looms in minutes, typically using synthetic materials like polypropylene. The result is a uniform, cost-efficient product that lacks the texture depth, natural material quality, and individual character of a hand-tufted piece." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I tell if a rug is hand-tufted or machine-made?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Flip the rug over and examine the back. A hand-tufted rug will have a canvas or fabric secondary backing (often with a latex layer) — you will not see the individual knots or loops of the pile. The pile texture on the front will feel soft, varied, and slightly irregular in the most natural way. A machine-made rug typically has a woven or bonded backing, perfectly uniform pile height across the entire surface, and a stiffer overall feel. The edges of a hand-tufted rug are often serged or bound by hand; machine-made edges are mechanically finished." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do hand-tufted rugs last longer than machine-made rugs?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, significantly. A quality hand-tufted rug made from pure New Zealand wool, like those from Rugkari, can last 20–30 years with basic care. The wool fibres are naturally resilient — they bend without breaking and recover from compression. Machine-made rugs using synthetic pile typically show visible wear within 3–5 years under regular use, as synthetic fibres flatten and cannot recover the way natural wool does. The latex layer in hand-tufted rugs can degrade over decades, but this is a known maintenance point — not a structural failure." }
+          },
+          {
+            "@type": "Question",
+            "name": "Are hand-tufted rugs expensive?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hand-tufted rugs from Rugkari start from ₹7,099 for a standard size — significantly less than hand-knotted rugs, which can cost ₹50,000 or more for the same size. Compared to machine-made rugs, you will pay a premium, but the cost-per-year of ownership typically favours hand-tufted: a ₹8,000 hand-tufted rug lasting 20 years costs ₹400/year, while a ₹3,500 machine-made rug replaced every 4 years costs ₹875/year. The true value comparison is lifetime cost, not sticker price." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a hand-tufted rug the same as a handmade rug?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hand-tufted rugs are a category of handmade rugs, but not all handmade rugs are hand-tufted. The main handmade rug categories are: (1) Hand-knotted — individual knots tied by hand, the most labour-intensive and expensive; (2) Hand-tufted — yarn pushed through canvas with a tufting gun, secured with latex; (3) Hand-woven / flatweave — yarn woven on a loom without pile; (4) Hand-loomed — machine-assisted but hand-guided weaving. Hand-tufted rugs represent the ideal middle ground: genuinely handcrafted, made from premium natural materials, but accessible in price relative to hand-knotted alternatives." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root { --background: hsl(0 0% 100%); --foreground: hsl(0 0% 6%); --secondary: hsl(0 0% 96%); --muted: hsl(0 0% 93%); --muted-foreground: hsl(0 0% 46%); --border: hsl(0 0% 87%); }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; min-height: 100vh; background: var(--background); color: var(--foreground); font-family: "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    img { display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+    .font-serif, h1, h2, h3, h4 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; letter-spacing: 0.01em; }
+    .tracking-luxury { letter-spacing: 0.18em; }
+    .tracking-wider-2 { letter-spacing: 0.08em; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+
+    /* HEADER */
+    /* ── HEADER — Dawn theme pixel-perfect ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: #ffffff;
+    }
+
+    /* Announcement bar — Dawn: white bg, full-dark text, 13px, thin border */
+    .store-note {
+      border-bottom: 1px solid rgba(18,18,18,0.08);
+      padding: 10px 16px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 20px;
+      color: rgb(18,18,18);
+      background: #ffffff;
+      letter-spacing: 0.06em;
+    }
+
+    /* Header row — Dawn: no fixed height, padding-based, ~56px tall */
+    .header-row {
+      display: flex;
+      min-height: 56px;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(18,18,18,0.08);
+    }
+
+    /* Logo — 140px width, centered vertically with padding */
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 0;
+      text-decoration: none;
+    }
+    .logo img { width: 140px; height: auto; object-fit: contain; display: block; }
+
+    /* Desktop nav — Dawn: full dark, 14px, letter-spacing, underline on hover */
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;          /* 3rem → Dawn default */
+      font-size: 13.4px;  /* 1.34rem — Dawn body text */
+      line-height: 20px;
+      letter-spacing: 0.04em;
+    }
+    .desktop-nav a {
+      color: rgb(18,18,18);
+      text-decoration: none;
+      transition: text-decoration-color 0.2s ease;
+      text-underline-offset: 3px;
+    }
+    .desktop-nav a:hover { text-decoration: underline; }
+
+    /* Icon area — Dawn: 44px touch targets, no bg on hover */
+    .icon-actions {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .icon-button {
+      display: inline-flex;
+      min-width: 44px; min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 0; border-radius: 0;
+      background: transparent;
+      color: rgb(18,18,18);
+      cursor: pointer;
+      padding: 0;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+    .icon-button:hover { opacity: 0.75; }
+    .icon-button svg, .mobile-summary svg {
+      width: 20px; height: 20px;
+      stroke: currentColor; stroke-width: 1.6;
+      stroke-linecap: round; stroke-linejoin: round;
+      fill: none;
+    }
+
+    /* Login as text — Dawn logged-out state */
+    .login-text-btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 4px;
+      border: 0; background: transparent;
+      color: rgb(18,18,18);
+      font-size: 13.4px;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+      white-space: nowrap;
+    }
+    .login-text-btn:hover { opacity: 0.75; }
+
+    /* Mobile hamburger */
+    .mobile-menu { display: none; }
+    .mobile-summary {
+      min-width: 44px; min-height: 44px;
+      margin-left: -12px;
+      display: flex; align-items: center; justify-content: center;
+      list-style: none; cursor: pointer;
+      background: transparent; border: 0;
+    }
+    .mobile-summary::-webkit-details-marker { display: none; }
+
+    /* Dawn-style mobile drawer overlay */
+    .mobile-drawer-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .mobile-drawer {
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      width: 300px;
+      background: #ffffff;
+      z-index: 101;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+      overflow-y: auto;
+      display: flex; flex-direction: column;
+    }
+    .mobile-drawer-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(18,18,18,0.08);
+      min-height: 56px;
+    }
+    .mobile-drawer-title {
+      font-size: 13.4px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: rgb(18,18,18); font-weight: 500;
+    }
+    .drawer-close-btn {
+      display: flex; align-items: center; justify-content: center;
+      min-width: 44px; min-height: 44px;
+      border: 0; background: transparent; cursor: pointer;
+      color: rgb(18,18,18); padding: 0;
+    }
+    .mobile-drawer-nav {
+      padding: 8px 0;
+      flex: 1;
+    }
+    .mobile-drawer-nav a {
+      display: flex; align-items: center;
+      padding: 12px 24px;
+      font-size: 14px; line-height: 20px;
+      color: rgb(18,18,18);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(18,18,18,0.04);
+      transition: opacity 0.2s;
+    }
+    .mobile-drawer-nav a:hover { opacity: 0.65; }
+    .mobile-drawer-social {
+      padding: 20px 24px;
+      border-top: 1px solid rgba(18,18,18,0.08);
+      display: flex; gap: 16px; align-items: center;
+    }
+    .mobile-drawer-social a {
+      display: flex; align-items: center; justify-content: center;
+      width: 32px; height: 32px;
+      color: rgb(18,18,18);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .mobile-drawer-social a:hover { opacity: 1; }
+    .mobile-drawer-social svg {
+      width: 18px; height: 18px;
+      fill: currentColor; stroke: none;
+    }
+
+    /* Drawer open state */
+    .site-header.drawer-open .mobile-drawer-overlay { display: block; opacity: 1; }
+    .site-header.drawer-open .mobile-drawer { transform: translateX(0); }
+
+    /* ARTICLE HEADER */
+    .article-hero { background: var(--foreground); padding: 64px 0 56px; color: white; }
+    .breadcrumb-nav { display: flex; align-items: center; gap: 8px; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 24px; }
+    .breadcrumb-nav a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .breadcrumb-nav a:hover { color: rgba(255,255,255,0.85); }
+    .breadcrumb-sep { opacity: 0.4; }
+    .article-hero-eyebrow { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin: 0 0 16px; }
+    .article-hero h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; font-size: clamp(32px, 4.5vw, 58px); line-height: 1.08; margin: 0 0 20px; color: white; max-width: 840px; }
+    .article-hero-sub { font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.75); max-width: 640px; margin: 0 0 28px; }
+    .article-meta { display: flex; align-items: center; gap: 16px; font-size: 12px; color: rgba(255,255,255,0.5); letter-spacing: 0.04em; }
+    .article-meta-sep { opacity: 0.35; }
+
+    /* ARTICLE LAYOUT */
+    .article-layout { display: grid; grid-template-columns: minmax(0, 2fr) 340px; gap: 64px; padding: 64px 0 80px; align-items: start; }
+    .article-content h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; font-size: 32px; line-height: 1.15; margin: 48px 0 20px; }
+    .article-content h2:first-child { margin-top: 0; }
+    .article-content h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; font-size: 22px; line-height: 1.2; margin: 32px 0 14px; }
+    .article-content p { font-size: 16px; line-height: 1.85; color: hsl(0 0% 18%); margin: 0 0 20px; }
+    .article-content ul, .article-content ol { padding-left: 24px; margin: 0 0 20px; }
+    .article-content li { font-size: 16px; line-height: 1.8; color: hsl(0 0% 18%); margin-bottom: 10px; }
+    .article-content strong { color: var(--foreground); font-weight: 500; }
+    .article-content a { border-bottom: 1px solid hsl(0 0% 12% / 0.3); padding-bottom: 1px; transition: border-color 0.2s; }
+    .article-content a:hover { border-color: var(--foreground); }
+
+    /* LEAD IMAGE */
+    .article-lead-image { margin: 0 0 40px; border-radius: 2px; overflow: hidden; }
+    .article-lead-image img { width: 100%; height: 400px; object-fit: cover; }
+    .article-lead-image figcaption { font-size: 12px; color: var(--muted-foreground); margin-top: 10px; text-align: center; }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box { background: var(--secondary); border-left: 3px solid var(--foreground); padding: 20px 24px; margin: 28px 0; border-radius: 0 2px 2px 0; }
+    .highlight-box p { margin: 0; font-size: 15px; line-height: 1.7; }
+
+    /* DEFINITION BOX */
+    .definition-box { border: 1px solid var(--border); border-radius: 2px; padding: 24px 28px; margin: 28px 0; background: var(--background); }
+    .definition-label { font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 10px; font-family: "Inter", sans-serif; font-weight: 500; }
+    .definition-box h3 { font-size: 22px; margin: 0 0 12px; }
+    .definition-box p { font-size: 15px; line-height: 1.75; margin: 0; color: hsl(0 0% 22%); }
+
+    /* PROCESS STEPS */
+    .process-steps { margin: 28px 0; counter-reset: step-counter; }
+    .step-item { display: grid; grid-template-columns: 48px 1fr; gap: 20px; align-items: start; margin-bottom: 24px; }
+    .step-item:last-child { margin-bottom: 0; }
+    .step-number { width: 48px; height: 48px; border-radius: 50%; background: var(--foreground); color: white; display: flex; align-items: center; justify-content: center; font-family: "Cormorant Garamond", serif; font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+    .step-content h3 { font-size: 18px; margin: 0 0 8px; }
+    .step-content p { font-size: 15px; line-height: 1.75; margin: 0; color: hsl(0 0% 22%); }
+
+    /* COMPARISON TABLE */
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 28px 0 36px; font-size: 14px; }
+    .comparison-table th { padding: 14px 16px; text-align: left; font-weight: 500; font-family: "Inter", sans-serif; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .comparison-table th:first-child { background: var(--secondary); color: var(--muted-foreground); }
+    .comparison-table th.col-handtufted { background: var(--foreground); color: white; }
+    .comparison-table th.col-machine { background: hsl(0 0% 75%); color: var(--foreground); }
+    .comparison-table td { padding: 14px 16px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+    .comparison-table td:first-child { font-weight: 500; background: var(--secondary); font-size: 13px; letter-spacing: 0.02em; }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .winner-badge { display: inline-block; background: hsl(142 55% 35%); color: white; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; margin-left: 8px; vertical-align: middle; }
+
+    /* IDENTIFIER CHECKLIST */
+    .identifier-list { list-style: none; padding: 0; margin: 20px 0 28px; }
+    .identifier-list li { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 15px; line-height: 1.65; color: hsl(0 0% 18%); }
+    .identifier-list li:last-child { border-bottom: none; }
+    .id-icon { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; margin-top: 1px; }
+    .id-icon.check { background: hsl(142 55% 92%); color: hsl(142 55% 28%); }
+    .id-icon.cross { background: hsl(0 72% 94%); color: hsl(0 72% 45%); }
+
+    /* PRODUCT STRIP */
+    .product-strip { background: var(--secondary); border: 1px solid var(--border); border-radius: 2px; padding: 28px; margin: 36px 0; }
+    .product-strip-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 20px; }
+    .product-strip-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .product-strip-card { display: block; }
+    .product-strip-card:hover .psc-image img { transform: scale(1.04); }
+    .psc-image { aspect-ratio: 1/1; overflow: hidden; border-radius: 2px; background: var(--muted); }
+    .psc-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .psc-name { font-family: "Cormorant Garamond", serif; font-size: 15px; line-height: 1.3; margin: 12px 0 6px; }
+    .psc-price { font-size: 13px; color: var(--muted-foreground); }
+    .psc-cta { display: inline-block; margin-top: 10px; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid hsl(0 0% 12% / 0.3); padding-bottom: 2px; transition: border-color 0.2s; }
+    .product-strip-card:hover .psc-cta { border-color: var(--foreground); }
+
+    /* INLINE CTA */
+    .inline-cta { background: var(--foreground); color: white; padding: 36px 40px; border-radius: 2px; margin: 40px 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .inline-cta h3 { font-family: "Cormorant Garamond", serif; font-size: 26px; color: white; margin: 0; line-height: 1.1; }
+    .inline-cta p { font-size: 14px; color: rgba(255,255,255,0.75); margin: 8px 0 0; }
+    .inline-cta-btn { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.9); padding: 14px 32px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: white; white-space: nowrap; transition: color 0.3s; }
+    .inline-cta-btn span { position: relative; z-index: 1; }
+    .inline-cta-btn::before { content: ''; position: absolute; inset: 0; background: white; transform: scaleX(0); transform-origin: left; transition: transform 0.5s ease-out; }
+    .inline-cta-btn:hover { color: var(--foreground); border-bottom: 1px solid rgba(255,255,255,0.9); }
+    .inline-cta-btn:hover::before { transform: scaleX(1); }
+
+    /* FAQ */
+    .faq-section { padding: 40px 0 0; border-top: 1px solid var(--border); margin-top: 48px; }
+    .faq-section h2 { margin: 0 0 32px; font-size: 34px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-question { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; cursor: pointer; list-style: none; font-size: 15px; font-weight: 500; line-height: 1.4; gap: 16px; transition: color 0.2s; }
+    .faq-question::-webkit-details-marker { display: none; }
+    .faq-icon { flex-shrink: 0; font-size: 22px; font-weight: 300; color: var(--muted-foreground); transition: transform 0.3s; }
+    details[open] .faq-icon { transform: rotate(45deg); }
+    .faq-answer { padding: 0 0 20px; font-size: 15px; line-height: 1.8; color: var(--muted-foreground); animation: fadein 0.2s ease; }
+
+    /* SIDEBAR */
+    .article-sidebar { position: sticky; top: 100px; }
+    .sidebar-cta { background: var(--secondary); border: 1px solid var(--border); padding: 28px; border-radius: 2px; }
+    .sidebar-cta-label { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 12px; }
+    .sidebar-cta h3 { font-family: "Cormorant Garamond", serif; font-size: 22px; line-height: 1.15; margin: 0 0 12px; }
+    .sidebar-cta p { font-size: 13px; line-height: 1.7; color: var(--muted-foreground); margin: 0 0 20px; }
+    .sidebar-cta-btn { display: block; background: var(--foreground); color: white; text-align: center; padding: 14px 16px; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; border-radius: 2px; transition: opacity 0.2s; }
+    .sidebar-cta-btn:hover { opacity: 0.85; }
+    .sidebar-product { display: block; margin-top: 20px; }
+    .sidebar-product img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; transition: opacity 0.3s; }
+    .sidebar-product:hover img { opacity: 0.85; }
+    .sidebar-product-name { font-family: "Cormorant Garamond", serif; font-size: 16px; margin: 12px 0 4px; }
+    .sidebar-product-price { font-size: 13px; color: var(--muted-foreground); }
+    .sidebar-toc { margin-top: 28px; padding: 24px; border: 1px solid var(--border); border-radius: 2px; }
+    .sidebar-toc h4 { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 16px; font-family: "Inter", sans-serif; font-weight: 500; }
+    .sidebar-toc ol { padding-left: 18px; margin: 0; }
+    .sidebar-toc li { font-size: 13px; line-height: 1.6; color: var(--muted-foreground); margin-bottom: 8px; }
+    .sidebar-toc li a { color: var(--muted-foreground); transition: color 0.2s; }
+    .sidebar-toc li a:hover { color: var(--foreground); }
+
+    /* RELATED */
+    .related-section { padding: 64px 0; border-top: 1px solid var(--border); margin-top: 64px; }
+    .related-section h2 { font-size: 34px; margin: 0 0 32px; }
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .related-card { display: block; }
+    .related-card-image { aspect-ratio: 3/2; overflow: hidden; border-radius: 2px; background: var(--muted); }
+    .related-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+    .related-card:hover .related-card-image img { transform: scale(1.03); }
+    .related-card h3 { font-family: "Cormorant Garamond", serif; font-size: 20px; line-height: 1.25; margin: 16px 0 8px; }
+    .related-card p { font-size: 14px; line-height: 1.7; color: var(--muted-foreground); margin: 0; }
+
+    /* TRUST BAR */
+    .trust-bar { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--secondary); padding: 20px 0; }
+    .trust-bar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 160px; }
+    .trust-item svg { flex-shrink: 0; color: var(--foreground); opacity: 0.75; }
+    .trust-item div { display: flex; flex-direction: column; }
+    .trust-item strong { font-size: 13px; font-weight: 500; }
+    .trust-item span { font-size: 11px; color: var(--muted-foreground); margin-top: 1px; }
+    .trust-divider { width: 1px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+    /* FOOTER */
+    .site-footer { margin-top: 80px; background: var(--secondary); border-top: 1px solid var(--border); }
+    .footer-main { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 48px; padding-top: 64px; padding-bottom: 64px; }
+    .footer-brand { display: block; width: 140px; height: auto; }
+    .footer-since { margin: 4px 0 0; color: var(--muted-foreground); font-size: 12px; text-transform: uppercase; }
+    .footer-copy { max-width: 320px; margin: 24px 0 0; color: var(--muted-foreground); font-size: 14px; line-height: 22px; }
+    .socials { display: flex; gap: 12px; margin-top: 24px; }
+    .socials a { display: flex; width: 34px; height: 34px; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 999px; transition: background-color 0.2s; }
+    .socials a:hover { background: var(--background); }
+    .socials svg { width: 16px; height: 16px; fill: currentColor; }
+    .footer-title { margin: 0 0 16px; font-family: "Inter", sans-serif; font-size: 12px; text-transform: uppercase; }
+    .footer-list { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; color: var(--muted-foreground); font-size: 14px; }
+    .footer-list a, .legal-links a { transition: color 0.2s; }
+    .footer-list a:hover, .legal-links a:hover { color: var(--foreground); }
+    .newsletter-text { margin: 0 0 16px; color: var(--muted-foreground); font-size: 14px; line-height: 22px; }
+    .newsletter-form { display: flex; gap: 8px; }
+    .newsletter-form input { width: 100%; min-width: 0; height: 40px; border: 1px solid var(--border); border-radius: 2px; background: var(--background); padding: 8px 12px; color: var(--foreground); outline: none; }
+    .newsletter-form button { height: 40px; border: 1px solid var(--foreground); border-radius: 2px; background: var(--foreground); padding: 0 16px; color: var(--background); cursor: pointer; }
+    .footer-bottom { border-top: 1px solid var(--border); }
+    .footer-bottom-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 24px; padding-bottom: 24px; color: var(--muted-foreground); font-size: 12px; }
+    .footer-bottom-row p { margin: 0; }
+    .legal-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0; padding: 0; list-style: none; }
+
+    /* WHATSAPP */
+    .whatsapp { position: fixed; right: 28px; bottom: 28px; z-index: 50; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.18)); }
+    .whatsapp-button { position: relative; display: flex; width: 58px; height: 58px; align-items: center; justify-content: center; border-radius: 999px; background: linear-gradient(135deg, hsl(142 65% 42%) 0%, hsl(142 65% 32%) 100%); color: white; box-shadow: 0 6px 24px rgba(37,211,102,0.35); transition: transform 0.25s ease; }
+    .whatsapp-button:hover { transform: scale(1.08) translateY(-2px); }
+    .whatsapp-button::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: hsl(142 65% 38%); opacity: 0.25; animation: ping 2s cubic-bezier(0,0,0.2,1) infinite; }
+    .whatsapp-button svg { position: relative; width: 28px; height: 28px; fill: currentColor; }
+
+    /* STICKY CTA */
+    .sticky-cta-bar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 30; background: var(--foreground); color: white; padding: 16px 24px; display: flex; align-items: center; justify-content: center; gap: 20px; box-shadow: 0 -4px 24px rgba(0,0,0,0.15); transform: translateY(100%); transition: transform 0.4s ease; }
+    .sticky-cta-bar.visible { transform: translateY(0); }
+    .sticky-cta-bar p { margin: 0; font-size: 13px; color: rgba(255,255,255,0.8); }
+    .sticky-cta-bar strong { color: white; }
+    .sticky-cta-close { background: transparent; border: 0; color: rgba(255,255,255,0.5); cursor: pointer; font-size: 20px; line-height: 1; padding: 0 0 0 12px; }
+    .sticky-btn { flex-shrink: 0; border: 1px solid rgba(255,255,255,0.7); padding: 10px 24px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: white; white-space: nowrap; transition: background 0.2s; }
+    .sticky-btn:hover { background: rgba(255,255,255,0.1); }
+
+    @keyframes ping { 75%,100% { transform:scale(2); opacity:0; } }
+    @keyframes fadein { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+
+    @media (max-width: 1023px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .article-sidebar { position: static; }
+      .product-strip-grid { grid-template-columns: repeat(2, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-main { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    }
+    @media (max-width: 767px) {
+      .desktop-nav { display: none; }
+      .mobile-menu { display: block; }
+      .article-hero { padding: 48px 0 40px; }
+      .article-hero h1 { font-size: clamp(26px, 6vw, 40px); }
+      .article-hero-sub { font-size: 14px; line-height: 1.6; }
+      .article-content h2 { font-size: 26px; margin-top: 36px; }
+      .article-content h3 { font-size: 19px; }
+      .step-item { grid-template-columns: 40px 1fr; gap: 14px; }
+      .comparison-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .comparison-table th, .comparison-table td { padding: 10px 12px; font-size: 13px; }
+      .product-pick { grid-template-columns: 1fr; }
+      .product-pick-image { aspect-ratio: 4/3; max-height: 280px; }
+      .product-strip-grid { grid-template-columns: 1fr; }
+      .inline-cta { flex-direction: column; padding: 28px 24px; }
+      .sticky-cta-bar p { display: none; }
+      .sticky-cta-bar { padding: 14px 16px; gap: 12px; }
+      .trust-divider { display: none; }
+      .trust-item { min-width: 140px; flex: 1 1 calc(50% - 8px); }
+      .related-grid { grid-template-columns: 1fr; }
+      .footer-main { grid-template-columns: 1fr; gap: 28px; padding-top: 48px; padding-bottom: 48px; }
+      .footer-bottom-row { flex-direction: column; align-items: flex-start; }
+      .newsletter-form { flex-direction: column; }
+      .newsletter-form button { width: 100%; height: 44px; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 16px; }
+      .article-hero { padding: 36px 0 28px; }
+      .article-hero h1 { font-size: 24px; line-height: 1.18; }
+      .article-content h2 { font-size: 22px; }
+      .article-content h3 { font-size: 17px; }
+      .article-content p, .article-content li { font-size: 15px; }
+      .article-lead-image img { height: 260px; }
+      .inline-cta { padding: 24px 16px; }
+      .inline-cta h3 { font-size: 22px; }
+      .faq-question { font-size: 14px; }
+      .faq-section h2 { font-size: 28px; }
+      .sidebar-cta { padding: 20px; }
+      .trust-item > div > span { display: none; }
+    }
+  </style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L4Z9CSQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <!-- Announcement bar — Dawn: white bg, full-dark text -->
+    <div class="store-note tracking-wider-2" role="marquee" aria-live="polite">Welcome to our store</div>
+
+    <!-- Dawn-style mobile drawer overlay + panel -->
+    <div class="mobile-drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+    <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Navigation" aria-modal="true">
+      <div class="mobile-drawer-header">
+        <span class="mobile-drawer-title">Menu</span>
+        <button class="drawer-close-btn" id="drawerClose" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-drawer-nav" role="navigation" aria-label="Mobile navigation">
+        <a href="https://rugkari.com/pages/stain-repellent?vid=suvals">Stain Repellent</a>
+        <a href="https://rugkari.com/pages/rug-warranty?vid=suvals">Rug Warranty</a>
+        <a href="https://rugkari.com/pages/track-your-order?vid=suvals">Track Your Order</a>
+        <a href="https://rugkari.com/collections/all?vid=suvals">Catalog</a>
+      </nav>
+      <!-- Social links — Dawn mobile drawer footer -->
+      <div class="mobile-drawer-social" aria-label="Social media links">
+        <a href="https://x.com/RugKari" aria-label="X (Twitter)" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61583826735546" aria-label="Facebook" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/rugkaari/" aria-label="Instagram" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@RugKari" aria-label="YouTube" rel="noopener" target="_blank">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container header-row">
+      <!-- Mobile hamburger — Dawn: 44px touch target -->
+      <button class="mobile-summary mobile-menu" id="drawerOpen" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none" aria-hidden="true"><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/></svg>
+      </button>
+
+      <a href="https://rugs.rugkari.com/" aria-label="Rugkari — Handcrafted Rugs Since 1980, go to homepage" class="logo">
+        <img src="https://rugkari.com/cdn/shop/files/RUGKARI_LOGO.webp?v=1777698877"
+             alt="Rugkari — Handcrafted Luxury Rugs Since 1980"
+             width="140" height="36" />
+      </a>
+
+      <nav class="desktop-nav" role="navigation" aria-label="Primary navigation">
+        <a href="https://rugkari.com/pages/stain-repellent?vid=suvals">Stain Repellent</a>
+        <a href="https://rugkari.com/pages/rug-warranty?vid=suvals">Rug Warranty</a>
+        <a href="https://rugkari.com/pages/track-your-order?vid=suvals">Track Your Order</a>
+        <a href="https://rugkari.com/collections/all?vid=suvals">Catalog</a>
+      </nav>
+
+      <div class="icon-actions" role="group" aria-label="Site utilities">
+        <!-- Search icon -->
+        <a class="icon-button" href="https://rugkari.com/search?vid=suvals" aria-label="Search Rugkari products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </a>
+        <!-- Log in as text — Dawn logged-out state -->
+        <a class="login-text-btn" href="https://rugkari.com/account?vid=suvals" aria-label="Log in to your account">Log in</a>
+        <!-- Cart icon -->
+        <a class="icon-button" href="https://rugkari.com/cart?vid=suvals" aria-label="Shopping cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </a>
+      </div>
+    </div>
+
+
+  <main id="main-content">
+
+    <section class="article-hero">
+      <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="https://rugkari.com/">Rugkari</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="https://rugs.rugkari.com/">The Rug Guide</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Hand-Tufted vs Machine-Made Rugs</span>
+        </nav>
+        <p class="article-hero-eyebrow tracking-luxury">Buying Guide · Cornerstone</p>
+        <h1>Hand-Tufted vs Machine-Made Rugs: The Definitive Guide for Indian Buyers</h1>
+        <p class="article-hero-sub">Before you spend a single rupee on a rug, read this. The difference between hand-tufted and machine-made isn't just about how they're made — it's about what you're actually buying, and how long it will last.</p>
+        <div class="article-meta">
+          <span>By Rugkari Editors</span><span class="article-meta-sep">·</span>
+          <span>May 2026</span><span class="article-meta-sep">·</span>
+          <span>12 min read</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="container trust-bar-inner">
+        <div class="trust-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><strong>Since 1980</strong><span>45 years of master craftsmanship</span></div></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Woolmark Certified</strong><span>100% pure New Zealand wool</span></div></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><strong>Free Pan-India Shipping</strong><span>Every order, every size</span></div></div>
+        <div class="trust-divider"></div>
+        <div class="trust-item"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><strong>10-Year Warranty</strong><span>Heirloom quality guaranteed</span></div></div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="article-layout">
+        <article class="article-content" id="article-body">
+
+          <figure class="article-lead-image">
+            <img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445"
+                 alt="Nexus Abstract hand-tufted pure New Zealand wool rug — intricate pile texture showing the depth and craftsmanship of Bhadohi artisans"
+                 width="900" height="400" loading="eager" />
+            <figcaption>Nexus Abstract — every loop placed by hand. The texture alone tells the story of Bhadohi craftsmanship.</figcaption>
+          </figure>
+
+          <h2 id="quick-answer">The Quick Answer</h2>
+
+          <div class="highlight-box">
+            <p><strong>Hand-tufted rugs</strong> are made by skilled artisans using a hand-held tufting gun — yarn pushed through canvas, secured with latex, backed with fabric. Made from premium natural fibres. Last 20–30 years. <strong>Machine-made rugs</strong> are mass-produced by automated power looms in minutes. Typically use synthetic fibres. Last 3–7 years under normal use. The cost difference is real; so is the quality difference — and the lifetime value calculation firmly favours hand-tufted.</p>
+          </div>
+
+          <p>If you're reading this, you're probably comparing rugs online and noticing a significant price gap between options labelled "hand-tufted" and those that aren't. You want to know if the premium is justified.</p>
+
+          <p>It is — but the reasons are worth understanding. Because "hand-tufted" is not just a marketing word. It describes a specific, skill-intensive manufacturing process that produces a fundamentally different product. And once you understand that process, the comparison becomes obvious.</p>
+
+          <h2 id="hand-tufted-process">What Is Hand-Tufting? The Craft Explained</h2>
+
+          <p>Hand-tufting originated in India — specifically in the carpet-weaving clusters of Bhadohi, Uttar Pradesh, which accounts for nearly 40% of India's entire rug export volume. The technique combines ancient craft knowledge with a purpose-built tool: the tufting gun.</p>
+
+          <p>Here is exactly how a Rugkari hand-tufted rug is made in Bhadohi:</p>
+
+          <div class="process-steps">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Pattern Transfer</h3>
+                <p>The design is hand-drawn or projected onto a primary backing canvas stretched over a frame. For complex patterns like the Nexus or Galleria, this stage alone requires hours of precision work from a skilled draughtsman.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Yarn Selection and Preparation</h3>
+                <p>Pure New Zealand wool — chosen for its superior lanolin content, staple length, and natural crimp — is selected, dyed in small batches for colour consistency, and wound onto bobbins. Rugkari uses Woolmark-certified wool exclusively, which guarantees fibre purity and traceable sourcing.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Hand-Tufting</h3>
+                <p>The artisan uses a pneumatic tufting gun to push yarn loops through the canvas backing, following the pattern line by line. Each pass creates a row of pile. For a 6×9 ft rug, this process takes 2–4 days of skilled labour. Colour changes, pattern complexity, and pile variations (cut pile vs loop pile) all require separate passes and tool adjustments.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Latex Application and Secondary Backing</h3>
+                <p>The back of the tufted canvas is coated with a latex adhesive to lock the yarn loops in place and prevent pile pull-out. A secondary fabric backing (typically cotton or jute) is then adhered over the latex layer for structural stability and a smooth underside finish.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>Carving, Shearing, and Finishing</h3>
+                <p>The pile surface is sheared to a uniform height, then selectively carved by hand to define pattern edges, create texture variations, and bring out the design's three-dimensionality. The rug is then washed, stretched, blocked, and inspected before final binding of the edges.</p>
+              </div>
+            </div>
+          </div>
+
+          <p>Total production time for a single Rugkari rug: 5–10 working days, depending on size and pattern complexity. Total hands involved: typically 6–12 artisans across the production process.</p>
+
+          <!-- PRODUCT STRIP 1 — after hand-tufting section -->
+          <div class="product-strip">
+            <p class="product-strip-label tracking-luxury">Shop Hand-Tufted Rugs — Made in Bhadohi</p>
+            <div class="product-strip-grid">
+              <a href="https://rugkari.com/products/nexus-abstract-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445" alt="Nexus Abstract hand-tufted pure New Zealand wool rug — intricate geometric pattern in neutral tones" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Nexus Abstract Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+              <a href="https://rugkari.com/products/galleria-geometric-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_forma_r_88ec9ade-333d-4e46-a807-4e2edd92a5c0.jpg?v=1777702440" alt="Galleria Geometric hand-tufted pure New Zealand wool rug — bold geometric forms for modern interiors" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Galleria Geometric Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+              <a href="https://rugkari.com/products/alchemy-abstract-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_gem_r_309adbe3-c23c-4e4f-8afa-8c71de32ffca.jpg?v=1777702441" alt="Alchemy Abstract hand-tufted pure New Zealand wool rug — rich tonal layers with artisan depth" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Alchemy Abstract Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+            </div>
+          </div>
+
+          <h2 id="machine-made-process">What Is Machine-Made? The Industrial Reality</h2>
+
+          <p>Machine-made rugs are produced by automated power looms — typically Axminster or Wilton looms — that can weave a standard rug in minutes. The process is entirely mechanised: yarn is fed from large spools, interlocked by the loom according to a digitised pattern, and the finished product rolls off the end of the production line ready for binding.</p>
+
+          <p>The key distinctions in machine-made production:</p>
+
+          <ul>
+            <li><strong>Speed</strong> — a power loom produces 5–10 metres of rug per hour. A hand-tufted artisan produces roughly 0.5–1 metre per day. The production efficiency gap is 100× or more.</li>
+            <li><strong>Materials</strong> — most machine-made rugs at accessible price points use polypropylene (olefin), polyester, or nylon. These are petroleum-derived synthetics that imitate the look of wool at low cost but cannot replicate its feel, resilience, or natural properties.</li>
+            <li><strong>Pattern limitations</strong> — loom weaving produces patterns in a grid structure. This constrains design to repeating geometric arrangements. The fluid, organic patterns characteristic of hand-tufted rugs are impossible to replicate accurately in machine production.</li>
+            <li><strong>Pile uniformity</strong> — machine weaving produces perfectly uniform pile height across the entire surface. While this sounds like a benefit, it actually results in a flat, rigid appearance that lacks the natural textural variation of hand-crafted pile.</li>
+            <li><strong>No human judgment</strong> — every design decision is encoded in the machine programme. There is no artisan adjusting tension, responding to the material, or making the micro-corrections that give hand-tufted rugs their unique character.</li>
+          </ul>
+
+          <h2 id="comparison">Hand-Tufted vs Machine-Made: The Complete Comparison</h2>
+
+          <p>Here is every dimension that matters to an Indian rug buyer — side by side:</p>
+
+          <table class="comparison-table" role="table" aria-label="Hand-tufted vs machine-made rug comparison">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col" class="col-handtufted">Hand-Tufted</th>
+                <th scope="col" class="col-machine">Machine-Made</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Production method</td>
+                <td>Skilled artisans, tufting gun, 5–10 days per rug</td>
+                <td>Automated power loom, minutes per rug</td>
+              </tr>
+              <tr>
+                <td>Primary material</td>
+                <td>Pure New Zealand wool (or other natural fibres) <span class="winner-badge">Better</span></td>
+                <td>Typically polypropylene, polyester, or nylon</td>
+              </tr>
+              <tr>
+                <td>Pile depth</td>
+                <td>Up to 20mm; variable carving creates texture dimension <span class="winner-badge">Better</span></td>
+                <td>Typically 8–12mm; perfectly uniform surface</td>
+              </tr>
+              <tr>
+                <td>Feel underfoot</td>
+                <td>Soft, yielding, natural — wool pile compresses and recovers <span class="winner-badge">Better</span></td>
+                <td>Stiffer; synthetic fibres flatten and do not fully recover</td>
+              </tr>
+              <tr>
+                <td>Durability</td>
+                <td>20–30 years with basic care <span class="winner-badge">Better</span></td>
+                <td>3–7 years before visible wear in high-traffic areas</td>
+              </tr>
+              <tr>
+                <td>Stain resistance</td>
+                <td>Natural lanolin in wool repels liquid spills; easier to clean <span class="winner-badge">Better</span></td>
+                <td>Synthetic coatings fade; deeper staining over time</td>
+              </tr>
+              <tr>
+                <td>Design range</td>
+                <td>Unlimited — any pattern, colour gradient, pile variation <span class="winner-badge">Better</span></td>
+                <td>Grid-constrained; repeating patterns only</td>
+              </tr>
+              <tr>
+                <td>Custom sizing</td>
+                <td>Available — made-to-order for non-standard rooms <span class="winner-badge">Better</span></td>
+                <td>Fixed standard sizes only</td>
+              </tr>
+              <tr>
+                <td>Environmental impact</td>
+                <td>Natural renewable fibre; biodegradable at end of life <span class="winner-badge">Better</span></td>
+                <td>Petroleum-derived synthetic; non-biodegradable</td>
+              </tr>
+              <tr>
+                <td>Entry price (6×9 ft)</td>
+                <td>₹7,099 and above (Rugkari)</td>
+                <td>₹1,500–₹5,000 <span class="winner-badge" style="background: hsl(215 72% 42%);">Lower</span></td>
+              </tr>
+              <tr>
+                <td>Cost per year of ownership</td>
+                <td>₹350–₹400/year (25-year lifespan) <span class="winner-badge">Better</span></td>
+                <td>₹500–₹875/year (3–5 year replacement cycle)</td>
+              </tr>
+              <tr>
+                <td>Uniqueness</td>
+                <td>Each rug has individual character; no two identical <span class="winner-badge">Better</span></td>
+                <td>Mass-produced; identical across batches</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="highlight-box">
+            <p><strong>The value reversal.</strong> At first glance, a ₹3,000 machine-made rug appears cheaper than a ₹8,000 hand-tufted rug. But if the machine-made rug needs replacing every 4 years, you spend ₹21,000 over 28 years. The ₹8,000 hand-tufted rug — still in use after the same period — costs 62% less in real terms.</p>
+          </div>
+
+          <!-- PRODUCT STRIP 2 — after comparison table -->
+          <div class="product-strip">
+            <p class="product-strip-label tracking-luxury">The Collection — Hand-Tufted in Bhadohi, India</p>
+            <div class="product-strip-grid">
+              <a href="https://rugkari.com/products/mandolin-geometric-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_boulder_r__06323.jpg?v=1777702444" alt="Mandolin Geometric hand-tufted pure New Zealand wool rug — refined geometric pattern in warm earth tones" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Mandolin Geometric Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+              <a href="https://rugkari.com/products/elysian-abstract-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4695-kellywearstler-districtspruce-rug-1200x1800-roomset__38058.jpg?v=1777702455" alt="Elysian Abstract hand-tufted pure New Zealand wool rug — 20mm luxury pile for living room and bedroom" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Elysian Abstract Wool Rug</p>
+                <p class="psc-price">From ₹10,499</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+              <a href="https://rugkari.com/products/tidal-geometric-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/IMG_5438_JPEG.jpg?v=1777702435" alt="Tidal Geometric hand-tufted pure New Zealand wool rug — striking geometric forms for contemporary homes" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Tidal Geometric Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+            </div>
+          </div>
+
+          <h2 id="how-to-identify">How to Tell a Hand-Tufted Rug from Machine-Made</h2>
+
+          <p>You should be able to identify the construction method of any rug before you buy it. Here are the six tests — in order of reliability:</p>
+
+          <ul class="identifier-list">
+            <li>
+              <div class="id-icon check" aria-hidden="true">✓</div>
+              <div><strong>Flip it over and look at the back.</strong> A hand-tufted rug has a fabric secondary backing (cotton or jute) with a visible latex layer underneath. You will not be able to see individual pile loops from the back — they're hidden by the backing material. A machine-made rug typically has a woven or bonded back where the construction weave is visible.</div>
+            </li>
+            <li>
+              <div class="id-icon check" aria-hidden="true">✓</div>
+              <div><strong>Check the pile surface for variation.</strong> Drag your hand across the pile from multiple directions. Hand-tufted wool pile has a natural, slightly irregular texture — you'll feel the crimp of the wool fibres. Machine-made pile feels uniform, almost plastic-smooth, because synthetic fibres have no natural crimp.</div>
+            </li>
+            <li>
+              <div class="id-icon check" aria-hidden="true">✓</div>
+              <div><strong>Look for carved edges on pattern boundaries.</strong> Hand-tufted rugs have visible bevelling or carving where one colour or pattern section meets another — this creates shadow and depth. Machine-made rugs have sharp, flat boundaries with no depth variation between pattern areas.</div>
+            </li>
+            <li>
+              <div class="id-icon check" aria-hidden="true">✓</div>
+              <div><strong>The burn test (for loose fibres only).</strong> Pull a small fibre from an inconspicuous edge. Wool burns slowly, self-extinguishes, and smells like burning hair. Polypropylene melts, does not self-extinguish, and smells chemical. This test is definitive for material identification.</div>
+            </li>
+            <li>
+              <div class="id-icon cross" aria-hidden="true">✗</div>
+              <div><strong>Don't rely on packaging labels alone.</strong> The terms "handmade," "hand-crafted," and "artisan" are used loosely in the market. Only "hand-tufted," "hand-knotted," or "hand-woven" describe specific verified construction methods. Ask for the specific manufacturing process if buying from an unfamiliar brand.</div>
+            </li>
+            <li>
+              <div class="id-icon cross" aria-hidden="true">✗</div>
+              <div><strong>Don't judge by fringe.</strong> Some machine-made rugs have fringe sewn on as a decorative afterthought. On genuinely hand-knotted rugs, fringe is part of the warp threads — it's structural. On hand-tufted rugs, there is typically no fringe (the edges are bound). Fringe alone tells you nothing about the construction method.</div>
+            </li>
+          </ul>
+
+          <h2 id="bhadohi-craft">Why Bhadohi Craftsmanship Is Different</h2>
+
+          <p>Bhadohi — known formally as Sant Ravidas Nagar in Uttar Pradesh — has been the centre of India's hand-tufted and hand-knotted rug industry for over 200 years. The craft knowledge here is generational: families where the grandfather taught the father who taught the son the same techniques, refined across decades.</p>
+
+          <p>What this means in practice for a Rugkari rug:</p>
+
+          <ul>
+            <li><strong>Colour reading</strong> — Bhadohi dyers understand how wool absorbs dye differently at different moisture levels and temperatures. This allows them to achieve subtle tone variations within a single colour that are impossible to replicate industrially.</li>
+            <li><strong>Tension calibration</strong> — the pile density and tension of a hand-tufted rug affects both its appearance and durability. Bhadohi artisans adjust tufting gun pressure intuitively based on the yarn weight and canvas stretch, producing consistent pile density that machines cannot match.</li>
+            <li><strong>Pattern fidelity at scale</strong> — translating a complex design across a 9×12 ft surface without distortion requires spatial skill and experience. A Bhadohi master artisan can maintain pattern alignment and proportion across a large rug that would be impossible to achieve mechanically.</li>
+            <li><strong>Pride of authorship</strong> — each Rugkari rug is made by named artisans in our Bhadohi workshop. The rug you receive has been touched, evaluated, and finished by people who take personal pride in the outcome.</li>
+          </ul>
+
+          <p>This is not nostalgia. It is the reason why, side by side, a Rugkari hand-tufted rug and a mass-produced alternative are immediately distinguishable by anyone who picks them both up.</p>
+
+          <h2 id="which-to-choose">Which Should You Choose?</h2>
+
+          <p>The honest answer: if you are buying a rug for a room you care about, hand-tufted is the correct choice. The price premium is real, but so is every aspect of the quality difference — material, durability, feel, appearance, and the intangible value of owning something made with genuine skill and care.</p>
+
+          <p>There are legitimate reasons to choose machine-made:</p>
+
+          <ul>
+            <li>A temporary rental space where you won't take the rug when you leave</li>
+            <li>A very high-traffic utility area (under a shoe rack, inside a mud room) where you expect rapid replacement</li>
+            <li>A strict budget constraint with no flexibility</li>
+          </ul>
+
+          <p>For every other situation — living rooms, bedrooms, dining areas, home offices, children's rooms — the hand-tufted option is the better investment, both financially and in terms of the daily experience of living with the rug.</p>
+
+          <!-- PRODUCT STRIP 3 — before final CTA -->
+          <div class="product-strip">
+            <p class="product-strip-label tracking-luxury">Explore the Full Collection — From ₹7,099</p>
+            <div class="product-strip-grid">
+              <a href="https://rugkari.com/products/alchemy-abstract-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_gem_r_309adbe3-c23c-4e4f-8afa-8c71de32ffca.jpg?v=1777702441" alt="Alchemy Abstract hand-tufted New Zealand wool rug — layered tonal design with 20mm pile depth" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Alchemy Abstract Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+              <a href="https://rugkari.com/products/galleria-geometric-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_forma_r_88ec9ade-333d-4e46-a807-4e2edd92a5c0.jpg?v=1777702440" alt="Galleria Geometric hand-tufted New Zealand wool rug — architectural geometry in natural tones" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Galleria Geometric Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+              <a href="https://rugkari.com/products/nexus-abstract-pure-new-zealand-wool-rug" class="product-strip-card">
+                <div class="psc-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445" alt="Nexus Abstract hand-tufted New Zealand wool rug — refined abstract forms for eclectic interiors" width="400" height="400" loading="lazy" /></div>
+                <p class="psc-name">Nexus Abstract Wool Rug</p>
+                <p class="psc-price">From ₹7,099</p>
+                <span class="psc-cta tracking-luxury">Shop Now →</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="inline-cta">
+            <div>
+              <h3>Handcrafted in Bhadohi. Delivered Across India.</h3>
+              <p>Pure New Zealand wool. 10-year warranty. Free pan-India shipping on every order.</p>
+            </div>
+            <a href="https://rugkari.com/collections/all" class="inline-cta-btn tracking-luxury"><span>Shop All Rugs →</span></a>
+          </div>
+
+          <!-- FAQ -->
+          <section class="faq-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+              <summary class="faq-question">What is the difference between hand-tufted and machine-made rugs? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <p class="faq-answer">Hand-tufted rugs are made by skilled artisans who use a tufting gun to push yarn loops through a canvas backing — a labour-intensive process that produces unique, handcrafted pieces with superior pile depth and texture. Machine-made rugs are mass-produced by automated looms in minutes, resulting in uniform but often stiffer, less natural-feeling pile. For material quality, Rugkari's hand-tufted rugs use pure New Zealand wool, which is not used in most machine production. The durability difference is significant: hand-tufted rugs last 20–30 years; machine-made typically 3–7 years.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">How do I tell if a rug is hand-tufted or machine-made? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <p class="faq-answer">Flip the rug over and examine the back. A hand-tufted rug will have a canvas or fabric secondary backing (often with a latex layer) — you will not see individual pile loops. The pile on the front will feel soft, naturally textured, and slightly variable in the way wool is. A machine-made rug has a woven or bonded backing, perfectly uniform pile height, and a stiffer overall feel. Look also for carved bevelling at pattern boundaries on the pile surface — this is characteristic of hand-tufted construction and cannot be replicated mechanically.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Are hand-tufted rugs better than hand-knotted rugs? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <p class="faq-answer">They serve different purposes and price points. Hand-knotted rugs are the most labour-intensive of all — individual knots tied one by one on a loom, taking months for a single piece, and priced accordingly (₹50,000 and above for a standard size). They are heirlooms and investments. Hand-tufted rugs are also genuinely handmade with premium natural materials, but the tufting gun speeds up production significantly, making them accessible at ₹7,099 and above. For most Indian households looking for a high-quality, long-lasting rug at a liveable price, hand-tufted is the better practical choice.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Do hand-tufted rugs shed? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <p class="faq-answer">Yes — all pure wool rugs shed initially, and this is normal. New wool fibres release loose fibres during the first few weeks of use. Regular vacuuming (without a beater bar) during this period removes the loose fibres, after which shedding essentially stops. The shedding is a sign of genuine wool content — synthetic rugs that claim to be "wool-free shedding" are using synthetic fibres, which do not behave like real wool. After the initial settling period, Rugkari's hand-tufted rugs shed minimally and maintain their appearance for years.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">Can I use a hand-tufted rug in a high-traffic area? <span class="faq-icon" aria-hidden="true">+</span></summary>
+              <p class="faq-answer">Yes. New Zealand wool is among the most resilient natural fibres — its natural crimp allows fibres to bend thousands of times before breaking, which is why wool rugs outperform synthetics in high-traffic durability tests. Rugkari's 20mm pile maintains its structure under regular foot traffic. Use a quality rug pad underneath to prevent slipping and protect both the rug and your floor. Rotate the rug 180° every 6–12 months in very high-traffic areas to ensure even wear distribution.</p>
+            </details>
+          </section>
+
+          <!-- RELATED POSTS -->
+          <section class="related-section" aria-labelledby="related-heading">
+            <h2 id="related-heading">Continue Reading</h2>
+            <div class="related-grid">
+              <a href="https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs" class="related-card">
+                <div class="related-card-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/designer-rugs-bernabeifreeman-contour-lo-wr-1.jpg?v=1777702443" alt="Mist Abstract wool rug — how to remove coffee stains from wool rugs" width="600" height="400" loading="lazy" /></div>
+                <h3>How to Remove Coffee Stains from Wool Rugs</h3>
+                <p>The 5-step method that works without damaging your wool pile. Plus: what not to do — the common mistakes that permanently set stains.</p>
+              </a>
+              <a href="https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room" class="related-card">
+                <div class="related-card-image"><img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4695-kellywearstler-districtspruce-rug-1200x1800-roomset__38058.jpg?v=1777702455" alt="Elysian Abstract hand-tufted wool rug styled in a modern Indian living room" width="600" height="400" loading="lazy" /></div>
+                <h3>8 Best Hand-Tufted Rugs for Your Living Room in India</h3>
+                <p>Our editors' picks for every living room style, size, and budget — plus a complete Indian living room size guide.</p>
+              </a>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="article-sidebar">
+          <div class="sidebar-toc">
+            <h4>In This Guide</h4>
+            <ol>
+              <li><a href="#quick-answer">The quick answer</a></li>
+              <li><a href="#hand-tufted-process">What is hand-tufting?</a></li>
+              <li><a href="#machine-made-process">What is machine-made?</a></li>
+              <li><a href="#comparison">Full comparison table</a></li>
+              <li><a href="#how-to-identify">How to identify quality</a></li>
+              <li><a href="#bhadohi-craft">Why Bhadohi is different</a></li>
+              <li><a href="#which-to-choose">Which should you choose?</a></li>
+            </ol>
+          </div>
+
+          <div class="sidebar-cta" style="margin-top: 28px;">
+            <p class="sidebar-cta-label tracking-luxury">Rugkari · Since 1980</p>
+            <h3>Shop Hand-Tufted Rugs</h3>
+            <p>Pure New Zealand wool rugs, handcrafted in Bhadohi. Custom sizes available. Free pan-India shipping.</p>
+            <a href="https://rugkari.com/collections/all" class="sidebar-cta-btn tracking-luxury">Shop All Rugs →</a>
+          </div>
+
+          <a href="https://rugkari.com/products/nexus-abstract-pure-new-zealand-wool-rug" class="sidebar-product" style="margin-top: 28px; display: block;">
+            <img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445"
+                 alt="Nexus Abstract hand-tufted pure New Zealand wool rug — intricate pattern, 20mm pile" width="340" height="340" loading="lazy" />
+            <p class="sidebar-product-name">Nexus Abstract Wool Rug</p>
+            <p class="sidebar-product-price">From ₹7,099 · Free Shipping</p>
+          </a>
+
+          <a href="https://rugkari.com/products/galleria-geometric-pure-new-zealand-wool-rug" class="sidebar-product" style="margin-top: 20px; display: block;">
+            <img src="https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_forma_r_88ec9ade-333d-4e46-a807-4e2edd92a5c0.jpg?v=1777702440"
+                 alt="Galleria Geometric hand-tufted pure New Zealand wool rug — architectural forms for modern interiors" width="340" height="340" loading="lazy" />
+            <p class="sidebar-product-name">Galleria Geometric Wool Rug</p>
+            <p class="sidebar-product-price">From ₹7,099 · Free Shipping</p>
+          </a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-main">
+      <div>
+        <img class="footer-brand" src="data:image/webp;base64,UklGRoQKAABXRUJQVlA4WAoAAAAYAAAA9QAAPAAAQUxQSBMJAAAB8FbbjibJtrVNCGIQYrCdgYtBBAN3Bh4MLBhYMVAxcAiC4BAEQRDmj8zwr733+T6tRcQE4P95HQaoQUxguwc5oAYxgekBNYgJTM+wxbcsZkafhhOGAWoQkyNqAjWBmB4SEwwDxOQENYgJhgFqu/WAmMAUat/S0QjjCB4sf+3xhHEE2wFPGEewHbJeZK7em3sUmR89kg5PGMcDWhs0UyTzmCeUDV5nNMI4Ih3OgzHpDuMINnieMe5+Lp7M4Z9Dg+VPwXedg3S9Q6bCqfjDEYfT0alIxyXDuHvqwXzf4vic/PwzfFhNAHkt3d37YgDUmdN1H074cMHMhsMvjsjAi6MuVxxX56Y3yP3RFWj83E43doF8giQziyTXCdBkv8rYoXRobji+JowT1sQSV/TcvbkBc6Vc5/uDdEHj+2aaNUI+xWjPB34OT0/mBDRucolmimQqMvWYssOpSsdCu2D23VFMxVBx3VHtTEGU3EozFZaMEYDaPL9MAMxJV7y5yRVOxR+O+HDC8ZmKXDFzgLBdcHjOGvDmdJnv7hPwqoCy3UkzFW/mCJgXf99cgcZUzPQL3myY2WDsODECL06IhCLqgtl3LwrNUkRelruL+cLMCWvdyTngwxBYsNblOY7jswXpiiFrQOP7NKVDc4Nm4kTlBE8oJzhm2nk99xb5gVbAaFcdHJMDIvCi3Wdmw4sO/GEugu/qzAmapYg8SzIVmYqVesZCVToWqlGk+nkH1flG40Oq3wpSjoWiXO6TCc0UCXbBfk1+MNQG1bP+cMSHEz5ccGaumDkiA8IGL7kHsJYoF2zrveCJFwew3WbmCC/FHzYclr98412Gr4dmNhg7lI4zjRMiYZyACBifd3lxQHV43qwRxvFOGTA2vNlwomylEJylmdBMkUw9xQvKDqcoFhoq7mIckX6/NW9mnBAJzcCpmhP2HpFN4VQ4B5yajoWKdLhIdXTKjdhvp+lYKMLlLl5QNjj1nKMHDMCHC2Y2nPriiNzw4lO4IArG5SZeUE6IuJUlFduGF8e7bCtmKtJxN+ULQodW4FxPDJzgCUTAaIi4hfxhw0xF9atyd7FGzJzgiZsIF6wbjM/byVaKRZGp5wgdThU6sHBAORofJ/XcTTZorpg5XuW7+ySw2qD0uxhH1IpO3G2C1ibAhxPOnTkgV8wcAGFDLxG2k2bfvQhkK8WWuOqofJiKtfQuLw5gQ2x3M37wYgeq4+TYYJwQCQBRME6IPOnwK+uFN6fLfP9GdsGHC+6yUJQTtnVf45mPA1hp6HzDcLJygheUy4+ZhgwstHNm370WtwFDBS7L/dFG4A8bbtOIH+n7rJ0p+xySpYgacPZClXIs1B9SHY0i1c/puXvzEXhV6nXHLdnwT3b+t4UdQ23QTDkrAzNHZOBXL1E2rCWnHLeVm+I62z0vXswRN5r5+LGt+6Y487Fr7JzwZodxPWnghEgMnH4zGiJgtFPU9r7mHqyGr5fwYK0jdt4EbPDcN58i+xCl6Jzw5vscpygdTv0NFVhoqDjFub+iCW4x7n48sP8OA5/IFQtl1/l7NFNkK8Vf2inpmKlIx9dOETb0kjOGce/wwP5LdqticLmXsMMLxmnXMJ8pB2B0aKVIpp5gfGLbYHx+My6IgnE5Y7cqpE/3ajREQtjuhQgsNFTsajzzcQRvvmF0aMUJnlBO8ITFr29EwGjY4gJhQ6MhtntJBWYavGRHr1+qH3vtaBRhR6PtkceZOISVAxrfmNkPCR2dKnS8f1vR+JDqaJTz4CVSAaPdCo2KChjbjkYoJ+R6IAILRbj8MC5YSyQ32bFXTKEmGIYTJFMQHNA5HZk5IgMzR+wUNvQSYbvA2NCoyLiXVEejIXLHzAeqo5fsUnZ4wTj+QASMHcZ+hmYqMqH0E6AVkEzBVnogEsYJkbD29YVIGJ+I7QJEibBjod0KvUQqYHx+U06IgLHt+lCRKxbKL0ZDp6Hxc0yTIz6c4NQz8OYHAwNaKbuUC7xE2RD8WrLQUIGFdoFxgpdIxb2UDY2GiG+owEJDlO5QOmZOiA2/R4pkKhpDD7yqJrzoUDpOQafhzQ+MvmumIh0zFbulOhpFql+ACBgbGvVWiBIpx0z71mukApr5/GKVikwopy/GjqFS8SZdd1gwBwyVIpl6kmyl+EtD43vPFpg5YguI7kUUjAuirnjSECVS/V7Ghk5BxTdlw5sfaHLr8zz3YCg+nODUL+icMFQq1Mlc2zIvfS1WE7wrFX/4wknQ2kSyFMHh28AJa2LghOTOEqMhAka7ABUwLmglt0IklA2N9gVeir/8AHOQZMUEfNigbNgZHDAkP4AuUfyZPgnkDzfFhw2nwdihtUEy5YtTlQ6nyrRbUSsWPlB+RaMhEsp2L6MhSqT8m9Ym+EtXAI/HA4AGOzRT9shWL6gzJwEgj8dDAMin2IEPOy5A4xszO4aKL7li5oBccbiXCBt6yQVSAaMhSm6FLWBsaJQveNGBRq7ToNBhCdYC2Thgt278AHOS0WxQ1WHuQcYICXZcgqgBnW+8+fnFOCESxumYcUEUjMsFaFRkwNjutdAQBWH7hsZNoZ78vZpAN0442pkKjJ78vrV/AHNxwUWSKYhSdNoPTygneOLEDMw0ZFwh1bHQEHUvqYBxgpd8w5s5ARieU5umB4B31YTjc9INgIzT0qZpEAAWjAFXYeAKzRTZSgGUY6Gi/IxGkepolAvQS6QCxuet0GiIgLHtgCZzMfwq9imG4kxtyewm+F3nXswJ+0/Cm28YHVobMHNEBmaOZygbvETZrlA2NBoi7iXlmGmIkh3AHCS3iEiSMeJsnYNkbRGRRZaPOHoW/tLw5hsvdkTCOCESp0bAaIi4AlEi5Zhp59xen22NCO+T4FIZl75GhPdlwP+xLN3XjtmsAa8XZvdVPu4+Aa/+GNZ1wuDrCy93/c9E64DCp3n7oLXXKlCJB/AAdHtsihjWQTZJ0fjPhEb06Udr79baBACxegOAeGymOb23cFuB/M8EgMGXH/gbbWm/PPBrPLQt67ME2yuA+s/Ey5cl/vGLZJPNWx+it7b88rf1QPYlJLq3/0zgMQ4CERFABBiGB+TxeDwAPCDjAGAYBBge+O93AFZQOCCIAAAAEAgAnQEq9gA9AD7RaKpSqCWjp6CJIQAaCWlu3cj/0/80B/DgAHhDAxkXXKTG2MIN1IR52X42ptTm0j/cmohaBo17KVF1z9vFgAD+8qiuf2VVg937miSvtO5MBIGW/QDDHgF1kii5diedtm0UOzEh3J+Z5rVevFDf1cxs40XxzHNkYAxnPgAAAEVYSUa6AAAARXhpZgAASUkqAAgAAAAGABIBAwABAAAAAQAAABoBBQABAAAAVgAAABsBBQABAAAAXgAAACgBAwABAAAAAgAAABMCAwABAAAAAQAAAGmHBAABAAAAZgAAAAAAAABIAAAAAQAAAEgAAAABAAAABgAAkAcABAAAADAyMTABkQcABAAAAAECAwAAoAcABAAAADAxMDABoAMAAQAAAP//AAACoAQAAQAAAPYAAAADoAQAAQAAAD0AAAAAAAAA" alt="Rugkari — Handcrafted Luxury Rugs Since 1980" width="140" height="36" loading="lazy" />
+        <p class="footer-since tracking-luxury">Since 1980</p>
+        <p class="footer-copy">Handcrafted luxury rugs woven by master artisans using pure New Zealand wool.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/rugkaari" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61583826735546" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.25-1.5 1.55-1.5h1.65V4.9c-.8-.08-1.6-.13-2.4-.13-2.4 0-4.05 1.47-4.05 4.17V11H8v3h2.75v8h2.75Z"/></svg></a>
+          <a href="https://www.youtube.com/@rugkari" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.8 15.4V8.6L15.6 12l-5.8 3.4Z"/></svg></a>
+          <a href="https://twitter.com/rugkari" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M18.9 2h3.3l-7.2 8.2L23.5 22h-6.7l-5.2-6.8L5.6 22H2.3l7.7-8.8L1.8 2h6.8l4.7 6.2L18.9 2Zm-1.2 18h1.8L7.6 3.9H5.7L17.7 20Z"/></svg></a>
+        </div>
+      </div>
+      <nav aria-label="The Company"><h4 class="footer-title tracking-luxury">The Company</h4><ul class="footer-list"><li><a href="https://rugkari.com/pages/the-founder">The Founder</a></li><li><a href="https://rugkari.com/pages/the-carpet-city">The Carpet City</a></li><li><a href="https://rugkari.com/pages/the-art">The Art</a></li><li><a href="https://rugkari.com/pages/contact">Contact</a></li></ul></nav>
+      <nav aria-label="Help"><h4 class="footer-title tracking-luxury">Help</h4><ul class="footer-list"><li><a href="https://rugkari.com/pages/stain-repellent">Stain Repellent</a></li><li><a href="https://rugkari.com/pages/rug-warranty">Rug Warranty</a></li><li><a href="https://rugkari.com/pages/track-your-order">Track Your Order</a></li><li><a href="https://rugkari.com/collections/all">Catalog</a></li></ul></nav>
+      <div><h4 class="footer-title tracking-luxury">Stay Connected</h4><p class="newsletter-text">New arrivals, exclusive offers and design inspiration.</p><form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)" novalidate><label for="ne-email" class="sr-only">Email</label><input type="email" id="ne-email" name="email" placeholder="Your email" required /><button type="submit">Join</button></form></div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-row"><p>© <span id="footer-year"></span> <a href="https://rugkari.com/">Rugkari</a>. Handwoven in India.</p><ul class="legal-links"><li><a href="https://rugkari.com/policies/privacy-policy">Privacy policy</a></li><li><a href="https://rugkari.com/policies/refund-policy">Refund policy</a></li><li><a href="https://rugkari.com/policies/terms-of-service">Terms of service</a></li><li><a href="https://rugkari.com/policies/shipping-policy">Shipping policy</a></li></ul></div></div>
+  </footer>
+
+  <div class="whatsapp"><a class="whatsapp-button" href="https://wa.me/917348515188?text=Hi%20Rugkari%2C%20I%27d%20like%20to%20know%20more%20about%20your%20rugs." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552" aria-hidden="true"><path d="M87.184 0C39.04 0 .002 39.038 0 87.184c0 15.363 4.03 30.37 11.688 43.549L.336 175.552l46.033-11.304c12.683 6.983 26.975 10.663 41.549 10.663 48.142 0 87.184-39.038 87.298-87.184C175.33 39.152 135.33 0 87.184 0zm0 159.893c-13.363 0-26.44-3.594-37.782-10.38l-2.714-1.61-28.138 6.913 7.138-25.883-1.765-2.827C16.83 114.466 13.11 101.059 13.11 87.184 13.11 46.23 46.23 13.11 87.184 13.11c40.13 0 72.781 32.65 72.781 72.782 0 40.953-32.65 74.001-72.781 74.001zm40.009-55.37c-2.196-1.097-12.978-6.394-14.99-7.124-2.012-.73-3.476-1.097-4.94 1.097-1.463 2.194-5.671 7.124-6.952 8.587-1.28 1.462-2.561 1.645-4.757.548-2.196-1.097-9.27-3.41-17.65-10.88-6.524-5.818-10.929-13.004-12.21-15.198-1.28-2.194-.136-3.379.962-4.472.986-.979 2.196-2.559 3.293-3.838 1.097-1.28 1.463-2.194 2.195-3.657.73-1.462.365-2.742-.183-3.838-.548-1.097-4.94-11.887-6.77-16.28-1.78-4.28-3.592-3.7-4.94-3.762-1.28-.061-2.744-.074-4.208-.074-1.463 0-3.842.548-5.854 2.742-2.012 2.194-7.684 7.49-7.684 18.28 0 10.789 7.867 21.214 8.964 22.676 1.097 1.462 15.479 23.625 37.503 33.146 5.242 2.266 9.333 3.619 12.52 4.633 5.262 1.677 10.053 1.44 13.838.873 4.222-.632 12.978-5.305 14.807-10.425 1.83-5.12 1.83-9.512 1.28-10.425-.548-.913-2.012-1.462-4.208-2.559z" fill="#fff"/></svg></a></div>
+
+  <div class="sticky-cta-bar" id="stickyCta">
+    <p><strong>Handcrafted in Bhadohi. Delivered free across India.</strong> Pure New Zealand wool, 10-year warranty.</p>
+    <a href="https://rugkari.com/collections/all" class="sticky-btn tracking-luxury">Shop Now →</a>
+    <button class="sticky-cta-close" onclick="document.getElementById('stickyCta').style.display='none'" aria-label="Close">×</button>
+  </div>
+
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+    function handleNewsletterSubmit(e) { e.preventDefault(); var btn = e.target.querySelector('button'); btn.textContent = '✓ Joined'; btn.disabled = true; e.target.querySelector('input').disabled = true; }
+    (function() {
+      var bar = document.getElementById('stickyCta');
+      var triggered = false;
+      window.addEventListener('scroll', function() {
+        if (triggered) return;
+        var scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        if (scrolled > 0.35) { bar.classList.add('visible'); triggered = true; }
+      }, { passive: true });
+    })();
+  
+
+        // ── Mobile Drawer — Dawn style ──
+    (function() {
+      var header  = document.querySelector('.site-header');
+      var openBtn = document.getElementById('drawerOpen');
+      var closeBtn = document.getElementById('drawerClose');
+      var overlay = document.getElementById('drawerOverlay');
+
+      function openDrawer() {
+        header.classList.add('drawer-open');
+        openBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDrawer() {
+        header.classList.remove('drawer-open');
+        openBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+      if (openBtn)  openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (overlay)  overlay.addEventListener('click', closeDrawer);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeDrawer();
+      });
+    })();
+  </script>
+</body>
+</html>

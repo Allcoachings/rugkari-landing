@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/webp" href="data:image/webp;base64,UklGRloEAABXRUJQVlA4WAoAAAAwAAAAMQAAMAAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIuQEAAA2QlW1b2Gavg+JgVEHjoKmCNQpoFCRVED4FCQpCFJQq6DcFYwr2/Q6ogh2NDo7+w4iYAPwvb0UaRK1ZNVlJ0t/p1X7c2JnLqZmzlJZI8ke5cXxhtBOTFEpfWUk4nj8nF8q06wthW+63xxaKiGTp1r7dx37+JClCWUnS7fEc+9val2iGLPnw18PPc9we4AJos9qjPvVv3245D1uB2GXJ5Xbr+tVQCKHAq/7+edii5a/j7l8t4ObM8RJFa6kGSSHphKqVQCVUfQGjYRwgtajzQT60XtCkZ4F2zQNfMcGh9SgokhUDYGFxgS1CWUA7YXlqwyjZDHkt0gi1pq4I2rzg79ArOhSNXR6g7HvqUFY1WXrXNuAehZs5C5DFo3gcs+SJGtNXhlLq53K4lvv90ezTt6ddH7kamo9b4ODeZ6qGEZZtMOSDSC1YvLIInszkqrkfZ6LZkI8h1YIlwML7bTCuGmdmolX7yD7VknwQr1dyk3G1wJnJeQ+LsFSTAgcyM9F8vNcCNxnyARZhqUYkeDLDtq3gWkCzIc+8nGeqhuH9Nhi3BHAtoPXgInsyw/aS7IE9QPYlPgEdA3v8DgBWUDggqgAAADAFAJ0BKjIAMQA+GQyFQiEEQREEAGEtIAB8cgsrYJmb/XRB3rBkkPoXm/BtmqdgaYZgAP7/Uh/x0tGHYi9Gl4+s+7fd4frQ4QIN2/5f/ORPsS5p8qguys0ggt00x1wnP4erK+ViAqCagCPmFnhNk1gC5cwYWWA+u/VBosT9ynL/NP/6K9DqGihU6b7c+4x+VUnVK02qirW4lIV+fOg74Mr7/T9mGPDEAAAA" />
+  <link rel="apple-touch-icon" href="data:image/webp;base64,UklGRloEAABXRUJQVlA4WAoAAAAwAAAAMQAAMAAASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZBTFBIuQEAAA2QlW1b2Gavg+JgVEHjoKmCNQpoFCRVED4FCQpCFJQq6DcFYwr2/Q6ogh2NDo7+w4iYAPwvb0UaRK1ZNVlJ0t/p1X7c2JnLqZmzlJZI8ke5cXxhtBOTFEpfWUk4nj8nF8q06wthW+63xxaKiGTp1r7dx37+JClCWUnS7fEc+9val2iGLPnw18PPc9we4AJos9qjPvVv3245D1uB2GXJ5Xbr+tVQCKHAq/7+edii5a/j7l8t4ObM8RJFa6kGSSHphKqVQCVUfQGjYRwgtajzQT60XtCkZ4F2zQNfMcGh9SgokhUDYGFxgS1CWUA7YXlqwyjZDHkt0gi1pq4I2rzg79ArOhSNXR6g7HvqUFY1WXrXNuAehZs5C5DFo3gcs+SJGtNXhlLq53K4lvv90ezTt6ddH7kamo9b4ODeZ6qGEZZtMOSDSC1YvLIInszkqrkfZ6LZkI8h1YIlwML7bTCuGmdmolX7yD7VknwQr1dyk3G1wJnJeQ+LsFSTAgcyM9F8vNcCNxnyARZhqUYkeDLDtq3gWkCzIc+8nGeqhuH9Nhi3BHAtoPXgInsyw/aS7IE9QPYlPgEdA3v8DgBWUDggqgAAADAFAJ0BKjIAMQA+GQyFQiEEQREEAGEtIAB8cgsrYJmb/XRB3rBkkPoXm/BtmqdgaYZgAP7/Uh/x0tGHYi9Gl4+s+7fd4frQ4QIN2/5f/ORPsS5p8qguys0ggt00x1wnP4erK+ViAqCagCPmFnhNk1gC5cwYWWA+u/VBosT9ynL/NP/6K9DqGihU6b7c+4x+VUnVK02qirW4lIV+fOg74Mr7/T9mGPDEAAAA" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found · Rugkari — The Rug Guide</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Browse our editorial guides on hand-tufted wool rugs or shop the Rugkari collection." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://rugs.rugkari.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root { --background: hsl(0 0% 100%); --foreground: hsl(0 0% 6%); --secondary: hsl(0 0% 96%); --muted-foreground: hsl(0 0% 46%); --border: hsl(0 0% 87%); }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: var(--background); color: var(--foreground); font-family: "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 0; text-align: center; }
+    .eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 20px; }
+    h1 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; font-size: clamp(48px, 8vw, 96px); line-height: 1; margin: 0 0 24px; letter-spacing: 0.01em; }
+    .subhead { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 400; font-size: clamp(22px, 3vw, 30px); line-height: 1.2; margin: 0 0 18px; }
+    p.lead { font-size: 16px; line-height: 1.75; color: hsl(0 0% 30%); max-width: 480px; margin: 0 auto 36px; }
+    .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 14px 28px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border-radius: 2px; transition: opacity 0.2s, background 0.2s; }
+    .btn-primary { background: var(--foreground); color: white; }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-secondary { background: transparent; color: var(--foreground); border: 1px solid var(--foreground); }
+    .btn-secondary:hover { background: var(--foreground); color: white; }
+    .links { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .links-label { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted-foreground); margin: 0 0 16px; }
+    .links ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+    .links li a { font-family: "Cormorant Garamond", Georgia, serif; font-size: 19px; color: var(--foreground); border-bottom: 1px solid hsl(0 0% 12% / 0.2); padding-bottom: 2px; transition: border-color 0.2s; }
+    .links li a:hover { border-color: var(--foreground); }
+    footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; color: var(--muted-foreground); font-size: 12px; }
+
+    @media (max-width: 767px) {
+      main { padding: 60px 0; }
+      .container { padding: 0 20px; }
+      .btn-row { gap: 10px; }
+    }
+    @media (max-width: 480px) {
+      main { padding: 48px 0; }
+      .container { padding: 0 16px; }
+      .btn { padding: 14px 20px; font-size: 10px; }
+      .btn-row { flex-direction: column; gap: 8px; align-items: stretch; }
+      .btn-row .btn { text-align: center; display: block; }
+      .links { margin-top: 40px; padding-top: 24px; }
+      .links li a { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <p class="eyebrow">Error 404</p>
+      <h1>Lost the thread.</h1>
+      <p class="subhead">The page you're looking for isn't here.</p>
+      <p class="lead">It may have moved, been renamed, or never existed. Browse our editorial guides instead — or head to the main store.</p>
+
+      <div class="btn-row">
+        <a href="/" class="btn btn-primary">The Rug Guide</a>
+        <a href="https://rugkari.com/collections/all" class="btn btn-secondary">Shop Rugs</a>
+      </div>
+
+      <div class="links">
+        <p class="links-label">Popular Guides</p>
+        <ul>
+          <li><a href="/hand-tufted-vs-machine-made-rugs">Hand-Tufted vs Machine-Made Rugs</a></li>
+          <li><a href="/best-hand-tufted-rugs-for-living-room">Best Hand-Tufted Rugs for Living Room</a></li>
+          <li><a href="/how-to-remove-coffee-stains-from-wool-rugs">How to Remove Coffee Stains from Wool Rugs</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer>© <span id="year"></span> Rugkari. Handwoven in Bhadohi, India.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

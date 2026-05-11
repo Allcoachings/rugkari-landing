@@ -1,0 +1,124 @@
+# Rugkari — The Rug Guide (rugs.rugkari.com)
+# Hostinger Apache Configuration
+# Blog HTML files live in blog/ but are served at /slug (clean URLs)
+
+Options -MultiViews +FollowSymLinks
+DirectoryIndex index.html
+
+RewriteEngine On
+RewriteBase /
+
+# 1. Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. Strip www
+RewriteCond %{HTTP_HOST} ^www\.rugs\.rugkari\.com$ [NC]
+RewriteRule ^(.*)$ https://rugs.rugkari.com/$1 [L,R=301]
+
+# 3. Strip trailing /index.html
+RewriteCond %{THE_REQUEST} \s/+(.*?)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# 4. Strip .html extension (incoming requests — root level files)
+RewriteCond %{THE_REQUEST} \s/+([^\s]+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# 5. Strip /blog/slug → /slug (canonical URLs have no /blog/ prefix)
+RewriteCond %{THE_REQUEST} \s/+blog/([^\s/]+?)(?:\.html)?[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# 6. Remove trailing slash on slug pages
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^/[^/]+/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 7a. Internal rewrite: /slug → /slug.html  (root-level HTML files)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# 7b. Internal rewrite: /slug → /blog/slug.html  (blog folder — NO redirect, transparent)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/blog/$1.html -f
+RewriteRule ^([^/]+)/?$ blog/$1.html [L]
+
+# Custom 404
+ErrorDocument 404 /404.html
+
+# MIME types
+AddType application/font-woff    .woff
+AddType font/woff2               .woff2
+AddType image/webp               .webp
+AddType application/json          .json
+
+# Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html                   "access plus 1 hour"
+  ExpiresByType application/xml             "access plus 1 hour"
+  ExpiresByType text/plain                  "access plus 1 day"
+  ExpiresByType application/json            "access plus 1 day"
+  ExpiresByType application/manifest+json   "access plus 1 day"
+  ExpiresByType text/css                    "access plus 1 year"
+  ExpiresByType application/javascript      "access plus 1 year"
+  ExpiresByType image/jpeg                  "access plus 1 year"
+  ExpiresByType image/png                   "access plus 1 year"
+  ExpiresByType image/webp                  "access plus 1 year"
+  ExpiresByType image/svg+xml               "access plus 1 year"
+  ExpiresByType font/woff2                  "access plus 1 year"
+  ExpiresByType application/font-woff       "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/manifest+json image/svg+xml text/plain application/xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Security headers
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+
+  # Cache-Control for HTML pages
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+
+  # Cache-Control for versioned static assets
+  <FilesMatch "\.(css|js|woff2|woff|ttf|webp|png|jpg|jpeg|svg|gif|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Cross-origin font access (required by browsers for web fonts)
+  <FilesMatch "\.(woff2|woff|ttf|eot)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+
+  # Correct Content-Type headers
+  <FilesMatch "\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+  </FilesMatch>
+  <FilesMatch "sitemap\.xml$">
+    Header set Content-Type "application/xml; charset=utf-8"
+  </FilesMatch>
+  <FilesMatch "manifest\.json$">
+    Header set Content-Type "application/manifest+json; charset=utf-8"
+  </FilesMatch>
+</IfModule>
+
+# Block access to hidden files
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# Block access to backup and sensitive file types
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)$">
+  Require all denied
+</FilesMatch>
