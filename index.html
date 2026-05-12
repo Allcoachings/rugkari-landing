@@ -209,7 +209,7 @@
         "name": "Rugkari Featured Rug Collections",
         "description": "Handcrafted pure New Zealand wool rug collections by Rugkari, woven in Bhadohi since 1980",
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
-        "numberOfItems": 4,
+        "numberOfItems": 12,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -242,6 +242,70 @@
             "url": "https://rugs.rugkari.com/collections/hand-tufted-rugs.html",
             "image": "https://rugkari.com/cdn/shop/files/5_9ce644f2-a560-4fa7-97b3-243df12f5f26.jpg?v=1777702689",
             "description": "Hand-tufted pure New Zealand wool rugs with a 20mm ultra-luxury pile. Woven by master artisans in Bhadohi."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Modern Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/modern-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/1_2112c79b-fb1d-40ed-a00e-3909b79b6305.jpg?v=1777703693",
+            "description": "Modern pure New Zealand wool rugs — abstract, geometric, designer and solid pieces handcrafted in Bhadohi."
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Solid Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/solid-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/15_dba6835d-9a09-487b-a880-dba3672d4cf8.jpg?v=1777704121",
+            "description": "Tonal solid pure New Zealand wool rugs, handcrafted in Bhadohi for quiet interiors."
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Geometric Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/geometric-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/1_d915f6f3-7df1-49b0-976d-6dddeac823c7.jpg?v=1777703543",
+            "description": "Geometric pure New Zealand wool rugs with grid, chevron and contemporary patterns handcrafted in Bhadohi."
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Unshaped Designer Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/unshaped-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/1_482b297d-3954-42f9-9f62-33d2eca3eaf3.jpg?v=1777704523",
+            "description": "Sculptural unshaped and designer-form pure New Zealand wool rugs, hand-finished in Bhadohi."
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Hand-Loom Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/hand-loom.html",
+            "image": "https://rugkari.com/cdn/shop/collections/Image.png?v=1777704813",
+            "description": "Handwoven hand-loom pure New Zealand wool rugs — flatweave and low-pile, handcrafted in Bhadohi."
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Dining Room Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/dining-room-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/IMG_5439_JPEG.jpg?v=1777705303",
+            "description": "Dining room pure New Zealand wool rugs with structured patterns, handcrafted in Bhadohi."
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "Living Room Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/living-room-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/3_31bca7c4-8c7f-4dd2-ab4a-612919a6cfde.jpg?v=1777704931",
+            "description": "Living room pure New Zealand wool rugs sized and scaled for Indian sofas and seating."
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "Bedroom Rugs Collection",
+            "url": "https://rugs.rugkari.com/collections/bedroom-rugs.html",
+            "image": "https://rugkari.com/cdn/shop/collections/Emanate_Rug_1.jpg?v=1777705155",
+            "description": "Bedroom pure New Zealand wool rugs — soft solids, abstracts and florals handcrafted in Bhadohi."
           }
         ]
       },
@@ -565,6 +629,17 @@
       transition: opacity 0.2s;
     }
     .mobile-drawer-nav a:hover { opacity: 0.65; }
+    .drawer-section { display: flex; flex-direction: column; }
+    .drawer-section-title {
+      padding: 18px 24px 6px;
+      font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(18,18,18,0.5);
+      font-weight: 600;
+      border-top: 1px solid rgba(18,18,18,0.06);
+      margin: 0;
+    }
+    .drawer-section:first-child .drawer-section-title { border-top: none; padding-top: 16px; }
     .mobile-drawer-social {
       padding: 20px 24px;
       border-top: 1px solid rgba(18,18,18,0.08);
@@ -1347,13 +1422,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
       </div>
       <nav class="mobile-drawer-nav" role="navigation" aria-label="Mobile navigation">
-        <a href="/collections/abstract-rugs.html">Abstract Rugs</a>
-        <a href="/collections/floral-rugs.html">Floral Rugs</a>
-        <a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a>
-        <a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a>
-        <a href="/rug-care">Rug Care</a>
-        <a href="/heritage">Heritage</a>
-        <a href="https://rugkari.com/collections/all" rel="noopener">Shop Catalog</a>
+        <div class="drawer-section">
+          <h5 class="drawer-section-title">Shop by Style</h5>
+          <a href="/collections/abstract-rugs.html">Abstract Rugs</a>
+          <a href="/collections/floral-rugs.html">Floral Rugs</a>
+          <a href="/collections/geometric-rugs.html">Geometric Rugs</a>
+          <a href="/collections/modern-rugs.html">Modern Rugs</a>
+          <a href="/collections/solid-rugs.html">Solid Rugs</a>
+          <a href="/collections/unshaped-rugs.html">Unshaped Rugs</a>
+        </div>
+        <div class="drawer-section">
+          <h5 class="drawer-section-title">Shop by Craft</h5>
+          <a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a>
+          <a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a>
+          <a href="/collections/hand-loom.html">Hand-Loom</a>
+        </div>
+        <div class="drawer-section">
+          <h5 class="drawer-section-title">Shop by Room</h5>
+          <a href="/collections/living-room-rugs.html">Living Room</a>
+          <a href="/collections/bedroom-rugs.html">Bedroom</a>
+          <a href="/collections/dining-room-rugs.html">Dining Room</a>
+        </div>
+        <div class="drawer-section">
+          <h5 class="drawer-section-title">More</h5>
+          <a href="/rug-care">Rug Care</a>
+          <a href="/heritage">Heritage</a>
+        </div>
       </nav>
       <!-- Social links — Dawn mobile drawer footer -->
       <div class="mobile-drawer-social" aria-label="Social media links">
@@ -1466,7 +1560,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="hero-actions">
-          <a href="https://rugkari.com/collections/unshaped-rugs?vid=suvals" class="outline-cta tracking-luxury"><span>Shop the Collection</span></a>
+          <a href="/collections/unshaped-rugs.html" class="outline-cta tracking-luxury"><span>Shop the Collection</span></a>
           <a href="#collections" class="text-cta tracking-luxury">Explore Curations</a>
         </div>
         <div class="hero-nav-dots" aria-hidden="true" id="heroNavDots">
@@ -1531,7 +1625,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Garden-inspired motifs in 100% New Zealand wool. Rugkari's floral rugs blend traditional Indian textile heritage with contemporary colour palettes — ideal for living rooms and bedrooms.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/modern-rugs?vid=suvals" role="listitem" aria-label="Shop Modern Rugs collection">
+        <a class="collection-card" href="/collections/modern-rugs.html" role="listitem" aria-label="Shop Modern Rugs collection">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/1_2112c79b-fb1d-40ed-a00e-3909b79b6305.jpg?v=1777703693&width=1200"
                  alt="Modern Rugs — contemporary design handcrafted wool rugs by Rugkari"
@@ -1541,7 +1635,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Minimalist to mid-century modern — our modern rug collection pairs contemporary design with the unmatched durability of pure New Zealand wool. Free shipping across India.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/solid-rugs?vid=suvals" role="listitem" aria-label="Shop Solid Rugs collection">
+        <a class="collection-card" href="/collections/solid-rugs.html" role="listitem" aria-label="Shop Solid Rugs collection">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/15_dba6835d-9a09-487b-a880-dba3672d4cf8.jpg?v=1777704121&width=1200"
                  alt="Solid Rugs — elegant single-colour pure wool rugs in 20+ colourways by Rugkari"
@@ -1551,7 +1645,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Available in 20+ hand-dyed colourways, our solid wool rugs are woven on traditional looms in Bhadohi. Natural stain resistance and Woolmark-certified wool, built to last decades.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/geometric-rugs?vid=suvals" role="listitem" aria-label="Shop Geometric Rugs collection">
+        <a class="collection-card" href="/collections/geometric-rugs.html" role="listitem" aria-label="Shop Geometric Rugs collection">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/1_d915f6f3-7df1-49b0-976d-6dddeac823c7.jpg?v=1777703543&width=1200"
                  alt="Geometric Rugs — sharp lines and balanced patterns in handcrafted wool by Rugkari"
@@ -1561,7 +1655,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Geometric precision meets artisan craft. From tribal-inspired patterns to architectural grids — all woven in pure New Zealand wool with natural colour-fast dyes.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/unshaped-rugs?vid=suvals" role="listitem" aria-label="Shop Unshaped Rugs collection">
+        <a class="collection-card" href="/collections/unshaped-rugs.html" role="listitem" aria-label="Shop Unshaped Rugs collection">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/1_482b297d-3954-42f9-9f62-33d2eca3eaf3.jpg?v=1777704523&width=1200"
                  alt="Unshaped Rugs — unique irregular silhouette wool rugs by Rugkari"
@@ -1630,7 +1724,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Each hand-knotted Rugkari rug achieves up to 300 KPSI (knots per square inch), taking 3 months to 2 years to complete. Fully reversible, built to last generations — the finest investment in home luxury.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/hand-loom?vid=suvals" role="listitem" aria-label="Shop Hand Loom rugs">
+        <a class="collection-card" href="/collections/hand-loom.html" role="listitem" aria-label="Shop Hand Loom rugs">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/Image.png?v=1777704813&width=1200"
                  alt="Hand Loom Rugs — woven on traditional looms by master artisans at Rugkari"
@@ -1657,7 +1751,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <section class="container section" aria-labelledby="style-edit-heading">
       <h2 class="section-title" id="style-edit-heading">Your Style Edit</h2>
       <div class="collection-grid" role="list">
-        <a class="collection-card" href="https://rugkari.com/collections/dining-room-rugs?vid=suvals" role="listitem" aria-label="Shop Dining Room Rugs">
+        <a class="collection-card" href="/collections/dining-room-rugs.html" role="listitem" aria-label="Shop Dining Room Rugs">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/IMG_5439_JPEG.jpg?v=1777705303&width=1200"
                  alt="Dining Room Rugs — durable easy-clean wool rugs for dining spaces by Rugkari"
@@ -1667,7 +1761,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>High-traffic rated, easy-clean pure wool rugs for dining spaces. Rugkari's natural lanolin-rich New Zealand wool resists food stains and is safe underfoot for the whole family.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/living-room-rugs?vid=suvals" role="listitem" aria-label="Shop Living Room Rugs">
+        <a class="collection-card" href="/collections/living-room-rugs.html" role="listitem" aria-label="Shop Living Room Rugs">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/3_31bca7c4-8c7f-4dd2-ab4a-612919a6cfde.jpg?v=1777704931&width=1200"
                  alt="Living Room Rugs — stylish handcrafted wool rugs for the heart of your home"
@@ -1677,7 +1771,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>From 4×6 ft to 12×16 ft — Rugkari's living room rugs are available in custom sizes. Our wool rugs improve indoor air quality by trapping allergens and are naturally flame-retardant.</p>
           <div class="shop-now"><span class="tracking-luxury">Shop Now</span></div>
         </a>
-        <a class="collection-card" href="https://rugkari.com/collections/bedroom-rugs?vid=suvals" role="listitem" aria-label="Shop Bedroom Rugs">
+        <a class="collection-card" href="/collections/bedroom-rugs.html" role="listitem" aria-label="Shop Bedroom Rugs">
           <div class="collection-image">
             <img src="https://rugkari.com/cdn/shop/collections/Emanate_Rug_1.jpg?v=1777705155&width=1200"
                  alt="Bedroom Rugs — soft plush underfoot handcrafted wool rugs for bedrooms by Rugkari"
@@ -1927,24 +2021,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
         </div>
       </div>
-      <nav aria-label="The Company links">
-        <h4 class="footer-title tracking-luxury">The Company</h4>
+      <nav aria-label="Shop Rug Collections">
+        <h4 class="footer-title tracking-luxury">Shop Rugs</h4>
         <ul class="footer-list">
-          <li><a href="/pages/the-founder.html">The Founder</a></li>
-          <li><a href="/pages/the-carpet-city.html">The Carpet City</a></li>
-          <li><a href="/pages/the-art.html">The Art</a></li>
-          <li><a href="/heritage">Heritage &amp; Story</a></li>
-          <li><a href="/pages/contact.html">Contact</a></li>
+          <li><a href="/collections/abstract-rugs.html">Abstract</a></li>
+          <li><a href="/collections/floral-rugs.html">Floral</a></li>
+          <li><a href="/collections/geometric-rugs.html">Geometric</a></li>
+          <li><a href="/collections/solid-rugs.html">Solid</a></li>
+          <li><a href="/collections/modern-rugs.html">Modern</a></li>
+          <li><a href="/collections/unshaped-rugs.html">Unshaped</a></li>
+          <li><a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a></li>
+          <li><a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a></li>
+          <li><a href="/collections/hand-loom.html">Hand-Loom</a></li>
+          <li><a href="/collections/living-room-rugs.html">Living Room</a></li>
+          <li><a href="/collections/bedroom-rugs.html">Bedroom</a></li>
+          <li><a href="/collections/dining-room-rugs.html">Dining Room</a></li>
         </ul>
       </nav>
-      <nav aria-label="Help links">
-        <h4 class="footer-title tracking-luxury">Help</h4>
+      <nav aria-label="Help &amp; Company">
+        <h4 class="footer-title tracking-luxury">Help &amp; Company</h4>
         <ul class="footer-list">
-          <li><a href="/pages/stain-repellent.html">Stain Repellent</a></li>
+          <li><a href="/rug-care">Rug Care &amp; Guides</a></li>
+          <li><a href="/heritage">Heritage &amp; Story</a></li>
           <li><a href="/pages/rug-warranty.html">Rug Warranty</a></li>
           <li><a href="/pages/track-your-order.html">Track Your Order</a></li>
-          <li><a href="/rug-care">Rug Care &amp; Guides</a></li>
-          <li><a href="https://rugkari.com/collections/all" rel="noopener">Catalog</a></li>
+          <li><a href="/pages/shipping-policy.html">Shipping &amp; Returns</a></li>
+          <li><a href="/pages/the-founder.html">The Founder</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
       <div>

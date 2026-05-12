@@ -12,17 +12,49 @@ $EM = [char]0x2014
 $DOT = [char]0x00B7
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 
-# Load real CDN URLs from Shopify CSV (first image per product handle)
+# Load CSV: real CDN URLs (first image), titles, lowest variant price,
+# construction (Hand-Knotted / Hand-Tufted / Handwoven / Handcrafted) per handle.
 $realFirstImage = @{}
+$csvTitle       = @{}
+$csvLowPrice    = @{}
+$csvHandles     = @()
 if (Test-Path $csvPath) {
   $csvRows = Import-Csv $csvPath
   foreach ($r in $csvRows) {
-    if (-not $r.Handle -or -not $r.'Image Src') { continue }
+    if (-not $r.Handle) { continue }
     $shortKey = ($r.Handle.Trim()) -replace '-pure-new-zealand-wool-rug',''
-    if (-not $realFirstImage.ContainsKey($shortKey)) {
+    if ($r.'Image Src' -and -not $realFirstImage.ContainsKey($shortKey)) {
       $realFirstImage[$shortKey] = $r.'Image Src'
     }
+    if ($r.Title -and -not $csvTitle.ContainsKey($shortKey)) {
+      $csvTitle[$shortKey] = $r.Title
+      $csvHandles += $shortKey
+    }
+    if ($r.'Variant Price') {
+      $p = 0
+      if ([double]::TryParse($r.'Variant Price', [ref]$p)) {
+        $cents = [int][math]::Round($p)
+        if (-not $csvLowPrice.ContainsKey($shortKey) -or $cents -lt $csvLowPrice[$shortKey]) {
+          $csvLowPrice[$shortKey] = $cents
+        }
+      }
+    }
   }
+}
+
+function Get-Construction($title) {
+  if ($title -match 'Hand-Knotted') { return 'Hand-Knotted' }
+  if ($title -match 'Hand-Tufted')  { return 'Hand-Tufted' }
+  if ($title -match 'Handwoven')    { return 'Handwoven' }
+  if ($title -match 'Handcrafted')  { return 'Handcrafted' }
+  return 'Handcrafted'
+}
+
+function Get-ShortName($title) {
+  $t = $title
+  $t = $t -replace '\s+(Hand-Knotted|Hand-Tufted|Handwoven|Handcrafted)\s+Pure New Zealand Wool Rug.*',''
+  $t = $t -replace '\s+Pure New Zealand Wool Rug.*',''
+  return $t.Trim()
 }
 
 # Header / footer building blocks shared by all collections
@@ -51,13 +83,32 @@ $sharedHeader = @'
       <button class="drawer-close-btn" id="drawerClose" aria-label="Close navigation menu"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
     </div>
     <nav class="mobile-drawer-nav" role="navigation" aria-label="Mobile navigation">
-      <a href="/collections/abstract-rugs.html">Abstract Rugs</a>
-      <a href="/collections/floral-rugs.html">Floral Rugs</a>
-      <a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a>
-      <a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a>
-      <a href="/rug-care">Rug Care</a>
-      <a href="/heritage">Our Story</a>
-      <a href="https://rugkari.com/collections/all" rel="noopener">Shop Catalog</a>
+      <div class="drawer-section">
+        <h5 class="drawer-section-title">Shop by Style</h5>
+        <a href="/collections/abstract-rugs.html">Abstract Rugs</a>
+        <a href="/collections/floral-rugs.html">Floral Rugs</a>
+        <a href="/collections/geometric-rugs.html">Geometric Rugs</a>
+        <a href="/collections/modern-rugs.html">Modern Rugs</a>
+        <a href="/collections/solid-rugs.html">Solid Rugs</a>
+        <a href="/collections/unshaped-rugs.html">Unshaped Rugs</a>
+      </div>
+      <div class="drawer-section">
+        <h5 class="drawer-section-title">Shop by Craft</h5>
+        <a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a>
+        <a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a>
+        <a href="/collections/hand-loom.html">Hand-Loom</a>
+      </div>
+      <div class="drawer-section">
+        <h5 class="drawer-section-title">Shop by Room</h5>
+        <a href="/collections/living-room-rugs.html">Living Room</a>
+        <a href="/collections/bedroom-rugs.html">Bedroom</a>
+        <a href="/collections/dining-room-rugs.html">Dining Room</a>
+      </div>
+      <div class="drawer-section">
+        <h5 class="drawer-section-title">More</h5>
+        <a href="/rug-care">Rug Care</a>
+        <a href="/heritage">Our Story</a>
+      </div>
     </nav>
   </div>
   <div class="container header-row">
@@ -102,14 +153,21 @@ $sharedFooter = @'
         <li><a href="/hand-tufted-vs-machine-made-rugs">Hand-Tufted vs Machine-Made</a></li>
       </ul>
     </nav>
-    <nav aria-label="Shop">
-      <h4 class="footer-title">Shop</h4>
+    <nav aria-label="Shop Rug Collections">
+      <h4 class="footer-title">Shop Rugs</h4>
       <ul class="footer-list">
-        <li><a href="/collections/abstract-rugs.html">Abstract Rugs</a></li>
-        <li><a href="/collections/floral-rugs.html">Floral Rugs</a></li>
+        <li><a href="/collections/abstract-rugs.html">Abstract</a></li>
+        <li><a href="/collections/floral-rugs.html">Floral</a></li>
+        <li><a href="/collections/geometric-rugs.html">Geometric</a></li>
+        <li><a href="/collections/solid-rugs.html">Solid</a></li>
+        <li><a href="/collections/modern-rugs.html">Modern</a></li>
+        <li><a href="/collections/unshaped-rugs.html">Unshaped</a></li>
         <li><a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a></li>
         <li><a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a></li>
-        <li><a href="https://rugkari.com/collections/all" rel="noopener">Full Catalog</a></li>
+        <li><a href="/collections/hand-loom.html">Hand-Loom</a></li>
+        <li><a href="/collections/living-room-rugs.html">Living Room</a></li>
+        <li><a href="/collections/bedroom-rugs.html">Bedroom</a></li>
+        <li><a href="/collections/dining-room-rugs.html">Dining Room</a></li>
       </ul>
     </nav>
     <div>
@@ -175,27 +233,27 @@ $collections = @(
     slug='abstract-rugs'
     title='Abstract Rugs'
     longTitle='Abstract Rugs Collection'
-    metaTitle='Abstract Rugs Collection | Hand-Tufted Pure New Zealand Wool | Rugkari'
-    metaDesc='Modern abstract pure New Zealand wool rugs by Rugkari. Hand-tufted in Bhadohi, free India shipping, 10-year warranty. Browse Elysian, Nexus, Starlite, Alchemy and more.'
+    metaTitle='Abstract Rugs Collection | Pure New Zealand Wool | Rugkari'
+    metaDesc='Modern abstract pure New Zealand wool rugs by Rugkari. Handcrafted in Bhadohi, free India shipping, heirloom warranty. Browse the full abstract collection.'
     eyebrow='Editorial Designs'
-    intro='Abstract rugs that read as art. Each piece is hand-tufted in pure New Zealand wool over 14-18 days, designed to anchor contemporary and editorial Indian interiors.'
-    products = @('elysian-abstract','nexus-abstract','starlite-abstract','alchemy-abstract','mist-abstract')
+    intro='Abstract rugs that read as art. Each piece is handcrafted in pure New Zealand wool, designed to anchor contemporary and editorial Indian interiors.'
     image='https://rugkari.com/cdn/shop/collections/7_91faef0e-6131-4c60-b908-ee6d896b3ba8.jpg'
     intro2='Abstract design in a rug is a balancing act. Too loud and it competes with the furniture; too muted and it disappears. Rugkari abstract rugs are tuned for Indian living rooms where seating volumes are large, light is warm, and the rug needs to ground without overpowering.'
-    intro3='Each Rugkari abstract piece is hand-tufted in pure New Zealand wool with a 20mm ultra-luxury pile. Three natural shades per design, no synthetic dyes. Backed by our 10-year heirloom warranty.'
+    intro3='Each Rugkari abstract piece is handcrafted in pure New Zealand wool with a 20mm ultra-luxury pile. Three natural shades per design, no synthetic dyes. Backed by our heirloom warranty.'
+    match = { param($h,$t) $h -match '-abstract$' }
   }
   @{
     slug='floral-rugs'
     title='Floral Rugs'
     longTitle='Floral Rugs Collection'
-    metaTitle='Floral Rugs Collection | Hand-Tufted Pure New Zealand Wool | Rugkari'
-    metaDesc='Botanical and floral pure New Zealand wool rugs by Rugkari, handcrafted in Bhadohi. Free India shipping, 10-year warranty. Soft florals for living rooms and bedrooms.'
+    metaTitle='Floral Rugs Collection | Pure New Zealand Wool | Rugkari'
+    metaDesc='Botanical and floral pure New Zealand wool rugs by Rugkari, handcrafted in Bhadohi. Free India shipping, heirloom warranty. Soft florals for living rooms and bedrooms.'
     eyebrow='Botanical Designs'
-    intro='Floral and botanical rugs in pure New Zealand wool. Hand-tufted softly, with botanical motifs scaled for modern Indian rooms.'
-    products = @('harmony-geometric','mist-abstract')
+    intro='Floral and botanical rugs in pure New Zealand wool. Handcrafted softly, with botanical motifs scaled for modern Indian rooms.'
     image='https://rugkari.com/cdn/shop/collections/ry.jpg'
     intro2='Floral design in rugs has come a long way from the heavy Victorian carpets of the 20th century. Rugkari floral rugs use softer, larger botanical motifs that complement contemporary furniture rather than overwhelm it.'
-    intro3='Each floral rug is hand-tufted in pure New Zealand wool, with botanical patterns inspired by Indian gardens and traditional Mughal motifs reinterpreted for modern interiors.'
+    intro3='Each floral rug is handcrafted in pure New Zealand wool, with botanical patterns inspired by Indian gardens and traditional Mughal motifs reinterpreted for modern interiors.'
+    match = { param($h,$t) $h -match '-floral$' }
   }
   @{
     slug='hand-knotted-rugs'
@@ -205,10 +263,10 @@ $collections = @(
     metaDesc='Heritage hand-knotted pure New Zealand wool rugs by Rugkari, up to 300 KPSI density. Woven by master artisans in Bhadohi. Free India shipping, 25-year warranty.'
     eyebrow='Heritage Craft'
     intro='The art of hand-knotting reaches its peak in Bhadohi. Each Rugkari hand-knotted rug is tied knot-by-knot over months, achieving up to 300 KPSI density in pure New Zealand wool.'
-    products = @('abacus-traditional')
     image='https://rugkari.com/cdn/shop/files/1_12805eb4-fa71-41d5-87fc-285d8ead17a6.jpg?v=1777702789'
     intro2='Hand-knotted rugs are the highest expression of rug-making art. Unlike hand-tufted rugs (where yarn is pushed through a backing with a tufting gun), hand-knotted rugs have each knot individually tied by hand. The result: a fully reversible rug that lasts generations.'
-    intro3='Rugkari hand-knotted rugs are made in Bhadohi, the Carpet City of the World, by master artisans who learned this craft from their grandparents. Knot densities reach 300 KPSI for our finest pieces.'
+    intro3='Rugkari hand-knotted rugs are made in Bhadohi, the Carpet City of the World, by master artisans who learned this craft from their grandparents. Knot densities reach 300 KPSI for our finest pieces, backed by a 25-year heirloom warranty.'
+    match = { param($h,$t) $t -match 'Hand-Knotted' }
   }
   @{
     slug='hand-tufted-rugs'
@@ -218,32 +276,149 @@ $collections = @(
     metaDesc='Hand-tufted pure New Zealand wool rugs by Rugkari. 20mm ultra-luxury pile, Bhadohi craftsmanship. Free India shipping, 10-year warranty. Browse our full hand-tufted range.'
     eyebrow='Modern Craft'
     intro='Hand-tufted rugs combine the best of artisan craft and accessible luxury. 20mm pile pure New Zealand wool, hand-pushed through a canvas backing by a single artisan over 14-18 days.'
-    products = @('elysian-abstract','tidal-geometric','nexus-abstract','starlite-abstract','harmony-geometric','galleria-geometric','alchemy-abstract','mandolin-geometric','abrash-traditional')
     image='https://rugkari.com/cdn/shop/files/5_9ce644f2-a560-4fa7-97b3-243df12f5f26.jpg?v=1777702689'
     intro2='Hand-tufted rugs are the most popular choice for modern Indian homes. They have the genuine handmade character of hand-knotted rugs at a fraction of the cost, with a denser, plusher pile that feels luxurious underfoot.'
-    intro3='Every Rugkari hand-tufted rug uses 100% pure New Zealand wool with a 20mm ultra-luxury pile depth, cotton canvas backing, and is woven by a single artisan over 14-18 days in Bhadohi.'
+    intro3='Every Rugkari hand-tufted rug uses 100% pure New Zealand wool with a 20mm ultra-luxury pile depth, cotton canvas backing, and is woven by a single artisan over 14-18 days in Bhadohi. Backed by our 10-year heirloom warranty.'
+    match = { param($h,$t) $t -match 'Hand-Tufted' }
+  }
+  @{
+    slug='modern-rugs'
+    title='Modern Rugs'
+    longTitle='Modern Rugs Collection'
+    metaTitle='Modern Rugs Collection | Pure New Zealand Wool | Rugkari'
+    metaDesc='Modern pure New Zealand wool rugs by Rugkari. Abstract, geometric, designer and solid pieces handcrafted in Bhadohi. Free India shipping, heirloom warranty.'
+    eyebrow='Contemporary Edit'
+    intro='Modern rugs for contemporary Indian interiors. Abstract, geometric, designer and solid designs in pure New Zealand wool, handcrafted in Bhadohi.'
+    image='https://rugkari.com/cdn/shop/collections/1_2112c79b-fb1d-40ed-a00e-3909b79b6305.jpg?v=1777703693'
+    intro2='Modern design in a rug means restraint. Clean lines, considered colour, scale that respects the room. Rugkari modern rugs span abstract editorial pieces, structured geometrics, designer silhouettes and quiet solids for serene interiors.'
+    intro3='Each modern rug is handcrafted in pure New Zealand wool with a 20mm ultra-luxury pile. Three natural shades per design, no synthetic dyes. Backed by our heirloom warranty.'
+    match = { param($h,$t) $h -match '-(abstract|geometric|designer|solid)$' }
+  }
+  @{
+    slug='solid-rugs'
+    title='Solid Rugs'
+    longTitle='Solid Rugs Collection'
+    metaTitle='Solid Rugs Collection | Pure New Zealand Wool | Rugkari'
+    metaDesc='Solid colour pure New Zealand wool rugs by Rugkari. Tonal, minimal, handcrafted in Bhadohi. Free India shipping, heirloom warranty.'
+    eyebrow='Quiet Luxury'
+    intro='Solid rugs let the wool do the talking. Tonal, minimal, plush. Each piece is handcrafted in pure New Zealand wool for interiors that prefer calm to pattern.'
+    image='https://rugkari.com/cdn/shop/collections/15_dba6835d-9a09-487b-a880-dba3672d4cf8.jpg?v=1777704121'
+    intro2='Solid rugs are the foundation of layered interiors. They ground furniture without competing, and the unbroken surface lets the texture of pure New Zealand wool become the visual story.'
+    intro3='Rugkari solid rugs use single-tone or close-tonal palettes with no synthetic dye contrast. 20mm pile depth, hand-pushed through cotton canvas, woven over 14-18 days in Bhadohi.'
+    match = { param($h,$t) $h -match '-solid$' }
+  }
+  @{
+    slug='geometric-rugs'
+    title='Geometric Rugs'
+    longTitle='Geometric Rugs Collection'
+    metaTitle='Geometric Rugs Collection | Pure New Zealand Wool | Rugkari'
+    metaDesc='Geometric pure New Zealand wool rugs by Rugkari. Grid, chevron, chronicle and contemporary patterns handcrafted in Bhadohi. Free India shipping, heirloom warranty.'
+    eyebrow='Structured Pattern'
+    intro='Geometric rugs bring rhythm and architecture to a room. Grids, chevrons, diamonds and contemporary repeats handcrafted in pure New Zealand wool.'
+    image='https://rugkari.com/cdn/shop/collections/1_d915f6f3-7df1-49b0-976d-6dddeac823c7.jpg?v=1777703543'
+    intro2='Geometric design is the most flexible pattern language in rugs. It works under modern furniture, traditional furniture and everything in between. Scale is the variable that decides the mood: tight repeats for energy, large blocks for calm.'
+    intro3='Each Rugkari geometric rug is handcrafted in pure New Zealand wool with a 20mm pile. Patterns are carved with hand-finishing for clean edges and tonal depth.'
+    match = { param($h,$t) $h -match '-geometric$' }
+  }
+  @{
+    slug='unshaped-rugs'
+    title='Unshaped Rugs'
+    longTitle='Unshaped Designer Rugs Collection'
+    metaTitle='Unshaped Designer Rugs | Pure New Zealand Wool | Rugkari'
+    metaDesc='Unshaped and designer-form pure New Zealand wool rugs by Rugkari. Sculptural silhouettes handcrafted in Bhadohi. Free India shipping, heirloom warranty.'
+    eyebrow='Sculptural Forms'
+    intro='Unshaped and designer rugs break from the rectangle. Sculptural silhouettes and signature forms in pure New Zealand wool, hand-finished for clean edges.'
+    image='https://rugkari.com/cdn/shop/collections/1_482b297d-3954-42f9-9f62-33d2eca3eaf3.jpg?v=1777704523'
+    intro2='Unshaped rugs ask a room to make space for them. They sit best as a focal piece, paired with restrained furniture and clean surrounding flooring so the silhouette can read.'
+    intro3='Rugkari designer rugs are hand-finished to the outline by master artisans, with pile carving at the perimeter to keep the form crisp. Pure New Zealand wool, heirloom warranty.'
+    match = { param($h,$t) $h -match '-designer$' }
+  }
+  @{
+    slug='hand-loom'
+    title='Hand-Loom Rugs'
+    longTitle='Hand-Loom Rugs Collection'
+    metaTitle='Hand-Loom Rugs Collection | Pure New Zealand Wool | Rugkari'
+    metaDesc='Handwoven hand-loom pure New Zealand wool rugs by Rugkari. Flatweave and low-pile, handcrafted in Bhadohi. Free India shipping, 10-year warranty.'
+    eyebrow='Flatweave Craft'
+    intro='Hand-loom rugs are woven, not tufted. Lighter, lower-pile, and naturally reversible $EM ideal for rooms that need a softer footprint with full wool character.'
+    image='https://rugkari.com/cdn/shop/collections/Image.png?v=1777704813'
+    intro2='Hand-loom (handwoven) construction interlocks warp and weft on a frame loom. The result is a flatter, denser surface than tufted rugs $EM closer in feel to a dhurrie but with the warmth of pure New Zealand wool.'
+    intro3='Rugkari hand-loom rugs work well in bedrooms, study areas, and under low-profile furniture where pile depth would interfere. Backed by our 10-year heirloom warranty.'
+    match = { param($h,$t) $t -match 'Handwoven' }
+  }
+  @{
+    slug='dining-room-rugs'
+    cap=40
+    title='Dining Room Rugs'
+    longTitle='Dining Room Rugs Collection'
+    metaTitle='Dining Room Rugs | Pure New Zealand Wool | Rugkari'
+    metaDesc='Dining room pure New Zealand wool rugs by Rugkari. Structured patterns that sit elegantly under a dining table. Free India shipping, heirloom warranty.'
+    eyebrow='Under the Table'
+    intro='Dining room rugs need to hold a table, six chairs and the foot traffic of every evening. Rugkari dining rugs are handcrafted in pure New Zealand wool with patterns that read at full chair-pull-out width.'
+    image='https://rugkari.com/cdn/shop/collections/IMG_5439_JPEG.jpg?v=1777705303'
+    intro2='A dining rug is sized to the table, not the room. The rule of thumb: 60cm of rug clearance on every side beyond the table edge so chairs stay on the rug when pulled out. Pattern should read top-down, not just side-on.'
+    intro3='Rugkari dining rugs are handcrafted in pure New Zealand wool with 20mm pile, structured pattern language, and edges hand-finished for daily traffic. Spill-cleaning is straightforward with our care kit.'
+    match = { param($h,$t) $h -match '-(traditional|geometric)$' }
+  }
+  @{
+    slug='living-room-rugs'
+    cap=40
+    title='Living Room Rugs'
+    longTitle='Living Room Rugs Collection'
+    metaTitle='Living Room Rugs | Pure New Zealand Wool | Rugkari'
+    metaDesc='Living room pure New Zealand wool rugs by Rugkari. Abstract, geometric, designer and traditional pieces handcrafted in Bhadohi. Free India shipping, heirloom warranty.'
+    eyebrow='Anchor the Room'
+    intro='The living room rug is the single piece that sets the temperature of the whole room. Rugkari living room rugs are handcrafted in pure New Zealand wool, sized and scaled for Indian sofas and seating.'
+    image='https://rugkari.com/cdn/shop/collections/3_31bca7c4-8c7f-4dd2-ab4a-612919a6cfde.jpg?v=1777704931'
+    intro2='A living room rug should fit under at least the front legs of the main sofa, with breathing space at the centre table. In Indian homes that often means 8x10 or 9x12; oversized for studios and larger for open-plan layouts.'
+    intro3='Rugkari living room rugs use 20mm pile pure New Zealand wool, hand-tufted or hand-knotted in Bhadohi. Pattern language spans abstract, geometric, designer and traditional. Backed by our heirloom warranty.'
+    match = { param($h,$t) $h -match '-(abstract|geometric|designer|traditional)$' }
+  }
+  @{
+    slug='bedroom-rugs'
+    cap=40
+    title='Bedroom Rugs'
+    longTitle='Bedroom Rugs Collection'
+    metaTitle='Bedroom Rugs | Pure New Zealand Wool | Rugkari'
+    metaDesc='Bedroom pure New Zealand wool rugs by Rugkari. Soft solids, abstracts and florals handcrafted in Bhadohi. Free India shipping, heirloom warranty.'
+    eyebrow='Quiet Mornings'
+    intro='Bedroom rugs are the first thing your feet meet. Rugkari bedroom rugs are handcrafted in pure New Zealand wool with soft solids, abstracts and florals tuned for calm.'
+    image='https://rugkari.com/cdn/shop/collections/Emanate_Rug_1.jpg?v=1777705155'
+    intro2='A bedroom rug is sized to extend at least 60cm past the sides and foot of the bed so you step onto wool, not bare floor. Calmer pattern languages $EM solids, soft abstracts, gentle florals $EM keep the room restful.'
+    intro3='Rugkari bedroom rugs use 20mm pile pure New Zealand wool, hand-tufted in Bhadohi. The pile compresses gently underfoot and rebounds. Backed by our heirloom warranty.'
+    match = { param($h,$t) $h -match '-(solid|abstract|floral)$' }
   }
 )
 
-$productCatalog = @{
-  'elysian-abstract'   = @{ title='Elysian Abstract'; price='10499'; vendor='Hand-Tufted'; slug='elysian-abstract-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/elysian-abstract-1.jpg' }
-  'tidal-geometric'    = @{ title='Tidal Geometric'; price='10499'; vendor='Hand-Tufted'; slug='tidal-geometric-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/tidal-geometric-1.jpg' }
-  'nexus-abstract'     = @{ title='Nexus Abstract'; price='10499'; vendor='Hand-Tufted'; slug='nexus-abstract-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/nexus-abstract-1.jpg' }
-  'starlite-abstract'  = @{ title='Starlite Abstract'; price='10499'; vendor='Hand-Tufted'; slug='starlite-abstract-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/starlite-abstract-1.jpg' }
-  'harmony-geometric'  = @{ title='Harmony Geometric'; price='10499'; vendor='Handcrafted'; slug='harmony-geometric-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/harmony-geometric-1.jpg' }
-  'galleria-geometric' = @{ title='Galleria Geometric'; price='10499'; vendor='Hand-Tufted'; slug='galleria-geometric-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/galleria-geometric-1.jpg' }
-  'alchemy-abstract'   = @{ title='Alchemy Abstract'; price='10499'; vendor='Hand-Tufted'; slug='alchemy-abstract-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/alchemy-abstract-1.jpg' }
-  'mandolin-geometric' = @{ title='Mandolin Geometric'; price='10499'; vendor='Hand-Tufted'; slug='mandolin-geometric-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/mandolin-geometric-1.jpg' }
-  'mist-abstract'      = @{ title='Mist Abstract'; price='8999'; vendor='Handwoven'; slug='mist-abstract-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/mist-abstract-1.jpg' }
-  'abacus-traditional' = @{ title='Abacus Traditional'; price='10499'; vendor='Handcrafted'; slug='abacus-traditional-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/abacus-traditional-1.jpg' }
-  'abrash-traditional' = @{ title='Abrash Traditional'; price='10499'; vendor='Hand-Tufted'; slug='abrash-traditional-pure-new-zealand-wool-rug'; image='https://rugkari.com/cdn/shop/files/abrash-traditional-1.jpg' }
+# Build productCatalog dynamically from CSV
+$productCatalog = @{}
+foreach ($k in $csvHandles) {
+  $title = $csvTitle[$k]
+  $construction = Get-Construction $title
+  $shortName = Get-ShortName $title
+  $price = if ($csvLowPrice.ContainsKey($k)) { [string]$csvLowPrice[$k] } else { '0' }
+  $image = if ($realFirstImage.ContainsKey($k)) { $realFirstImage[$k] } else { '' }
+  $productCatalog[$k] = @{
+    title  = $shortName
+    price  = $price
+    vendor = $construction
+    slug   = $k + '-pure-new-zealand-wool-rug'
+    image  = $image
+  }
 }
 
-# Override fake image URLs with real CDN URLs from CSV
-foreach ($k in @($productCatalog.Keys)) {
-  if ($realFirstImage.ContainsKey($k)) {
-    $productCatalog[$k].image = $realFirstImage[$k]
+# Populate each collection's product list from CSV via its match script-block.
+# Optional .cap limits the number of products shown on heavy room-based pages.
+foreach ($c in $collections) {
+  $matched = @()
+  foreach ($k in $csvHandles) {
+    $title = $csvTitle[$k]
+    if (& $c.match $k $title) { $matched += $k }
   }
+  if ($c.ContainsKey('cap') -and $c.cap -gt 0 -and $matched.Count -gt $c.cap) {
+    $matched = $matched | Select-Object -First $c.cap
+  }
+  $c.products = $matched
 }
 
 function Build-ProductCardsHtml($keys) {

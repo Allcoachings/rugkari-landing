@@ -61,11 +61,83 @@
 
   <url>
     <loc>https://rugs.rugkari.com/collections/hand-tufted-rugs.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/hand-tufted-rugs.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/hand-tufted-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/modern-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/modern-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/modern-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/solid-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/solid-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/solid-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/geometric-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/geometric-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/geometric-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/unshaped-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/unshaped-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/unshaped-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/hand-loom.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/hand-loom.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/hand-loom.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/dining-room-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/dining-room-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/dining-room-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/living-room-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/living-room-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/living-room-rugs.html" />
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/collections/bedroom-rugs.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/bedroom-rugs.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/bedroom-rugs.html" />
   </url>
 
   <!-- Footer / Utility pages -->
