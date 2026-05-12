@@ -288,8 +288,8 @@ $jsonLd
     <div class="product-grid">
 $productsHtml    </div>
     <p style="text-align:center; margin-top: 56px;">
-      <a href="https://rugkari.com/collections/$($c.slug)" class="btn btn-ghost" rel="noopener">
-        <span>View on Rugkari.com</span>
+      <a href="/#collections" class="btn btn-ghost">
+        <span>Explore Other Collections</span>
       </a>
     </p>
   </div>
@@ -352,7 +352,7 @@ $productsHtml    </div>
         <li><a href="/collections/floral-rugs.html">Floral</a></li>
         <li><a href="/collections/hand-knotted-rugs.html">Hand-Knotted</a></li>
         <li><a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a></li>
-        <li><a href="https://rugkari.com/collections/all" rel="noopener">Full Catalog</a></li>
+        <li><a href="/collections/hand-tufted-rugs.html">Hand-Tufted</a></li>
       </ul>
     </nav>
     <div>

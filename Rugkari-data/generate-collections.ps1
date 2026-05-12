@@ -421,6 +421,34 @@ foreach ($c in $collections) {
   $c.products = $matched
 }
 
+# Relevant local collections to suggest at the bottom of each page (3 per page).
+$relatedMap = @{
+  'abstract-rugs'    = @('modern-rugs','geometric-rugs','unshaped-rugs')
+  'floral-rugs'      = @('bedroom-rugs','abstract-rugs','solid-rugs')
+  'hand-knotted-rugs'= @('hand-tufted-rugs','living-room-rugs','hand-loom')
+  'hand-tufted-rugs' = @('hand-knotted-rugs','modern-rugs','living-room-rugs')
+  'modern-rugs'      = @('abstract-rugs','geometric-rugs','solid-rugs')
+  'solid-rugs'       = @('bedroom-rugs','modern-rugs','hand-loom')
+  'geometric-rugs'   = @('modern-rugs','dining-room-rugs','hand-tufted-rugs')
+  'unshaped-rugs'    = @('modern-rugs','abstract-rugs','hand-tufted-rugs')
+  'hand-loom'        = @('hand-tufted-rugs','solid-rugs','bedroom-rugs')
+  'dining-room-rugs' = @('geometric-rugs','hand-knotted-rugs','hand-tufted-rugs')
+  'living-room-rugs' = @('hand-tufted-rugs','modern-rugs','geometric-rugs')
+  'bedroom-rugs'     = @('solid-rugs','floral-rugs','hand-loom')
+}
+# Title lookup for related buttons
+$titleBySlug = @{}
+foreach ($cc in $collections) { $titleBySlug[$cc.slug] = $cc.title }
+
+function Build-RelatedButtonsHtml($slugs) {
+  $sb = New-Object System.Text.StringBuilder
+  foreach ($s in $slugs) {
+    if (-not $titleBySlug.ContainsKey($s)) { continue }
+    [void]$sb.AppendLine('      <a href="/collections/' + $s + '.html" class="btn btn-ghost"><span>Explore ' + $titleBySlug[$s] + '</span></a>')
+  }
+  return $sb.ToString()
+}
+
 function Build-ProductCardsHtml($keys) {
   $sb = New-Object System.Text.StringBuilder
   foreach ($k in $keys) {
@@ -452,6 +480,8 @@ foreach ($c in $collections) {
   $url = 'https://rugs.rugkari.com/collections/' + $c.slug + '.html'
   $productsHtml = Build-ProductCardsHtml $c.products
   $itemListJson = Build-ItemListJson $c.products $url
+  $relatedSlugs = if ($relatedMap.ContainsKey($c.slug)) { $relatedMap[$c.slug] } else { @() }
+  $relatedHtml = Build-RelatedButtonsHtml $relatedSlugs
 
   $jsonLd = @'
 <script type="application/ld+json">
@@ -562,11 +592,11 @@ $sharedHeader
     <h2 class="section-title">Shop the $($c.title)</h2>
     <div class="product-grid">
 $productsHtml    </div>
-    <p style="text-align:center; margin-top: 56px;">
-      <a href="https://rugkari.com/collections/$($c.slug)" class="btn btn-ghost" rel="noopener">
-        <span>View Full Catalog on Rugkari.com</span>
-      </a>
-    </p>
+    <div style="margin-top: 56px; text-align: center;">
+      <p class="eyebrow" style="margin-bottom: 18px;">You May Also Like</p>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+$relatedHtml      </div>
+    </div>
   </div>
 </section>
 
