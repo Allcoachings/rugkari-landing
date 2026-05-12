@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- Homepage -->
@@ -11,11 +10,6 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/" />
-    <image:image>
-      <image:loc>/assets/RUGKARI-LOGO.webp</image:loc>
-      <image:title>Rugkari – The Rug Guide</image:title>
-      <image:caption>Handcrafted pure New Zealand wool rugs from Bhadohi, India</image:caption>
-    </image:image>
   </url>
 
   <!-- Brand / About -->
@@ -45,11 +39,6 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/abstract-rugs.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/abstract-rugs.html" />
-    <image:image>
-      <image:loc>https://rugkari.com/cdn/shop/collections/7_91faef0e-6131-4c60-b908-ee6d896b3ba8.jpg</image:loc>
-      <image:title>Abstract Rugs Collection</image:title>
-      <image:caption>Premium abstract pure New Zealand wool rugs, hand-tufted in Bhadohi</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -59,11 +48,6 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/floral-rugs.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/floral-rugs.html" />
-    <image:image>
-      <image:loc>https://rugkari.com/cdn/shop/collections/ry.jpg</image:loc>
-      <image:title>Floral Rugs Collection</image:title>
-      <image:caption>Vintage floral hand-tufted pure wool rugs for Indian homes</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -73,11 +57,6 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/hand-knotted-rugs.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/hand-knotted-rugs.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_12805eb4-fa71-41d5-87fc-285d8ead17a6.jpg?v=1777702789</image:loc>
-      <image:title>Hand-Knotted Rugs Collection</image:title>
-      <image:caption>Heirloom hand-knotted traditional wool rugs from Bhadohi</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -87,11 +66,6 @@
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/collections/hand-tufted-rugs.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/collections/hand-tufted-rugs.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_9ce644f2-a560-4fa7-97b3-243df12f5f26.jpg?v=1777702689</image:loc>
-      <image:title>Hand-Tufted Rugs Collection</image:title>
-      <image:caption>Hand-tufted 20mm pile pure New Zealand wool rugs by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <!-- Footer / Utility pages -->
@@ -275,11 +249,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/abacus-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/abacus-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_12805eb4-fa71-41d5-87fc-285d8ead17a6.jpg?v=1777702789</image:loc>
-      <image:title>Abacus Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Abacus Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -289,11 +258,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/abrash-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/abrash-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_9ce644f2-a560-4fa7-97b3-243df12f5f26.jpg?v=1777702689</image:loc>
-      <image:title>Abrash Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Abrash Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -303,11 +267,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/acre-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/acre-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_568671ee-97ad-4abc-a190-87f32aa8c8ca.jpg?v=1777702796</image:loc>
-      <image:title>Acre Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Acre Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -317,11 +276,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/adam-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/adam-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/RSTRT.jpg?v=1777702506</image:loc>
-      <image:title>Adam Geometric Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Adam Geometric Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -331,11 +285,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/agate-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/agate-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/104.37.58AM5.45.50AM.jpg?v=1777702666</image:loc>
-      <image:title>Agate Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Agate Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -345,11 +294,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/alchemy-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/alchemy-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1.jpg?v=1777702441</image:loc>
-      <image:title>Alchemy Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Alchemy Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -359,11 +303,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/alkaya-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/alkaya-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_33273abc-bfb8-42c1-b534-fa0565a3a8dc.jpg?v=1777702723</image:loc>
-      <image:title>Alkaya Traditional Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Alkaya Traditional Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -373,11 +312,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/arbor-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/arbor-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_3fd5f70b-ddad-4844-895b-252200046a2a.jpg?v=1777702696</image:loc>
-      <image:title>Arbor Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Arbor Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -387,11 +321,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/arcade-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/arcade-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/arcade.jpg?v=1777702463</image:loc>
-      <image:title>Arcade Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Arcade Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -401,11 +330,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/arctic-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/arctic-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/Image.png?v=1777702542</image:loc>
-      <image:title>Arctic Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Arctic Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -415,11 +339,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ashlar-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ashlar-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/14_e5844ecd-8830-47c9-8841-0463bc97d18b.jpg?v=1777702762</image:loc>
-      <image:title>Ashlar Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ashlar Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -429,11 +348,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/atelier-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/atelier-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_df439d85-0463-4cf1-b4bb-90ba09158a8d.jpg?v=1777702692</image:loc>
-      <image:title>Atelier Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Atelier Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -443,11 +357,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/aurora-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/aurora-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ry.jpg?v=1777702476</image:loc>
-      <image:title>Aurora Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Aurora Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -457,11 +366,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/aurum-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/aurum-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/RDFGHCVJH.jpg?v=1777702545</image:loc>
-      <image:title>Aurum Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Aurum Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -471,11 +375,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/axis-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/axis-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/UNSHPD.jpg?v=1777702725</image:loc>
-      <image:title>Axis Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Axis Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -485,11 +384,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/bean-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/bean-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_d740bb15-62cd-4395-9bb3-43331e4f9afc.jpg?v=1777702824</image:loc>
-      <image:title>Bean Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Bean Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -499,11 +393,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/betel-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/betel-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/BETEL.jpg?v=1777702483</image:loc>
-      <image:title>Betel Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Betel Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -513,11 +402,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/bliss-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/bliss-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/unybtv.jpg?v=1777702487</image:loc>
-      <image:title>Bliss Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Bliss Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -527,11 +411,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/bowrai-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/bowrai-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/TAPISECO09-001-tapis-studio-eco-rug-009-front-1.png?v=1777702657</image:loc>
-      <image:title>Bowrai Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Bowrai Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -541,11 +420,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/bracken-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/bracken-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_9e32dd16-5abd-46f7-b33c-6a267a756445.jpg?v=1777702815</image:loc>
-      <image:title>Bracken Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Bracken Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -555,11 +429,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/bramble-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/bramble-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/15_b4b6be78-6102-480c-b649-48a7c327430b.jpg?v=1777702803</image:loc>
-      <image:title>Bramble Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Bramble Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -569,11 +438,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/bunraaz-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/bunraaz-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/10_00b115fb-9281-4d6e-b482-2a0ffc4b4999.jpg?v=1777702618</image:loc>
-      <image:title>Bunraaz Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Bunraaz Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -583,11 +447,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/burgundy-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/burgundy-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_bbf2c2a8-7bf0-4880-839d-66876ca08160.jpg?v=1777702710</image:loc>
-      <image:title>Burgundy Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Burgundy Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -597,11 +456,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cadre-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cadre-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_91faef0e-6131-4c60-b908-ee6d896b3ba8.jpg?v=1777702686</image:loc>
-      <image:title>Cadre Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cadre Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -611,11 +465,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/caecum-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/caecum-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/Caecum_Rug_1.jpg?v=1777702673</image:loc>
-      <image:title>Caecum Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Caecum Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -625,11 +474,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/caelra-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/caelra-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_7b8d2f61-f9b7-4d7c-922f-3f7ec79fedd6.jpg?v=1777702605</image:loc>
-      <image:title>Caelra Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Caelra Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -639,11 +483,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/caelvyn-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/caelvyn-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/11_cb1d3ff8-9398-4897-a28f-2ccc67c73d19.jpg?v=1777702620</image:loc>
-      <image:title>Caelvyn Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Caelvyn Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -653,11 +492,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/caesar-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/caesar-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_40a3bc6c-336b-4bd7-b995-c8aaad514d01.jpg?v=1777702809</image:loc>
-      <image:title>Caesar Traditional Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Caesar Traditional Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -667,11 +501,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cairn-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cairn-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_b665c711-c292-421e-b6e0-73e9992e6dc3.jpg?v=1777702766</image:loc>
-      <image:title>Cairn Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cairn Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -681,11 +510,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cama-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cama-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/hgfrettuy.jpg?v=1777702458</image:loc>
-      <image:title>Cama Abstract Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cama Abstract Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -695,11 +519,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/camel-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/camel-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/134.37.58AM5.45.50AM.jpg?v=1777702660</image:loc>
-      <image:title>Camel Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Camel Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -709,11 +528,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/camillia-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/camillia-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/XDFGCHGV.jpg?v=1777702557</image:loc>
-      <image:title>Camillia Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Camillia Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -723,11 +537,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/canopy-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/canopy-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/fdxcghvb.jpg?v=1777702536</image:loc>
-      <image:title>Canopy Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Canopy Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -737,11 +546,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cantus-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cantus-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_2.jpg?v=1777702810</image:loc>
-      <image:title>Cantus Traditional Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cantus Traditional Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -751,11 +555,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/canvas-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/canvas-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_ed08f36e-c930-41e5-a503-cc0fdfbfffca.jpg?v=1777702453</image:loc>
-      <image:title>Canvas Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Canvas Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -765,11 +564,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/caramel-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/caramel-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_2112c79b-fb1d-40ed-a00e-3909b79b6305.jpg?v=1777702702</image:loc>
-      <image:title>Caramel Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Caramel Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -779,11 +573,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cavern-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cavern-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_d82831a8-44d6-4de1-ae6d-f7a3fcc3b0dd.jpg?v=1777702600</image:loc>
-      <image:title>Cavern Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cavern Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -793,11 +582,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/celestial-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/celestial-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/celestial_1.jpg?v=1777702473</image:loc>
-      <image:title>Celestial Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Celestial Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -807,11 +591,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cemara-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cemara-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/13_54aa824d-c02c-4d12-99f7-c76b856b84d9.jpg?v=1777702644</image:loc>
-      <image:title>Cemara Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cemara Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -821,11 +600,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/chainlink-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/chainlink-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/45.32.56AM5.45.50AM.jpg?v=1777702678</image:loc>
-      <image:title>Chainlink Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Chainlink Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -835,11 +609,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/chevron-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/chevron-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_e16ee80f-10ad-4c05-892e-29b039fea651.jpg?v=1777702714</image:loc>
-      <image:title>Chevron Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Chevron Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -849,11 +618,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/chlorophyll-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/chlorophyll-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_658132b7-db38-4dbf-8315-0e266bac74a5.jpg?v=1777702698</image:loc>
-      <image:title>Chlorophyll Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Chlorophyll Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -863,11 +627,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/chronicle-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/chronicle-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/12_192c09c0-62d7-491f-b59c-e91e3e9ba79e.jpg?v=1777702774</image:loc>
-      <image:title>Chronicle Designer Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Chronicle Designer Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -877,11 +636,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/chronos-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/chronos-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_02841ba2-54d2-418a-b8c0-b1ccb4bfa385.jpg?v=1777702780</image:loc>
-      <image:title>Chronos Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Chronos Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -891,11 +645,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/claret-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/claret-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8_78f6091f-3279-455a-b6d4-27bc7d4b7739.jpg?v=1777702749</image:loc>
-      <image:title>Claret Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Claret Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -905,11 +654,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/clastra-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/clastra-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/11_d395cb38-668a-4141-bf00-c3c2663741a5.jpg?v=1777702646</image:loc>
-      <image:title>Clastra Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Clastra Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -919,11 +663,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/coco-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/coco-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/COCO.jpg?v=1777702480</image:loc>
-      <image:title>Coco Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Coco Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -933,11 +672,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/colonnade-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/colonnade-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_26b5f7af-db27-4b72-bf17-7c562aae1d21.jpg?v=1777702783</image:loc>
-      <image:title>Colonnade Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Colonnade Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -947,11 +681,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/columnae-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/columnae-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/65.32.56AM5.45.50AM.jpg?v=1777702674</image:loc>
-      <image:title>Columnae Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Columnae Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -961,11 +690,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/confluence-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/confluence-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_b7a63a38-0e2f-4407-9e35-de9e82de8e2c.jpg?v=1777702695</image:loc>
-      <image:title>Confluence Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Confluence Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -975,11 +699,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/constellation-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/constellation-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/13_b3507213-12bd-4ca2-b46c-20e5990519cb.jpg?v=1777702777</image:loc>
-      <image:title>Constellation Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Constellation Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -989,11 +708,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/corsage-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/corsage-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/wedfcvbhj.jpg?v=1777702533</image:loc>
-      <image:title>Corsage Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Corsage Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1003,11 +717,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/cosmos-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/cosmos-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/trdftgbbkfcghvjbdesign.jpg?v=1777702518</image:loc>
-      <image:title>Cosmos Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Cosmos Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1017,11 +726,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/crellin-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/crellin-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_66d3d956-c957-4943-a126-049cf6b3f1cf.jpg?v=1777702637</image:loc>
-      <image:title>Crellin Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Crellin Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1031,11 +735,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/croft-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/croft-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/9_6fa1fa21-af41-41d5-b954-81d195ed6aaa.jpg?v=1777702798</image:loc>
-      <image:title>Croft Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Croft Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1045,11 +744,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/crown-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/crown-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/dfcgvhjbnk.jpg?v=1777702527</image:loc>
-      <image:title>Crown Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Crown Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1059,11 +753,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/dawn-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/dawn-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/rdcytfytfuy.jpg?v=1777702489</image:loc>
-      <image:title>Dawn Geometric Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Dawn Geometric Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1073,11 +762,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/delvane-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/delvane-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_a52f893b-9cbf-4d22-a9ae-1c10297d779c.jpg?v=1777702636</image:loc>
-      <image:title>Delvane Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Delvane Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1087,11 +771,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/divira-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/divira-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_feb71069-46f4-4a05-919d-6bdaa27a5145.jpg?v=1777702613</image:loc>
-      <image:title>Divira Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Divira Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1101,11 +780,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/driselle-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/driselle-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/15_dba6835d-9a09-487b-a880-dba3672d4cf8.jpg?v=1777702622</image:loc>
-      <image:title>Driselle Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Driselle Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1115,11 +789,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ebony-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ebony-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ebony_1.jpg?v=1777702504</image:loc>
-      <image:title>Ebony Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ebony Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1129,11 +798,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ecru-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ecru-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_93c690b3-fa75-46c3-8646-638150db023d.jpg?v=1777702740</image:loc>
-      <image:title>Ecru Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ecru Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1143,11 +807,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/elara-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/elara-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/elara.jpg?v=1777702469</image:loc>
-      <image:title>Elara Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Elara Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1157,11 +816,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/elaris-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/elaris-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/9_0700933b-30ab-438f-a0b3-c41993721d2a.jpg?v=1777702616</image:loc>
-      <image:title>Elaris Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Elaris Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1171,11 +825,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/elysian-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/elysian-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/esduotfgcdfsuycfgh.jpg?v=1777702456</image:loc>
-      <image:title>Elysian Abstract Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Elysian Abstract Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1185,11 +834,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/emanate-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/emanate-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/Emanate_Rug_1.jpg?v=1777702680</image:loc>
-      <image:title>Emanate Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Emanate Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1199,11 +843,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/emberley-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/emberley-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_57ae85e3-6c83-4d99-924d-deea33b5739c.jpg?v=1777702818</image:loc>
-      <image:title>Emberley Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Emberley Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1213,11 +852,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/emphorium-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/emphorium-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/uyyyyyyyfuyfutdt.jpg?v=1777702457</image:loc>
-      <image:title>Emphorium Abstract Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Emphorium Abstract Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1227,11 +861,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/essence-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/essence-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/xtb.jpg?v=1777702474</image:loc>
-      <image:title>Essence Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Essence Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1241,11 +870,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ethos-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ethos-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_bf91364f-ea95-46ae-8e55-ee6b45cb2137.jpg?v=1777702813</image:loc>
-      <image:title>Ethos Traditional Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ethos Traditional Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1255,11 +879,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/eurus-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/eurus-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/eurus.jpg?v=1777702438</image:loc>
-      <image:title>Eurus Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Eurus Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1269,11 +888,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/farnor-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/farnor-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_5548f491-9ba3-4d2f-ab7d-1c5d722c7f4a.jpg?v=1777702639</image:loc>
-      <image:title>Farnor Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Farnor Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1283,11 +897,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/feylan-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/feylan-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/25_02c0aee6-397a-4f06-ab8f-207df20a418a.jpg?v=1777702630</image:loc>
-      <image:title>Feylan Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Feylan Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1297,11 +906,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/fieldstone-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/fieldstone-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/125.32.56AM5.45.50AM.jpg?v=1777702682</image:loc>
-      <image:title>Fieldstone Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Fieldstone Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1311,11 +915,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/flame-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/flame-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/9.jpg?v=1777702566</image:loc>
-      <image:title>Flame Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Flame Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1325,11 +924,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/flamingo-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/flamingo-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/efqdw.jpg?v=1777702528</image:loc>
-      <image:title>Flamingo Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Flamingo Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1339,11 +933,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/flowen-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/flowen-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/22_fe8e849d-3e66-489f-9d48-bbb691e6f19c.jpg?v=1777702579</image:loc>
-      <image:title>Flowen Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Flowen Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1353,11 +942,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/fringe-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/fringe-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_3.49.04_AM_4.37.58_AM_5.45.50_AM.jpg?v=1777702667</image:loc>
-      <image:title>Fringe Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Fringe Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1367,11 +951,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/frost-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/frost-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/fvd.jpg?v=1777702531</image:loc>
-      <image:title>Frost Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Frost Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1381,11 +960,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/galactic-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/galactic-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/esrdtfcghv.jpg?v=1777702525</image:loc>
-      <image:title>Galactic Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Galactic Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1395,11 +969,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/galleria-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/galleria-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4.jpg?v=1777702439</image:loc>
-      <image:title>Galleria Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Galleria Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1409,11 +978,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gamora-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gamora-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/Gamora.jpg?v=1777702498</image:loc>
-      <image:title>Gamora Geometric Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gamora Geometric Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1423,11 +987,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gestural-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gestural-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/35.32.56AM5.45.50AM.jpg?v=1777702670</image:loc>
-      <image:title>Gestural Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gestural Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1437,11 +996,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gilled-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gilled-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_bd11c2e2-753a-4701-aec0-a0298071e0a6.jpg?v=1777702706</image:loc>
-      <image:title>Gilled Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gilled Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1451,11 +1005,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/glacier-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/glacier-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/SEZXERRCDC_21317409-56ca-4493-9575-86d13869141e.jpg?v=1777702437</image:loc>
-      <image:title>Glacier Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Glacier Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1465,11 +1014,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/granoir-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/granoir-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/VGHJCFGHH.jpg?v=1777702553</image:loc>
-      <image:title>Granoir Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Granoir Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1479,11 +1023,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/graphite-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/graphite-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_0edf70a0-8ebe-4426-b228-a082f0fee5ae.jpg?v=1777702769</image:loc>
-      <image:title>Graphite Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Graphite Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1493,11 +1032,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gravele-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gravele-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_399f4db1-2d50-4c4c-95d0-77bc5ce4bf36.jpg?v=1777702737</image:loc>
-      <image:title>Gravele Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gravele Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1507,11 +1041,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gravele-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gravele-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/12_5fbdd538-a0c2-4b10-bb4d-53f60bd453b4.jpg?v=1777702621</image:loc>
-      <image:title>Gravele Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gravele Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1521,11 +1050,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gravix-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gravix-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8_a0222817-5592-4657-bd74-d83015bb97d8.jpg?v=1777702640</image:loc>
-      <image:title>Gravix Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gravix Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1535,11 +1059,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/greige-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/greige-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/16_8742f838-26a9-47d0-b26a-8777a9832d94.jpg?v=1777702758</image:loc>
-      <image:title>Greige Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Greige Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1549,11 +1068,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/greige-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/greige-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_3677b01f-b07f-4856-9207-05b9f1d898c3.jpg?v=1777702687</image:loc>
-      <image:title>Greige Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Greige Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1563,11 +1077,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/greige-traditional-pure-new-zealand-wool-rug-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/greige-traditional-pure-new-zealand-wool-rug-2.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_597a002c-676d-44ae-b814-2b2e2f32001e.jpg?v=1777702763</image:loc>
-      <image:title>Greige Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Greige Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1577,11 +1086,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/greystone-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/greystone-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/11_a453784c-f3a4-4b1d-983e-24ee09663a89.jpg?v=1777702816</image:loc>
-      <image:title>Greystone Designer Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Greystone Designer Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1591,11 +1095,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/grid-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/grid-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/grid.jpg?v=1777702471</image:loc>
-      <image:title>Grid Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Grid Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1605,11 +1104,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gridwyn-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gridwyn-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/15_30960d43-a64c-45e9-86ee-8856ddfe9fc5.jpg?v=1777702648</image:loc>
-      <image:title>Gridwyn Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gridwyn Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1619,11 +1113,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/guardian-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/guardian-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_d915f6f3-7df1-49b0-976d-6dddeac823c7.jpg?v=1777702820</image:loc>
-      <image:title>Guardian Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Guardian Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1633,11 +1122,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/gulraiz-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/gulraiz-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/24_157cd97e-de07-4830-8f20-d8f54156e90f.jpg?v=1777702598</image:loc>
-      <image:title>Gulraiz Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Gulraiz Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1647,11 +1131,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/harmony-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/harmony-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/harmony.jpg?v=1777702465</image:loc>
-      <image:title>Harmony Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Harmony Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1661,11 +1140,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/haze-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/haze-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/9_ba32b562-e4c3-4048-91d2-baa7e79506f3.jpg?v=1777702757</image:loc>
-      <image:title>Haze Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Haze Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1675,11 +1149,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/heartwood-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/heartwood-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_4.19.59_AM_4.37.58_AM_5.45.50_AM.jpg?v=1777702668</image:loc>
-      <image:title>Heartwood Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Heartwood Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1689,11 +1158,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/hem-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/hem-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/11_7b7626e5-6aaf-4910-b088-d9117135c78e.jpg?v=1777702799</image:loc>
-      <image:title>Hem Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Hem Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1703,11 +1167,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/heritage-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/heritage-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/HERITAGE.jpg?v=1777702544</image:loc>
-      <image:title>Heritage Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Heritage Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1717,11 +1176,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/herrin-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/herrin-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_ea7e5a2c-f6ae-4726-a701-0c6258230a47.jpg?v=1777702717</image:loc>
-      <image:title>Herrin Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Herrin Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1731,11 +1185,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/history-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/history-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/17.jpg?v=1777702577</image:loc>
-      <image:title>History Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>History Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1745,11 +1194,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/hunter-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/hunter-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/hunter_1.jpg?v=1777702512</image:loc>
-      <image:title>Hunter Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Hunter Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1759,11 +1203,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/hush-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/hush-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/10_ebffc953-d285-420e-b817-ba8c926a8985.jpg?v=1777702751</image:loc>
-      <image:title>Hush Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Hush Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1773,11 +1212,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/impres-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/impres-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/16.jpg?v=1777702576</image:loc>
-      <image:title>Impres Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Impres Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1787,11 +1221,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/indigo-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/indigo-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_c40e89d8-668c-489c-8a56-5dc86c78cb62.jpg?v=1777702716</image:loc>
-      <image:title>Indigo Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Indigo Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1801,11 +1230,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/inkwell-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/inkwell-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_db0a79e9-630a-4711-afc6-d9237bbd25ec.jpg?v=1777702746</image:loc>
-      <image:title>Inkwell Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Inkwell Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1815,11 +1239,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ivory-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ivory-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/qwerfvghjm.jpg?v=1777702517</image:loc>
-      <image:title>Ivory Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ivory Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1829,11 +1248,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/limen-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/limen-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_dfee6950-fb33-4c48-ba45-527fe913b5c2.jpg?v=1777702752</image:loc>
-      <image:title>Limen Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Limen Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1843,11 +1257,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/lineage-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/lineage-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/14.jpg?v=1777702573</image:loc>
-      <image:title>Lineage Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Lineage Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1857,11 +1266,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/linen-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/linen-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/15_09c949c3-da96-4d28-9b9d-2c20e28198d0.jpg?v=1777702742</image:loc>
-      <image:title>Linen Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Linen Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1871,11 +1275,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/locus-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/locus-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/12_bdf072d3-e6a3-4efd-8b1c-18f13a09d070.jpg?v=1777702755</image:loc>
-      <image:title>Locus Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Locus Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1885,11 +1284,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/lush-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/lush-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/hfdxfgchv.jpg?v=1777702521</image:loc>
-      <image:title>Lush Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Lush Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1899,11 +1293,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/luxora-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/luxora-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ESTCFCHFG.jpg?v=1777702550</image:loc>
-      <image:title>Luxora Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Luxora Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1913,11 +1302,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/maelune-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/maelune-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_76c130b1-b19c-401f-b035-7fe866d54ad9.jpg?v=1777702610</image:loc>
-      <image:title>Maelune Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Maelune Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1927,11 +1311,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/majesty-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/majesty-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/RETYFGU.jpg?v=1777702500</image:loc>
-      <image:title>Majesty Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Majesty Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1941,11 +1320,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mandala-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mandala-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_2.jpg?v=1777702807</image:loc>
-      <image:title>Mandala Designer Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mandala Designer Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1955,11 +1329,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mandolin-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mandolin-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/MANDOLIN_RUG_1.jpg?v=1777702444</image:loc>
-      <image:title>Mandolin Geometric Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mandolin Geometric Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1969,11 +1338,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/marble-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/marble-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ujhygtfrtgbhyht.jpg?v=1777702484</image:loc>
-      <image:title>Marble Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Marble Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1983,11 +1347,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/marine-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/marine-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/fgchvjbkn.jpg?v=1777702541</image:loc>
-      <image:title>Marine Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Marine Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -1997,11 +1356,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/marov-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/marov-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/marov_1.jpg?v=1777702595</image:loc>
-      <image:title>Marov Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Marov Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2011,11 +1365,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mazeirn-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mazeirn-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_b2acb4e6-92d0-4e23-b208-492281f23693.jpg?v=1777702631</image:loc>
-      <image:title>Mazeirn Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mazeirn Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2025,11 +1374,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/meandering-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/meandering-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_529795fc-3246-4bf9-9eff-eaeeabfa4181.jpg?v=1777702707</image:loc>
-      <image:title>Meandering Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Meandering Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2039,11 +1383,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/metropolis-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/metropolis-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/10_f1385202-1ad2-4c07-90a0-1f555f29baf0.jpg?v=1777702771</image:loc>
-      <image:title>Metropolis Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Metropolis Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2053,11 +1392,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/minimalist-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/minimalist-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/hgr.jpg?v=1777702468</image:loc>
-      <image:title>Minimalist Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Minimalist Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2067,11 +1401,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mirage-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mirage-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/hyyf.jpg?v=1777702460</image:loc>
-      <image:title>Mirage Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mirage Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2081,11 +1410,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mist-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mist-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/gdfghby.jpg?v=1777702442</image:loc>
-      <image:title>Mist Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mist Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2095,11 +1419,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mistrel-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mistrel-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/15_d09732b0-9166-4668-8b9f-b30505392777.jpg?v=1777702588</image:loc>
-      <image:title>Mistrel Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mistrel Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2109,11 +1428,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/monograph-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/monograph-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/13_6b99eb9a-5b8d-494a-b406-0effd99c0a26.jpg?v=1777702804</image:loc>
-      <image:title>Monograph Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Monograph Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2123,11 +1437,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/monolith-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/monolith-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/12.jpg?v=1777702570</image:loc>
-      <image:title>Monolith Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Monolith Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2137,11 +1446,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/moraines-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/moraines-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/105.32.56AM5.45.50AM.jpg?v=1777702671</image:loc>
-      <image:title>Moraines Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Moraines Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2151,11 +1455,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mores-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mores-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_71488b20-57c0-44b2-9f5d-afb8d88f88f6.jpg?v=1777702791</image:loc>
-      <image:title>Mores Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mores Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2165,11 +1464,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/morkel-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/morkel-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_94ab426f-2a94-4232-b8f5-3f2de15bce5c.jpg?v=1777702654</image:loc>
-      <image:title>Morkel Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Morkel Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2179,11 +1473,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/morse-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/morse-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_a77750bc-4d1a-45f8-8383-81e27a2c18ed.jpg?v=1777702778</image:loc>
-      <image:title>Morse Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Morse Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2193,11 +1482,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/mosaic-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/mosaic-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/TCYDHGVJ.jpg?v=1777702554</image:loc>
-      <image:title>Mosaic Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Mosaic Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2207,11 +1491,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/motif-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/motif-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_677eb757-a3e4-4da6-84b5-f2fcc65d199f.jpg?v=1777702812</image:loc>
-      <image:title>Motif Designer Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Motif Designer Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2221,11 +1500,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/nautilus-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/nautilus-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/xdgfhkytx.jpg?v=1777702560</image:loc>
-      <image:title>Nautilus Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Nautilus Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2235,11 +1509,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/navy-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/navy-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/44.37.58AM5.45.50AM.jpg?v=1777702662</image:loc>
-      <image:title>Navy Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Navy Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2249,11 +1518,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/nebula-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/nebula-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/Untitleddesign_35_c6e9d3bc-c53f-4d59-b74a-f66e916dc690.jpg?v=1777702562</image:loc>
-      <image:title>Nebula Abstract Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Nebula Abstract Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2263,11 +1527,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/neptune-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/neptune-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/neptune.jpg?v=1777702447</image:loc>
-      <image:title>Neptune Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Neptune Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2277,11 +1536,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/neruun-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/neruun-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_a154b24a-1913-4690-99f2-152391909861.jpg?v=1777702603</image:loc>
-      <image:title>Neruun Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Neruun Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2291,11 +1545,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/nexus-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/nexus-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_effcd7fe-664d-46ea-9c63-87f317e4b0ff.jpg?v=1777702445</image:loc>
-      <image:title>Nexus Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Nexus Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2305,11 +1554,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/noir-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/noir-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/xedtcfg.jpg?v=1777702515</image:loc>
-      <image:title>Noir Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Noir Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2319,11 +1563,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ochre-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ochre-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8.jpg?v=1777702709</image:loc>
-      <image:title>Ochre Abstract Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ochre Abstract Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2333,11 +1572,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/olive-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/olive-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/OLIVE.jpg?v=1777702477</image:loc>
-      <image:title>Olive Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Olive Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2347,11 +1581,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/opulence-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/opulence-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_1500x1500_9daf7c56-2233-429d-be30-c3508765312c.jpg?v=1777702496</image:loc>
-      <image:title>Opulence Abstract Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Opulence Abstract Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2361,11 +1590,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/orbiter-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/orbiter-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_1fb0efa1-864e-44dc-aac9-0afd1c748730.jpg?v=1777702690</image:loc>
-      <image:title>Orbiter Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Orbiter Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2375,11 +1599,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/orlin-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/orlin-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/23.jpg?v=1777702580</image:loc>
-      <image:title>Orlin Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Orlin Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2389,11 +1608,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ornate-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ornate-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/FGX.jpg?v=1777702547</image:loc>
-      <image:title>Ornate Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ornate Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2403,11 +1617,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/orniv-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/orniv-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7.jpg?v=1777702565</image:loc>
-      <image:title>Orniv Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Orniv Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2417,11 +1626,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/orniv-traditional-pure-new-zealand-wool-rug-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/orniv-traditional-pure-new-zealand-wool-rug-2.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8_3a8033f7-1470-4078-9de5-34273ca4f6b4.jpg?v=1777702726</image:loc>
-      <image:title>Orniv Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Orniv Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2431,11 +1635,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/orriva-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/orriva-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/12_60a6e15d-481e-415b-8906-8a347455994c.jpg?v=1777702642</image:loc>
-      <image:title>Orriva Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Orriva Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2445,11 +1644,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/orryn-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/orryn-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/20_013b0815-227d-4cfd-b05f-d53fd6b7a669.jpg?v=1777702594</image:loc>
-      <image:title>Orryn Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Orryn Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2459,11 +1653,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/palette-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/palette-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/24.37.58AM5.45.50AM.jpg?v=1777702663</image:loc>
-      <image:title>Palette Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Palette Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2473,11 +1662,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/paper-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/paper-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/veruveyur.jpg?v=1777702493</image:loc>
-      <image:title>Paper Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Paper Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2487,11 +1671,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/paradise-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/paradise-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/cfghvjbknm.jpg?v=1777702539</image:loc>
-      <image:title>Paradise Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Paradise Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2501,11 +1680,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/periphery-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/periphery-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/115.32.56AM5.45.50AM.jpg?v=1777702676</image:loc>
-      <image:title>Periphery Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Periphery Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2515,11 +1689,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/petal-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/petal-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/hjfhj-2.jpg?v=1777702507</image:loc>
-      <image:title>Petal Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Petal Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2529,11 +1698,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/petalia-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/petalia-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/trrrr_r_34.jpg?v=1777702563</image:loc>
-      <image:title>Petalia Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Petalia Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2543,11 +1707,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/pinnate-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/pinnate-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_a7f2bd64-54fc-4ef3-b740-9ef009fdd07f.jpg?v=1777702701</image:loc>
-      <image:title>Pinnate Geometric Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Pinnate Geometric Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2557,11 +1716,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/portico-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/portico-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8_e52ee005-4480-4b8e-afca-dd053a399496.jpg?v=1777702781</image:loc>
-      <image:title>Portico Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Portico Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2571,11 +1725,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/puresuit-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/puresuit-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6.jpg?v=1777702462</image:loc>
-      <image:title>Puresuit Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Puresuit Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2585,11 +1734,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/quadorra-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/quadorra-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/14_0b05a28e-c3e1-4650-b4e9-d7aa25fbe4e4.jpg?v=1777702651</image:loc>
-      <image:title>Quadorra Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Quadorra Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2599,11 +1743,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/radiant-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/radiant-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/knjlhgcfhgcvbkhgvhbjgv.jpg?v=1777702520</image:loc>
-      <image:title>Radiant Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Radiant Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2613,11 +1752,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/regal-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/regal-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/cfvbn.jpg?v=1777702538</image:loc>
-      <image:title>Regal Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Regal Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2627,11 +1761,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/relic-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/relic-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_0ea4d36e-74eb-4124-8a73-d5e9f27c8b2a.jpg?v=1777702787</image:loc>
-      <image:title>Relic Designer Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Relic Designer Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2641,11 +1770,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/respire-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/respire-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_a355b513-2188-441b-a528-24dcc871e9ff.jpg?v=1777702744</image:loc>
-      <image:title>Respire Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Respire Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2655,11 +1779,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/reverie-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/reverie-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/eddw.jpg?v=1777702491</image:loc>
-      <image:title>Reverie Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Reverie Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2669,11 +1788,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/rhythm-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/rhythm-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/YFJFT.jpg?v=1777702503</image:loc>
-      <image:title>Rhythm Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Rhythm Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2683,11 +1797,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/riddel-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/riddel-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_5c307471-96d9-43c8-8d3c-9f0e276d3a8b.jpg?v=1777702635</image:loc>
-      <image:title>Riddel Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Riddel Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2697,11 +1806,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/rippelle-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/rippelle-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_4c4068e9-1e6e-4ca5-876b-f0f64f421e33.jpg?v=1777702586</image:loc>
-      <image:title>Rippelle Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Rippelle Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2711,11 +1815,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/rippelle-traditional-pure-new-zealand-wool-rug-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/rippelle-traditional-pure-new-zealand-wool-rug-2.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_fe9be25d-865a-4836-803e-2df106641adb.jpg?v=1777702731</image:loc>
-      <image:title>Rippelle Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Rippelle Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2725,11 +1824,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/royal-bengal-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/royal-bengal-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/rantham.jpg?v=1777702509</image:loc>
-      <image:title>Royal Bengal Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Royal Bengal Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2739,11 +1833,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/royal-white-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/royal-white-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/mukund.jpg?v=1777702511</image:loc>
-      <image:title>Royal White Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Royal White Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2753,11 +1842,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/ruffled-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/ruffled-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/6_b24cb930-a8a6-403d-a710-559d013f4e2c.jpg?v=1777702703</image:loc>
-      <image:title>Ruffled Geometric Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Ruffled Geometric Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2767,11 +1851,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/rune-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/rune-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_2e5b5ddd-1d0d-4cac-bbcb-b30c9a019682.jpg?v=1777702786</image:loc>
-      <image:title>Rune Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Rune Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2781,11 +1860,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/russet-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/russet-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_1f00f214-a4f9-48a3-b243-004f5c3c0f45.jpg?v=1777702699</image:loc>
-      <image:title>Russet Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Russet Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2795,11 +1869,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sage-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sage-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/11_58ce2804-2114-4933-955e-3cc02380ffe3.jpg?v=1777702775</image:loc>
-      <image:title>Sage Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sage Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2809,11 +1878,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sanctuary-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sanctuary-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/cfgh.jpg?v=1777702530</image:loc>
-      <image:title>Sanctuary Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sanctuary Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2823,11 +1887,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sanctum-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sanctum-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_31bca7c4-8c7f-4dd2-ab4a-612919a6cfde.jpg?v=1777702822</image:loc>
-      <image:title>Sanctum Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sanctum Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2837,11 +1896,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sapphire-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sapphire-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/SAPPHIRE.jpg?v=1777702479</image:loc>
-      <image:title>Sapphire Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sapphire Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2851,11 +1905,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/savanna-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/savanna-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_8b9bb38a-48cd-4d4b-b394-47d352bb5f15.jpg?v=1777702722</image:loc>
-      <image:title>Savanna Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Savanna Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2865,11 +1914,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sculptural-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sculptural-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/14.37.58AM5.45.50AM.jpg?v=1777702665</image:loc>
-      <image:title>Sculptural Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sculptural Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2879,11 +1923,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/seanova-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/seanova-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_964241d7-ed99-444c-934c-cf7bff3dd7ed.jpg?v=1777702732</image:loc>
-      <image:title>Seanova Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Seanova Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2893,11 +1932,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/seanova-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/seanova-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8_6aee1e8f-e9a1-4871-8042-8c757d4c3d9e.jpg?v=1777702585</image:loc>
-      <image:title>Seanova Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Seanova Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2907,11 +1941,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sediment-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sediment-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_f4ede4ac-0794-44c8-b1f5-c111631289fc.jpg?v=1777702720</image:loc>
-      <image:title>Sediment Traditional Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sediment Traditional Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2921,11 +1950,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/senate-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/senate-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/11_034e8bb5-7aaa-4154-84b7-b7ed847d4dd4.jpg?v=1777702760</image:loc>
-      <image:title>Senate Floral Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Senate Floral Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2935,11 +1959,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sentinel-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sentinel-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_3.jpg?v=1777702806</image:loc>
-      <image:title>Sentinel Traditional Hand-Knotted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sentinel Traditional Hand-Knotted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2949,11 +1968,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/seraphine-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/seraphine-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/HTFYHMHJBNKJ.jpg?v=1777702555</image:loc>
-      <image:title>Seraphine Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Seraphine Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2963,11 +1977,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/serene-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/serene-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/JFYTFG_e0e75c63-7400-475e-a65e-9975486c53ca.jpg?v=1777702513</image:loc>
-      <image:title>Serene Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Serene Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2977,11 +1986,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/serpent-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/serpent-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/95.32.56AM5.45.50AM.jpg?v=1777702683</image:loc>
-      <image:title>Serpent Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Serpent Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -2991,11 +1995,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/shadow-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/shadow-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ytrdfgyhjcgvhbjnhgh.jpg?v=1777702523</image:loc>
-      <image:title>Shadow Geometric Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Shadow Geometric Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3005,11 +2004,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/shag-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/shag-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_ed20ea9f-791c-4102-9e97-76836fc95f2a.jpg?v=1777702454</image:loc>
-      <image:title>Shag Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Shag Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3019,11 +2013,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/shell-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/shell-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/rtxfcghvbjhkjfxdzfghkfxgh.jpg?v=1777702559</image:loc>
-      <image:title>Shell Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Shell Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3033,11 +2022,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/shoreline-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/shoreline-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_482b297d-3954-42f9-9f62-33d2eca3eaf3.jpg?v=1777702712</image:loc>
-      <image:title>Shoreline Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Shoreline Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3047,11 +2031,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sienna-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sienna-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/Sienna_rug_1.jpg?v=1777702677</image:loc>
-      <image:title>Sienna Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sienna Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3061,11 +2040,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/silt-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/silt-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/13_94013ba8-b081-4432-99a4-408629ece10e.jpg?v=1777702743</image:loc>
-      <image:title>Silt Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Silt Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3075,11 +2049,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/skechbook-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/skechbook-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/17_67a61a86-1a7c-4366-8920-f63943e54a82.jpg?v=1777702624</image:loc>
-      <image:title>Skechbook Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Skechbook Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3089,11 +2058,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/skechbook-traditional-pure-new-zealand-wool-rug-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/skechbook-traditional-pure-new-zealand-wool-rug-2.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_bd5da6ec-90da-4e40-b3f4-5d5535a43bd5.jpg?v=1777702734</image:loc>
-      <image:title>Skechbook Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Skechbook Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3103,11 +2067,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/slate-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/slate-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_d25f65a5-2a01-463d-88f9-83be57afe6db.jpg?v=1777702754</image:loc>
-      <image:title>Slate Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Slate Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3117,11 +2076,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/snail-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/snail-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/RXDCTFVGHBJ.jpg?v=1777702448</image:loc>
-      <image:title>Snail Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Snail Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3131,11 +2085,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/snuggle-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/snuggle-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/15.jpg?v=1777702574</image:loc>
-      <image:title>Snuggle Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Snuggle Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3145,11 +2094,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/solace-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/solace-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_266f9368-4a7b-40a1-8ba6-aa4f9abc9341.jpg?v=1777702819</image:loc>
-      <image:title>Solace Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Solace Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3159,11 +2103,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/solan-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/solan-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_b5c40169-cb8b-4cbb-a166-059a4eb4659b.jpg?v=1777702765</image:loc>
-      <image:title>Solan Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Solan Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3173,11 +2112,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/solmaze-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/solmaze-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_c0302dd2-fe1e-4a84-9a65-3cf8e8b054a5.jpg?v=1777702633</image:loc>
-      <image:title>Solmaze Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Solmaze Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3187,11 +2121,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/solum-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/solum-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_453b2e2e-d40f-4670-892f-a3215bff2f6d.jpg?v=1777702793</image:loc>
-      <image:title>Solum Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Solum Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3201,11 +2130,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/solurein-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/solurein-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_29678def-7bc4-4cda-9119-db0eb3b15dc9.jpg?v=1777702601</image:loc>
-      <image:title>Solurein Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Solurein Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3215,11 +2139,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sorelle-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sorelle-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/20_0b0ec338-bc64-4d49-b400-e3ec6eea1e4c.jpg?v=1777702627</image:loc>
-      <image:title>Sorelle Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sorelle Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3229,11 +2148,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sorelle-traditional-pure-new-zealand-wool-rug-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sorelle-traditional-pure-new-zealand-wool-rug-2.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_f4b112e5-ed9b-4c75-b575-81b77f12608a.jpg?v=1777702729</image:loc>
-      <image:title>Sorelle Traditional Pure New Zealand Wool Rug 2 Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sorelle Traditional Pure New Zealand Wool Rug 2 Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3243,11 +2157,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/spectrum-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/spectrum-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_7684a9f1-1233-4110-87a2-c88a442f8a3e.jpg?v=1777702451</image:loc>
-      <image:title>Spectrum Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Spectrum Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3257,11 +2166,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/star-brust-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/star-brust-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/24.jpg?v=1777702581</image:loc>
-      <image:title>Star Brust Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Star Brust Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3271,11 +2175,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/starlite-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/starlite-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5.jpg?v=1777702434</image:loc>
-      <image:title>Starlite Abstract Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Starlite Abstract Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3285,11 +2184,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/stroke-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/stroke-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/13_c3260d9f-a703-4c7c-b810-c3d11e813662.jpg?v=1777702572</image:loc>
-      <image:title>Stroke Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Stroke Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3299,11 +2193,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/stroke-traditional-pure-new-zealand-wool-rug-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/stroke-traditional-pure-new-zealand-wool-rug-2.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_4376bd7a-adf8-4dce-876f-769655d034a8.jpg?v=1777702735</image:loc>
-      <image:title>Stroke Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Stroke Traditional Pure New Zealand Wool Rug 2 Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3313,11 +2202,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sunray-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sunray-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/25.jpg?v=1777702583</image:loc>
-      <image:title>Sunray Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sunray Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3327,11 +2211,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/swatch-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/swatch-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/18_7ba4bab3-f79c-4b3f-ad13-1c9e7dfe0629.jpg?v=1777702625</image:loc>
-      <image:title>Swatch Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Swatch Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3341,11 +2220,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/sylen-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/sylen-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/18_96770fbe-a1d1-496e-bf7b-5f019f63e109.jpg?v=1777702591</image:loc>
-      <image:title>Sylen Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Sylen Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3355,11 +2229,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/symbol-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/symbol-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/22_c1feabf7-007d-4b47-aa7c-194dadce3fcc.jpg?v=1777702597</image:loc>
-      <image:title>Symbol Traditional Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Symbol Traditional Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3369,11 +2238,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/symmetry-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/symmetry-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/symmetry.jpg?v=1777702466</image:loc>
-      <image:title>Symmetry Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Symmetry Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3383,11 +2247,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/synchrony-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/synchrony-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/9_5517e43a-dff6-49a5-b349-b8e7179849f3.jpg?v=1777702772</image:loc>
-      <image:title>Synchrony Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Synchrony Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3397,11 +2256,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/talud-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/talud-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_1d04e1b2-d190-4586-8ca4-561ac57dad5b.jpg?v=1777702794</image:loc>
-      <image:title>Talud Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Talud Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3411,11 +2265,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/tansel-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/tansel-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/8_11b34c9f-0bfa-4307-a79b-8b08a7195fff.jpg?v=1777702615</image:loc>
-      <image:title>Tansel Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Tansel Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3425,11 +2274,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/tavren-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/tavren-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/5_0da4bd04-50fd-403e-8994-5d41925a076d.jpg?v=1777702608</image:loc>
-      <image:title>Tavren Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Tavren Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3439,11 +2283,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/teak-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/teak-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2.jpg?v=1777702450</image:loc>
-      <image:title>Teak Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Teak Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3453,11 +2292,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/teal-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/teal-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/94.37.58AM5.45.50AM.jpg?v=1777702659</image:loc>
-      <image:title>Teal Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Teal Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3467,11 +2301,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/terracotta-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/terracotta-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_565baea9-7698-4d25-b4e6-d554c48bbf1b.jpg?v=1777702718</image:loc>
-      <image:title>Terracotta Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Terracotta Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3481,11 +2310,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/terraform-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/terraform-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/13.jpg?v=1777702568</image:loc>
-      <image:title>Terraform Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Terraform Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3495,11 +2319,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/tidal-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/tidal-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/IMG_5439_JPEG.jpg?v=1777702435</image:loc>
-      <image:title>Tidal Geometric Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Tidal Geometric Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3509,11 +2328,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/trellis-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/trellis-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/JVYTUDXZFCGF.jpg?v=1777702548</image:loc>
-      <image:title>Trellis Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Trellis Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3523,11 +2337,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/trident-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/trident-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_15aff4ee-dd44-47d0-a68d-6e196a36e201.jpg?v=1777702738</image:loc>
-      <image:title>Trident Geometric Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Trident Geometric Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3537,11 +2346,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/tropical-floral-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/tropical-floral-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ghvhbjn.jpg?v=1777702534</image:loc>
-      <image:title>Tropical Floral Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Tropical Floral Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3551,11 +2355,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/tundra-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/tundra-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/2_63b46da4-541f-42cc-b07a-35d01a581bb2.jpg?v=1777702768</image:loc>
-      <image:title>Tundra Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Tundra Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3565,11 +2364,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/velthor-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/velthor-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1_c2c912fe-a46f-499e-8e16-06f9af6b563c.jpg?v=1777702655</image:loc>
-      <image:title>Velthor Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Velthor Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3579,11 +2373,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/verdant-solid-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/verdant-solid-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_b0eb2b5b-0455-46b8-9de8-7123cf1c735a.jpg?v=1777702748</image:loc>
-      <image:title>Verdant Solid Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Verdant Solid Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3593,11 +2382,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/verdara-designer-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/verdara-designer-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_7043ec0b-dad2-480d-bc24-d99d18f604ad.jpg?v=1777702728</image:loc>
-      <image:title>Verdara Designer Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Verdara Designer Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3607,11 +2391,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/verdara-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/verdara-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/19_82fcdf4a-51d8-4a64-9327-cd23b5e7c900.jpg?v=1777702628</image:loc>
-      <image:title>Verdara Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Verdara Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3621,11 +2400,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/vermara-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/vermara-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/16_4fa22277-9c35-4f39-9569-e333c153209c.jpg?v=1777702589</image:loc>
-      <image:title>Vermara Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Vermara Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3635,11 +2409,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/vermillion-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/vermillion-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4_8796dae5-32ea-4255-a8a6-d64b20c5bcab.jpg?v=1777702693</image:loc>
-      <image:title>Vermillion Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Vermillion Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3649,11 +2418,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/vertex-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/vertex-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/VERTEX.jpg?v=1777702482</image:loc>
-      <image:title>Vertex Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Vertex Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3663,11 +2427,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/vesperal-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/vesperal-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/55.32.56AM5.45.50AM.jpg?v=1777702684</image:loc>
-      <image:title>Vesperal Traditional Hand-Tufted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Vesperal Traditional Hand-Tufted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3677,11 +2436,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/vestige-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/vestige-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_b0e1540e-d9f8-48e3-9468-e2be507ccf59.jpg?v=1777702785</image:loc>
-      <image:title>Vestige Geometric Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Vestige Geometric Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3691,11 +2445,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/waymark-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/waymark-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/17_af931448-b801-4284-88a5-f641bda28612.jpg?v=1777702801</image:loc>
-      <image:title>Waymark Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Waymark Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3705,11 +2454,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/zen-geometric-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/zen-geometric-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ERSZFGVH.jpg?v=1777702501</image:loc>
-      <image:title>Zen Geometric Handwoven Pure New Zealand Wool Rug</image:title>
-      <image:caption>Zen Geometric Handwoven Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3719,11 +2463,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/zenith-abstract-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/zenith-abstract-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/FVFGFHGDT.jpg?v=1777702551</image:loc>
-      <image:title>Zenith Abstract Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Zenith Abstract Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
   <url>
@@ -3733,11 +2472,6 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/products/zeyraen-traditional-pure-new-zealand-wool-rug.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/products/zeyraen-traditional-pure-new-zealand-wool-rug.html" />
-    <image:image>
-      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/19_48962511-b669-475d-9a7c-96142505417f.jpg?v=1777702592</image:loc>
-      <image:title>Zeyraen Traditional Handcrafted Pure New Zealand Wool Rug</image:title>
-      <image:caption>Zeyraen Traditional Handcrafted Pure New Zealand Wool Rug – pure New Zealand wool rug, hand-crafted in Bhadohi by Rugkari</image:caption>
-    </image:image>
   </url>
 
 </urlset>

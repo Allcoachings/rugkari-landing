@@ -41,7 +41,6 @@ foreach ($r in $csv) {
 $sb = New-Object System.Text.StringBuilder
 [void]$sb.AppendLine('<?xml version="1.0" encoding="UTF-8"?>')
 [void]$sb.AppendLine('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"')
-[void]$sb.AppendLine('        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9"')
 [void]$sb.AppendLine('        xmlns:xhtml="http://www.w3.org/1999/xhtml">')
 [void]$sb.AppendLine('')
 
@@ -57,20 +56,16 @@ function Add-Url($locPath, $priority, $changefreq, $imgUrl, $imgTitle, $imgCapti
   [void]$sb.AppendLine('    <priority>' + $priority + '</priority>')
   [void]$sb.AppendLine('    <xhtml:link rel="alternate" hreflang="en-IN" href="' + (Xml-Escape $loc) + '" />')
   [void]$sb.AppendLine('    <xhtml:link rel="alternate" hreflang="x-default" href="' + (Xml-Escape $loc) + '" />')
-  if ($imgUrl) {
-    [void]$sb.AppendLine('    <image:image>')
-    [void]$sb.AppendLine('      <image:loc>' + (Xml-Escape $imgUrl) + '</image:loc>')
-    if ($imgTitle)   { [void]$sb.AppendLine('      <image:title>' + (Xml-Escape $imgTitle) + '</image:title>') }
-    if ($imgCaption) { [void]$sb.AppendLine('      <image:caption>' + (Xml-Escape $imgCaption) + '</image:caption>') }
-    [void]$sb.AppendLine('    </image:image>')
-  }
+  # Google deprecated the image sitemap extension (sitemap-image/0.9) — images are
+  # now discovered via HTML crawling, so we emit no <image:*> tags. $imgUrl and the
+  # remaining image parameters are intentionally unused.
   [void]$sb.AppendLine('  </url>')
   [void]$sb.AppendLine('')
 }
 
 # Homepage
 [void]$sb.AppendLine('  <!-- Homepage -->')
-Add-Url '/' '1.0' 'weekly' '/assets/RUGKARI-LOGO.webp' "Rugkari $EN The Rug Guide" 'Handcrafted pure New Zealand wool rugs from Bhadohi, India'
+Add-Url '/' '1.0' 'weekly' 'https://rugs.rugkari.com/assets/RUGKARI-LOGO.webp' "Rugkari $EN The Rug Guide" 'Handcrafted pure New Zealand wool rugs from Bhadohi, India'
 
 # Brand / About
 [void]$sb.AppendLine('  <!-- Brand / About -->')
