@@ -1,0 +1,31 @@
+# ============================================================
+# Rugkari — files that must NOT be committed or deployed
+# ============================================================
+
+# Claude Code local config and memory store
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Editor / IDE folders
+.vscode/
+.idea/
+*.iml
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Backup and temp files
+*.bak
+*.tmp
+*.orig
+*.rej

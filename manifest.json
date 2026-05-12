@@ -18,32 +18,32 @@
       "short_name": "Compare Rugs",
       "description": "The definitive buying guide for Indian buyers",
       "url": "/hand-tufted-vs-machine-made-rugs",
-      "icons": [{ "src": "https://rugkari.com/cdn/shop/files/rugkari-logo.webp", "sizes": "96x96" }]
+      "icons": [{ "src": "/assets/RUGKARI-LOGO.webp", "sizes": "96x96" }]
     },
     {
       "name": "Best Rugs for Living Room",
       "short_name": "Living Room Guide",
       "description": "8 best hand-tufted rugs for Indian living rooms 2026",
       "url": "/best-hand-tufted-rugs-for-living-room",
-      "icons": [{ "src": "https://rugkari.com/cdn/shop/files/rugkari-logo.webp", "sizes": "96x96" }]
+      "icons": [{ "src": "/assets/RUGKARI-LOGO.webp", "sizes": "96x96" }]
     },
     {
       "name": "Remove Coffee Stains",
       "short_name": "Stain Removal",
       "description": "Safe 5-step stain removal for wool rugs",
       "url": "/how-to-remove-coffee-stains-from-wool-rugs",
-      "icons": [{ "src": "https://rugkari.com/cdn/shop/files/rugkari-logo.webp", "sizes": "96x96" }]
+      "icons": [{ "src": "/assets/RUGKARI-LOGO.webp", "sizes": "96x96" }]
     }
   ],
   "icons": [
     {
-      "src": "https://rugkari.com/cdn/shop/files/rugkari-logo.webp",
+      "src": "/assets/RUGKARI-LOGO.webp",
       "sizes": "192x192",
       "type": "image/webp",
       "purpose": "any"
     },
     {
-      "src": "https://rugkari.com/cdn/shop/files/rugkari-logo.webp",
+      "src": "/assets/RUGKARI-LOGO.webp",
       "sizes": "512x512",
       "type": "image/webp",
       "purpose": "maskable"

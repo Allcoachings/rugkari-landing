@@ -1,0 +1,46 @@
+# ============================================================
+# Rugkari — paths to exclude from production deploys
+# ============================================================
+# Usage examples:
+#   rsync -av --exclude-from=.deployignore ./ user@host:/var/www/
+#   tar --exclude-from=.deployignore -czf site.tar.gz .
+#
+# These are dev-only and must never be uploaded to the live site.
+
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Claude Code local config + memory
+.claude/
+
+# Generators and source data (build-time only, not served)
+Rugkari-data/
+
+# Header/footer partials — already inlined into every page, never fetched
+snippets/
+
+# This file itself
+.deployignore
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Secrets / local env
+.env
+.env.*
+
+# Backup / temp files
+*.bak
+*.tmp
+*.orig
+*.rej

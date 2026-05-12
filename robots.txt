@@ -1,26 +1,70 @@
+# =============================================================================
 # Rugkari — The Rug Guide (rugs.rugkari.com)
+# Production robots.txt — last updated 2026-05-12
+# Policy: open to search + AI training/search crawlers; blocked from tracking
+# query strings, internal data folders, and non-canonical endpoints.
+# =============================================================================
 
+# ---- Default policy ---------------------------------------------------------
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /products/
+Allow: /collections/
+Allow: /blog/
+Allow: /pages/
 Disallow: /404.html
 Disallow: /cdn-cgi/
-Disallow: /*?utm_
+Disallow: /snippets/
+Disallow: /Rugkari-data/
+Disallow: /*?utm_*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+Disallow: /*?msclkid=*
+Disallow: /*?mc_cid=*
+Disallow: /*?mc_eid=*
+Disallow: /*?ref=*
+Disallow: /*?affiliate=*
+Disallow: /*?session=*
+Disallow: /*&utm_*
 
-# Google crawlers
+# ---- Google -----------------------------------------------------------------
 User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
 
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+# Google AI training (Gemini, Bard, Vertex)
 User-agent: Google-Extended
 Allow: /
 
-# Bing
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# ---- Microsoft / Bing -------------------------------------------------------
 User-agent: Bingbot
 Allow: /
 
-# AI assistants and LLM crawlers
+User-agent: BingPreview
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# ---- OpenAI / ChatGPT -------------------------------------------------------
 User-agent: GPTBot
 Allow: /
 
@@ -30,6 +74,7 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# ---- Anthropic / Claude -----------------------------------------------------
 User-agent: ClaudeBot
 Allow: /
 
@@ -39,28 +84,59 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+# ---- Perplexity -------------------------------------------------------------
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ---- Apple / Siri -----------------------------------------------------------
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: CCBot
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
+# ---- Meta / Llama -----------------------------------------------------------
 User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: Meta-ExternalFetcher
 Allow: /
 
+User-agent: FacebookBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# ---- DuckDuckGo / You / Kagi -----------------------------------------------
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
 User-agent: YouBot
 Allow: /
 
-User-agent: Diffbot
+# ---- Common Crawl (training data) ------------------------------------------
+User-agent: CCBot
+Allow: /
+
+# ---- Cohere -----------------------------------------------------------------
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# ---- Mistral / Amazon / Bytedance ------------------------------------------
+User-agent: MistralAI-User
 Allow: /
 
 User-agent: Amazonbot
@@ -69,4 +145,44 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+# ---- Diffbot / ImagesiftBot / PetalBot -------------------------------------
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# ---- Yandex / Baidu / Naver -------------------------------------------------
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Naverbot
+Allow: /
+
+# ---- Block aggressive / abusive crawlers -----------------------------------
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# ---- Sitemap discovery ------------------------------------------------------
 Sitemap: https://rugs.rugkari.com/sitemap.xml
+
+# ---- Host (legacy, harmless) -----------------------------------------------
+Host: rugs.rugkari.com
