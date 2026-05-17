@@ -37,6 +37,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} ^/[^/]+/$
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
+# 6b. Special: /blog → /blog.html (articles index — overrides /blog/ directory match)
+RewriteRule ^blog/?$ /blog.html [L]
+
 # 7a. Internal rewrite: /slug → /slug.html  (root-level HTML files)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
