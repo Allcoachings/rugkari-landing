@@ -32,6 +32,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/rug-care" />
   </url>
 
+  <url>
+    <loc>https://rugs.rugkari.com/blog</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/blog" />
+  </url>
+
   <!-- Collections -->
   <url>
     <loc>https://rugs.rugkari.com/collections/abstract-rugs.html</loc>
