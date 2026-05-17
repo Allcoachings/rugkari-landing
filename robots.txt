@@ -1,6 +1,6 @@
 # =============================================================================
 # Rugkari — The Rug Guide (rugs.rugkari.com)
-# Production robots.txt — last updated 2026-05-12
+# Production robots.txt — last updated 2026-05-16
 # Policy: open to search + AI training/search crawlers; blocked from tracking
 # query strings, internal data folders, and non-canonical endpoints.
 # =============================================================================

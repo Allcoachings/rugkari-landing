@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Homepage -->
   <url>
@@ -24,9 +25,9 @@
 
   <url>
     <loc>https://rugs.rugkari.com/rug-care</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/rug-care" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/rug-care" />
   </url>
@@ -240,86 +241,271 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/pages/privacy-policy.html" />
   </url>
 
-  <!-- Blog Articles (cornerstone editorial) -->
+  <!-- Blog Articles (cornerstone editorial) — priority ordered by search volume + commercial intent -->
   <url>
-    <loc>https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room" />
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/designer-rugs-bernabeifreeman-contour-lo-wr-1.jpg?v=1777702443</image:loc>
+      <image:title>How to remove coffee stains from pure New Zealand wool rugs</image:title>
+      <image:caption>Step-by-step guide to safely removing coffee stains from hand-tufted wool rugs.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/premium-abstract-area-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/premium-abstract-area-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/premium-abstract-area-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_91faef0e-6131-4c60-b908-ee6d896b3ba8.jpg?v=1777702686</image:loc>
+      <image:title>Premium abstract area rug in pure New Zealand wool</image:title>
+      <image:caption>Designer hand-tufted abstract area rug from the Rugkari premium collection.</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/hand-tufted-vs-machine-made-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445</image:loc>
+      <image:title>Hand-tufted vs machine-made rugs comparison</image:title>
+      <image:caption>Side-by-side comparison of hand-tufted and machine-made rugs for Indian buyers.</image:caption>
+    </image:image>
   </url>
 
   <url>
-    <loc>https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://rugs.rugkari.com/how-to-clean-hand-tufted-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-remove-coffee-stains-from-wool-rugs" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-clean-hand-tufted-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-clean-hand-tufted-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4695-kellywearstler-districtspruce-rug-1200x1800-roomset__38058.jpg?v=1777702455</image:loc>
+      <image:title>How to clean hand-tufted wool rugs at home</image:title>
+      <image:caption>The complete care protocol for hand-tufted pure New Zealand wool rugs.</image:caption>
+    </image:image>
   </url>
 
   <url>
-    <loc>https://rugs.rugkari.com/how-to-choose-rug-size-for-living-room-india</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://rugs.rugkari.com/handcrafted-rugs-india-online</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-choose-rug-size-for-living-room-india" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-choose-rug-size-for-living-room-india" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/handcrafted-rugs-india-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/handcrafted-rugs-india-online" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_7043ec0b-dad2-480d-bc24-d99d18f604ad.jpg?v=1777702728</image:loc>
+      <image:title>Handcrafted Indian wool rug from Bhadohi</image:title>
+      <image:caption>Maker-direct handcrafted rugs from India's GI-tagged carpet city of Bhadohi.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/best-hand-tufted-rugs-for-living-room" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4695-kellywearstler-districtspruce-rug-1200x1800-roomset__38058.jpg?v=1777702455</image:loc>
+      <image:title>Best hand-tufted rugs for Indian living rooms 2026</image:title>
+      <image:caption>Editor's picks of hand-tufted wool rugs for Indian living rooms.</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://rugs.rugkari.com/hand-knotted-vs-hand-tufted-rugs-difference</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/hand-knotted-vs-hand-tufted-rugs-difference" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/hand-knotted-vs-hand-tufted-rugs-difference" />
-  </url>
-
-  <url>
-    <loc>https://rugs.rugkari.com/best-rugs-for-bedroom-india-guide</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/best-rugs-for-bedroom-india-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/best-rugs-for-bedroom-india-guide" />
-  </url>
-
-  <url>
-    <loc>https://rugs.rugkari.com/how-to-care-for-pure-new-zealand-wool-rugs</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-care-for-pure-new-zealand-wool-rugs" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-care-for-pure-new-zealand-wool-rugs" />
-  </url>
-
-  <url>
-    <loc>https://rugs.rugkari.com/custom-rugs-india-everything-to-know</loc>
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/custom-rugs-india-everything-to-know" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/custom-rugs-india-everything-to-know" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/1200x1800---cc_plexa_r_c9edf421-09e9-4752-be04-8e0b82194cc0.jpg?v=1777702445</image:loc>
+      <image:title>Hand-knotted vs hand-tufted rugs durability comparison</image:title>
+      <image:caption>Construction and durability differences between hand-knotted and hand-tufted rugs.</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://rugs.rugkari.com/unshaped-rugs-carpets-india-designer-guide</loc>
-    <lastmod>2026-05-13</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/unshaped-rugs-carpets-india-designer-guide" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/unshaped-rugs-carpets-india-designer-guide" />
+    <image:image>
+      <image:loc>https://rugkari.com/cdn/shop/collections/1_482b297d-3954-42f9-9f62-33d2eca3eaf3.jpg?v=1777704523</image:loc>
+      <image:title>Unshaped designer rugs and carpets in India</image:title>
+      <image:caption>Sculptural, irregular-silhouette designer rugs in pure New Zealand wool.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/custom-rugs-india-everything-to-know</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/custom-rugs-india-everything-to-know" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/custom-rugs-india-everything-to-know" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4.jpg?v=1777702439</image:loc>
+      <image:title>Custom rugs in India — complete buyer guide</image:title>
+      <image:caption>Everything to know about commissioning a custom rug in India.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/custom-size-hand-tufted-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/custom-size-hand-tufted-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/custom-size-hand-tufted-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4.jpg?v=1777702439</image:loc>
+      <image:title>Custom size hand-tufted rugs in India</image:title>
+      <image:caption>Order guide for custom-dimension hand-tufted pure NZ wool rugs woven in Bhadohi.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/best-rugs-for-bedroom-india-guide</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/best-rugs-for-bedroom-india-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/best-rugs-for-bedroom-india-guide" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/esduotfgcdfsuycfgh.jpg?v=1777702456</image:loc>
+      <image:title>Best rugs for bedroom India</image:title>
+      <image:caption>Bedroom rug guide — sizing, materials and placement for Indian homes.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/how-to-choose-rug-size-for-living-room-india</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-choose-rug-size-for-living-room-india" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-choose-rug-size-for-living-room-india" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/4695-kellywearstler-districtspruce-rug-1200x1800-roomset__38058.jpg?v=1777702455</image:loc>
+      <image:title>How to choose rug size for living room in India</image:title>
+      <image:caption>India-specific rug sizing guide — 6x9, 8x10, 9x12 ft layouts.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/how-to-care-for-pure-new-zealand-wool-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/how-to-care-for-pure-new-zealand-wool-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/how-to-care-for-pure-new-zealand-wool-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/designer-rugs-bernabeifreeman-contour-lo-wr-1.jpg?v=1777702443</image:loc>
+      <image:title>How to care for pure New Zealand wool rugs</image:title>
+      <image:caption>Complete care guide — vacuuming, rotation, spill response and professional cleaning intervals.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/pure-new-zealand-wool-abstract-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/pure-new-zealand-wool-abstract-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/pure-new-zealand-wool-abstract-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/7_529795fc-3246-4bf9-9eff-eaeeabfa4181.jpg?v=1777702707</image:loc>
+      <image:title>Pure New Zealand wool abstract rugs</image:title>
+      <image:caption>Why pure NZ wool is the global benchmark for abstract designer rugs.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/hypoallergenic-rugs-for-kids</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/hypoallergenic-rugs-for-kids" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/hypoallergenic-rugs-for-kids" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/ry.jpg?v=1777702476</image:loc>
+      <image:title>Hypoallergenic rugs for kids and nurseries</image:title>
+      <image:caption>Why pure New Zealand wool is the safest rug fibre for children's rooms.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/20mm-pile-height-wool-rugs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/20mm-pile-height-wool-rugs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/20mm-pile-height-wool-rugs" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_7043ec0b-dad2-480d-bc24-d99d18f604ad.jpg?v=1777702728</image:loc>
+      <image:title>20mm pile height pure NZ wool rug</image:title>
+      <image:caption>India's hand-tufted standard pile depth explained.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/rug-maintenance-for-high-pile</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/rug-maintenance-for-high-pile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/rug-maintenance-for-high-pile" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/3_7043ec0b-dad2-480d-bc24-d99d18f604ad.jpg?v=1777702728</image:loc>
+      <image:title>High-pile rug maintenance guide</image:title>
+      <image:caption>Care protocol for 20mm+ pile wool rugs — vacuuming, rotation, professional cleaning.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/soft-rugs-for-primary-school-reading-corners</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/soft-rugs-for-primary-school-reading-corners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/soft-rugs-for-primary-school-reading-corners" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/94.37.58AM5.45.50AM.jpg?v=1777702659</image:loc>
+      <image:title>Soft wool rugs for primary school reading corners</image:title>
+      <image:caption>Six pure wool reading-corner rug picks for primary classrooms.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://rugs.rugkari.com/non-toxic-rugs-for-preschool-classrooms</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rugs.rugkari.com/non-toxic-rugs-for-preschool-classrooms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rugs.rugkari.com/non-toxic-rugs-for-preschool-classrooms" />
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0659/8649/4558/files/fdxcghvb.jpg?v=1777702536</image:loc>
+      <image:title>Non-toxic rugs for preschool classrooms</image:title>
+      <image:caption>Educator buying guide for safe, certified pure wool classroom floor rugs.</image:caption>
+    </image:image>
   </url>
 
   <!-- Product Pages (248 total) -->
