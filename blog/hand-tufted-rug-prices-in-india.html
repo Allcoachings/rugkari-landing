@@ -263,6 +263,16 @@
   .whatsapp-button:hover { transform: none; }
 }
   /* WA-FAB-END */
+    /* CUR-START */
+  .currency-bar { border-bottom: 1px solid var(--border, hsl(0 0% 87%)); background: #fff; }
+  .currency-bar .container { display: flex; align-items: center; justify-content: flex-end; gap: 12px; padding-top: 10px; padding-bottom: 10px; }
+  .currency-bar-label { font-family: "Inter", system-ui, sans-serif; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-foreground, hsl(0 0% 46%)); }
+  .currency-toggle { display: inline-flex; border: 1px solid hsl(0 0% 87%); border-radius: 999px; overflow: hidden; background: hsl(0 0% 96%); }
+  .cur-opt { -webkit-appearance: none; appearance: none; border: 0; background: transparent; font-family: "Inter", system-ui, sans-serif; font-size: 12.5px; font-weight: 500; letter-spacing: .02em; color: hsl(0 0% 32%); padding: 7px 16px; cursor: pointer; transition: background .2s ease, color .2s ease; line-height: 1; }
+  .cur-opt.is-active { background: hsl(0 0% 6%); color: #fff; }
+  .cur-opt:focus-visible { outline: 2px solid hsl(0 0% 6%); outline-offset: 2px; }
+  @media (max-width: 480px) { .currency-bar .container { justify-content: center; } .cur-opt { padding: 7px 14px; } }
+  /* CUR-END */
   </style>
 </head>
 <body>
@@ -289,6 +299,7 @@
 </header>
 
 <main id="main-content">
+<!--CUR-BAR--><div class="currency-bar"><div class="container"><span class="currency-bar-label">Prices shown in</span><div class="currency-toggle" role="group" aria-label="Select currency"><button type="button" class="cur-opt is-active" data-cur="inr" aria-pressed="true">₹ INR</button><button type="button" class="cur-opt" data-cur="usd" aria-pressed="false">$ USD</button></div></div></div><!--/CUR-BAR-->
 
   <section class="article-hero">
     <div class="container">
@@ -642,6 +653,31 @@
   function handleNewsletterSubmit(e) { e.preventDefault(); const btn = e.target.querySelector('button'); btn.textContent = '✓ Joined'; btn.disabled = true; e.target.querySelector('input').disabled = true; }
   (function() { var bar = document.getElementById('stickyCta'); var triggered = false; window.addEventListener('scroll', function() { if (triggered) return; var scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight); if (scrolled > 0.4) { bar.classList.add('visible'); triggered = true; } }, { passive: true }); })();
   (function() { var header = document.querySelector('.site-header'); var openBtn = document.getElementById('drawerOpen'); var closeBtn = document.getElementById('drawerClose'); var overlay = document.getElementById('drawerOverlay'); function openDrawer() { header.classList.add('drawer-open'); openBtn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; } function closeDrawer() { header.classList.remove('drawer-open'); openBtn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; } if (openBtn) openBtn.addEventListener('click', openDrawer); if (closeBtn) closeBtn.addEventListener('click', closeDrawer); if (overlay) overlay.addEventListener('click', closeDrawer); document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeDrawer(); }); })();
+</script>
+<script data-cur-js>
+(function(){
+  var SEL=".psc-price,.sidebar-product-price,.product-pick-price,.ep-price,.card-price,.price-cell";
+  var DIV=88/1.2; // USD = INR / 88 * 1.20  (rate INR 88 = $1, +20% international)
+  function fmt(n){return n.toLocaleString("en-US");}
+  function toUSD(s){
+    return s.replace(/(?:₹\s?|Rs\.?\s?)([\d,]+)/g,function(m,num){
+      var v=parseInt(num.replace(/,/g,""),10); if(isNaN(v)) return m;
+      return "$"+fmt(Math.round(v/DIV));
+    });
+  }
+  var els=[].slice.call(document.querySelectorAll(SEL));
+  els.forEach(function(el){ if(!el.hasAttribute("data-inr")) el.setAttribute("data-inr", el.innerHTML); });
+  function apply(cur){
+    els.forEach(function(el){ var inr=el.getAttribute("data-inr"); el.innerHTML=(cur==="usd")?toUSD(inr):inr; });
+    var b=document.querySelectorAll(".cur-opt");
+    for(var i=0;i<b.length;i++){ var on=b[i].getAttribute("data-cur")===cur; b[i].classList.toggle("is-active",on); b[i].setAttribute("aria-pressed",on?"true":"false"); }
+    try{ localStorage.setItem("rugkari-cur",cur); }catch(e){}
+  }
+  var b=document.querySelectorAll(".cur-opt");
+  for(var i=0;i<b.length;i++){ (function(x){ x.addEventListener("click",function(){ apply(x.getAttribute("data-cur")); }); })(b[i]); }
+  var saved="inr"; try{ saved=localStorage.getItem("rugkari-cur")||"inr"; }catch(e){}
+  if(saved==="usd") apply("usd");
+})();
 </script>
 </body>
 </html>
