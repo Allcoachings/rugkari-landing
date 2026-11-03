@@ -51,6 +51,16 @@ Settings > Customer events that subscribes to `rug_experience_open` and calls
 
 Tab order: Size guide (default), Texture, Room, 3D. three.js loads only when the 3D tab is opened.
 
+## Store facts used on the product page (confirmed by the owner, 3 Nov 2026)
+
+- Warranty: 10 years against manufacturing defects
+- Returns: 15 days from delivery
+- Pile height: 15–20 mm
+
+Other places that still show older numbers and must match: the theme's trust bars and
+"Why you can buy with confidence" (7-day returns, 30-night trial, lifetime / 1-year
+warranty), the footer, and Settings › Policies › Refund policy.
+
 ## Installing the new product section
 
 Files:
