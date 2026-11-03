@@ -1,0 +1,705 @@
+{%- comment -%}
+  RUGKARI — Product page (main product section), redesign.
+
+  Built on the live theme's own global.js contract, so cart, variant switching, add-ons,
+  sticky add-to-cart, zoom and lightbox all run on the theme's existing, tested code:
+    form[data-product-form]        → AJAX add to cart + cart drawer (+ add-on line item)
+    [data-variant-picker] + JSON   → variant id, price, URL ?variant=, button state
+    [data-product-price]           → price (.price__amount)
+    [data-addons] + JSON           → per-size add-on (e.g. Stain Resistant Coating)
+    .product__media-list / items   → hover zoom, lightbox, variant media scroll
+    [data-thumb-index]             → mobile gallery dots
+    .sticky-atc                    → sticky bar
+  Checkout: Shopify's own {{ form | payment_button }}. No pixel or tracking code here: Meta /
+  Google stay in Settings › Customer events, and Shopify emits product_viewed /
+  product_added_to_cart itself.
+  Product JSON-LD is already output by the layout, so this section does not add another one.
+{%- endcomment -%}
+
+{%- liquid
+  assign current = product.selected_or_first_available_variant
+  assign product_form_id = 'ProductForm-' | append: section.id
+  assign handle_parts = product.handle | split: '-'
+  assign style_word = handle_parts[1] | capitalize
+  if section.settings.eyebrow_style == false
+    assign style_word = ''
+  endif
+
+  assign addon = section.settings.addon_product
+  if addon == blank and section.settings.addon_handle != blank
+    assign addon = all_products[section.settings.addon_handle]
+  endif
+
+  assign hint_lines = section.settings.size_hints | newline_to_br | split: '<br />'
+  assign image_count = 0
+  for media in product.media
+    if media.media_type == 'image'
+      assign image_count = image_count | plus: 1
+    endif
+  endfor
+-%}
+
+<section
+  id="ProductSection-{{ section.id }}"
+  class="rkp"
+  data-section-id="{{ section.id }}"
+  data-eta-min="{{ section.settings.eta_min_days }}"
+  data-eta-max="{{ section.settings.eta_max_days }}"
+>
+  <div class="rkp__wrap page-width">
+    {%- if section.settings.show_breadcrumbs -%}
+      <nav class="rkp__crumbs" aria-label="Breadcrumb">
+        <a href="{{ routes.root_url }}">Home</a><span aria-hidden="true">/</span>
+        {%- if collection -%}<a href="{{ collection.url }}">{{ collection.title | escape }}</a><span aria-hidden="true">/</span>{%- else -%}<a href="{{ routes.all_products_collection_url }}">Rugs</a><span aria-hidden="true">/</span>{%- endif -%}
+        <span aria-current="page">{{ product.title | escape }}</span>
+      </nav>
+    {%- endif -%}
+
+    <div class="rkp__grid">
+      {%- comment -%} ───────── Gallery ───────── {%- endcomment -%}
+      <div class="rkp__gallery">
+        <div class="product__media-list" id="MediaList-{{ section.id }}">
+          {%- for media in product.media -%}
+            {%- if media.media_type == 'image' -%}
+              <div
+                class="product__media-item product__media-item--image{% if forloop.first %} rkp__media--lead{% endif %}"
+                data-media-id="{{ media.id }}"
+                data-media-index="{{ forloop.index0 }}"
+              >
+                {%- liquid
+                  if forloop.first
+                    assign img_loading = 'eager'
+                    assign img_priority = 'high'
+                  else
+                    assign img_loading = 'lazy'
+                    assign img_priority = 'auto'
+                  endif
+                -%}
+                {{
+                  media.preview_image
+                  | image_url: width: 2200
+                  | image_tag:
+                    widths: '550, 750, 1100, 1500, 2200',
+                    sizes: '(min-width: 990px) 58vw, 100vw',
+                    loading: img_loading,
+                    fetchpriority: img_priority,
+                    alt: media.alt
+                }}
+                <span class="rkp__count" aria-hidden="true">{{ forloop.index }} / {{ image_count }}</span>
+              </div>
+            {%- else -%}
+              <div class="product__media-item rkp__media--other" data-media-id="{{ media.id }}" data-media-index="{{ forloop.index0 }}">
+                {{ media | media_tag }}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if section.settings.show_closeup and image_count > 1 -%}
+            {%- assign closeup = product.media[section.settings.closeup_media_index] | default: product.media[1] -%}
+            {%- if closeup.media_type == 'image' -%}
+              <div
+                class="product__media-item product__media-item--image rkp__closeup"
+                data-media-id="{{ closeup.id }}"
+                data-media-index="{{ closeup.position | minus: 1 }}"
+                style="--rkp-focus-x: {{ section.settings.closeup_x }}%; --rkp-focus-y: {{ section.settings.closeup_y }}%;"
+              >
+                {{
+                  closeup.preview_image
+                  | image_url: width: 2200
+                  | image_tag: widths: '750, 1100, 1500, 2200', sizes: '(min-width: 990px) 29vw, 100vw', loading: 'lazy', alt: ''
+                }}
+                <span class="rkp__tag">Pile close-up</span>
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+
+          {%- if product.media.size == 0 -%}
+            <div class="product__media-item rkp__media--empty">{{ 'product-1' | placeholder_svg_tag: 'rkp__placeholder' }}</div>
+          {%- endif -%}
+        </div>
+
+        {%- if product.media.size > 1 -%}
+          <div class="rkp__dots" aria-label="Choose photo">
+            {%- for media in product.media -%}
+              <button type="button" class="rkp__dot{% if forloop.first %} is-active{% endif %}" data-thumb-index="{{ forloop.index0 }}" aria-label="Photo {{ forloop.index }}"></button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        <dialog class="lightbox">
+          <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true" focusable="false"><path d="m5 5 14 14M19 5 5 19"/></svg>
+          </button>
+          <div class="lightbox__track">
+            {%- for media in product.media -%}
+              <div class="lightbox__slide">
+                {{ media.preview_image | image_url: width: 2400 | image_tag: loading: 'lazy', alt: media.alt }}
+              </div>
+            {%- endfor -%}
+          </div>
+        </dialog>
+      </div>
+
+      {%- comment -%} ───────── Buy box ───────── {%- endcomment -%}
+      <div class="rkp__buy">
+        <div class="rkp__titles">
+          <p class="rkp__eyebrow">{{ section.settings.eyebrow }}{% if style_word != blank %} · {{ style_word }}{% endif %}</p>
+          <h1 class="rkp__title">{{ product.title | escape }}</h1>
+          {%- if section.settings.subtitle != blank -%}<p class="rkp__subtitle">{{ section.settings.subtitle }}</p>{%- endif -%}
+        </div>
+
+        <div class="rkp__price-row">
+          <div class="price" data-product-price>
+            <span class="price__amount">{{ current.price | money }}</span>
+            {%- if current.compare_at_price > current.price -%}<s class="price__compare">{{ current.compare_at_price | money }}</s>{%- endif -%}
+          </div>
+          {%- if section.settings.price_note != blank -%}<p class="rkp__price-note">{{ section.settings.price_note }}</p>{%- endif -%}
+        </div>
+
+        {%- if section.settings.show_eta -%}
+          <p class="rkp__eta" data-rkp-eta hidden>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>
+            <span>{{ section.settings.eta_label }} <b data-rkp-eta-dates></b></span>
+          </p>
+        {%- endif -%}
+
+        {%- assign perks = section.blocks | where: 'type', 'perk' -%}
+        {%- if perks.size > 0 -%}
+          <ul class="rkp__perks">
+            {%- for block in perks -%}
+              <li {{ block.shopify_attributes }}><span class="rkp__perk-dot" aria-hidden="true"></span><span><b>{{ block.settings.title }}</b>{%- if block.settings.text != blank -%}<small>{{ block.settings.text }}</small>{%- endif -%}</span></li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- unless product.has_only_default_variant -%}
+          <div class="rkp__picker" data-variant-picker>
+            {%- for option in product.options_with_values -%}
+              <fieldset class="variant-fieldset">
+                <legend class="rkp__legend">
+                  {{ option.name }}: <span>{{ option.selected_value }}</span>
+                  {%- if forloop.first and section.settings.size_link_label != blank -%}
+                    <button type="button" class="rkp__size-link" data-rkp-open-size>{{ section.settings.size_link_label }}</button>
+                  {%- endif -%}
+                </legend>
+                {%- assign opt_i = option.position | minus: 1 -%}
+                <div class="variant-options variant-options--cards rkp__cards">
+                  {%- for value in option.values -%}
+                    {%- liquid
+                      assign value_variant = nil
+                      for v in product.variants
+                        if v.options[opt_i] == value
+                          assign value_variant = v
+                          break
+                        endif
+                      endfor
+                      assign hint = ''
+                      for line in hint_lines
+                        assign pair = line | split: '|'
+                        assign key = pair[0] | strip
+                        if key == value
+                          assign hint = pair[1] | strip
+                        endif
+                      endfor
+                    -%}
+                    <span class="variant-option variant-option--card{% if value_variant and value_variant.available == false %} is-unavailable{% endif %}">
+                      <input
+                        type="radio"
+                        id="Option-{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                        name="options[{{ option.name | escape }}]"
+                        value="{{ value | escape }}"
+                        data-option-index="{{ option.position }}"
+                        {% if option.selected_value == value %}checked{% endif %}
+                      >
+                      <label for="Option-{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-option-value data-option-index="{{ option.position }}">
+                        {%- if section.settings.popular_value == value -%}<span class="rkp__badge">{{ section.settings.popular_label }}</span>{%- endif -%}
+                        <span class="variant-option__val">{{ value }}</span>
+                        {%- if hint != blank -%}<span class="variant-option__hint">{{ hint }}</span>{%- endif -%}
+                        {%- if product.options.size == 1 and value_variant -%}<span class="rkp__card-price">{{ value_variant.price | money }}</span>{%- endif -%}
+                      </label>
+                    </span>
+                  {%- endfor -%}
+                </div>
+              </fieldset>
+            {%- endfor -%}
+            <script type="application/json">
+              [
+                {%- for v in product.variants -%}
+                  {
+                    "id": {{ v.id }},
+                    "options": {{ v.options | json }},
+                    "available": {{ v.available | json }},
+                    "price_formatted": {{ v.price | money | json }},
+                    "compare_at_price_formatted": {% if v.compare_at_price > v.price %}{{ v.compare_at_price | money | json }}{% else %}null{% endif %},
+                    "featured_media_position": {% if v.featured_media %}{{ v.featured_media.position }}{% else %}null{% endif %}
+                  }{%- unless forloop.last -%},{%- endunless -%}
+                {%- endfor -%}
+              ]
+            </script>
+          </div>
+        {%- endunless -%}
+
+        {%- if addon != blank and addon.id -%}
+          <div class="product-addons rkp__addons" data-addons>
+            <label class="addon">
+              <input type="checkbox" class="addon__input" data-addon-toggle>
+              <span class="addon__box" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="m4.5 12.5 5 5 10-11"/></svg></span>
+              <span class="addon__text">{{ section.settings.addon_label | default: addon.title }} <span class="addon__price" data-addon-price></span>{%- if section.settings.addon_note != blank -%}<small class="rkp__addon-note">{{ section.settings.addon_note }}</small>{%- endif -%}</span>
+            </label>
+            <p class="product-addons__total" data-addon-total hidden></p>
+            <script type="application/json" data-addon-data>
+              {
+                {%- for v in addon.variants -%}
+                  {{ v.title | json }}: { "id": {{ v.id }}, "price": {{ v.price }}, "price_formatted": {{ v.price | money | json }} }{%- unless forloop.last -%},{%- endunless -%}
+                {%- endfor -%}
+              }
+            </script>
+          </div>
+        {%- endif -%}
+
+        {%- form 'product', product, id: product_form_id, class: 'rkp__form', data-product-form: '' -%}
+          <input type="hidden" name="id" value="{{ current.id }}">
+          <div class="rkp__buy-row">
+            <div class="quantity">
+              <button type="button" class="quantity__button" data-dir="down" aria-label="Decrease quantity">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg>
+              </button>
+              <input class="quantity__input" type="number" name="quantity" id="Quantity-{{ section.id }}" value="1" min="1" aria-label="Quantity">
+              <button type="button" class="quantity__button" data-dir="up" aria-label="Increase quantity">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+            <button type="submit" name="add" class="btn btn--primary rkp__add"{% unless current.available %} disabled{% endunless %}>
+              <span>{%- if current.available -%}Add to cart{%- else -%}Sold out{%- endif -%}</span>
+            </button>
+          </div>
+          {%- if section.settings.show_dynamic_checkout -%}
+            <div class="rkp__dynamic">{{ form | payment_button }}</div>
+          {%- endif -%}
+          <p class="form-status form-status--error" data-form-status hidden></p>
+        {%- endform -%}
+
+        {%- assign trusts = section.blocks | where: 'type', 'trust' -%}
+        {%- if trusts.size > 0 -%}
+          <ul class="rkp__trust">
+            {%- for block in trusts -%}
+              <li {{ block.shopify_attributes }}>
+                {%- case block.settings.icon -%}
+                  {%- when 'truck' -%}<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>
+                  {%- when 'pin' -%}<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+                  {%- when 'return' -%}<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4"/></svg>
+                  {%- else -%}<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="1.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                {%- endcase -%}
+                <span>{{ block.settings.label }}</span>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- if section.settings.advisor_title != blank -%}
+          <div class="rkp__advisor">
+            <div>
+              <p class="rkp__advisor-title">{{ section.settings.advisor_title }}</p>
+              {%- if section.settings.advisor_text != blank -%}<p class="rkp__advisor-text">{{ section.settings.advisor_text }}</p>{%- endif -%}
+            </div>
+            {%- if section.settings.advisor_url != blank -%}
+              <a class="rkp__advisor-btn" href="{{ section.settings.advisor_url }}" target="_blank" rel="noopener">{{ section.settings.advisor_button }} →</a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        {%- assign panels = section.blocks | where: 'type', 'panel' -%}
+        {%- assign specs = section.blocks | where: 'type', 'specs' -%}
+        {%- if panels.size > 0 or specs.size > 0 -%}
+          <div class="rkp__acc">
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'specs' -%}
+                  <details {{ block.shopify_attributes }}{% if block.settings.open %} open{% endif %}>
+                    <summary>{{ block.settings.title }}</summary>
+                    <div class="rkp__acc-body">
+                      <dl class="rkp__specs">
+                        <dt>Size</dt><dd data-rkp-size>{{ current.title }}</dd>
+                        {%- if block.settings.material != blank -%}<dt>Material</dt><dd>{{ block.settings.material }}</dd>{%- endif -%}
+                        {%- if block.settings.technique != blank -%}<dt>Technique</dt><dd>{{ block.settings.technique }}</dd>{%- endif -%}
+                        {%- if block.settings.pile != blank -%}<dt>Pile height</dt><dd>{{ block.settings.pile }}</dd>{%- endif -%}
+                        {%- if block.settings.backing != blank -%}<dt>Backing</dt><dd>{{ block.settings.backing }}</dd>{%- endif -%}
+                        {%- if block.settings.origin != blank -%}<dt>Origin</dt><dd>{{ block.settings.origin }}</dd>{%- endif -%}
+                      </dl>
+                    </div>
+                  </details>
+                {%- when 'panel' -%}
+                  <details {{ block.shopify_attributes }}{% if block.settings.open %} open{% endif %}>
+                    <summary>{{ block.settings.title }}</summary>
+                    <div class="rkp__acc-body rte">{{ block.settings.content }}</div>
+                  </details>
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- comment -%} ───────── The design (product description) ───────── {%- endcomment -%}
+    {%- if section.settings.show_story and product.description != blank -%}
+      <div class="rkp__story">
+        {%- assign story_media = product.media[section.settings.story_media_index] | default: product.featured_media -%}
+        {%- if story_media -%}
+          <div class="rkp__story-media">
+            {{ story_media.preview_image | image_url: width: 1600 | image_tag: widths: '750, 1100, 1600', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy', alt: '' }}
+          </div>
+        {%- endif -%}
+        <div class="rkp__story-text">
+          <p class="rkp__eyebrow">{{ section.settings.story_eyebrow }}</p>
+          <div class="rte">{{ product.description }}</div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} ───────── How it is made ───────── {%- endcomment -%}
+    {%- assign steps = section.blocks | where: 'type', 'step' -%}
+    {%- if steps.size > 0 -%}
+      <div class="rkp__craft">
+        <p class="rkp__eyebrow">{{ section.settings.craft_eyebrow }}</p>
+        <h2 class="rkp__h2">{{ section.settings.craft_heading }}</h2>
+        <ol class="rkp__steps">
+          {%- for block in steps -%}
+            <li {{ block.shopify_attributes }}><span class="rkp__step-n">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span><b>{{ block.settings.title }}</b><span>{{ block.settings.text }}</span></li>
+          {%- endfor -%}
+        </ol>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="sticky-atc">
+    <div class="sticky-atc__info">
+      <p class="sticky-atc__title">{{ product.title | escape }}</p>
+      <span class="sticky-atc__price">{{ current.price | money }}</span>
+    </div>
+    <button type="button" class="btn btn--primary"{% unless current.available %} disabled{% endunless %}>
+      <span>{%- if current.available -%}Add to cart{%- else -%}Sold out{%- endif -%}</span>
+    </button>
+  </div>
+</section>
+
+<style>
+  #ProductSection-{{ section.id }} {
+    --rkp-ink: rgb(16, 16, 16);
+    --rkp-mute: #6d6862;
+    --rkp-line: #e6e2dc;
+    --rkp-stone: #f3f0ec;
+    --rkp-badge: #6b4f3a;
+    --rkp-serif: "Playfair Display", Georgia, serif;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  .rkp *, .rkp *::before, .rkp *::after { box-sizing: border-box; }
+  .rkp__wrap { max-width: 1400px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  @media (min-width: 990px) { .rkp__wrap { padding-left: 32px; padding-right: 32px; } }
+  .rkp__crumbs { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 0; font-size: 12px; color: var(--rkp-mute); }
+  .rkp__crumbs a { color: inherit; text-decoration: none; }
+  .rkp__crumbs a:hover { color: var(--rkp-ink); }
+  .rkp__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+  @media (max-width: 989px) { .rkp__grid { grid-template-columns: minmax(0, 1fr); } }
+
+  /* Gallery */
+  .rkp .product__media-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .rkp .product__media-item { position: relative; overflow: hidden; background: var(--rkp-stone); cursor: zoom-in; margin: 0; aspect-ratio: 4 / 5; }
+  .rkp .product__media-item.rkp__media--lead { grid-column: 1 / -1; aspect-ratio: 5 / 4; }
+  .rkp .product__media-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s cubic-bezier(.22,.7,.12,1); transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%); }
+  .rkp .product__media-item.is-zooming img { transform: scale(1.7); }
+  .rkp .rkp__closeup img { transform: scale(2.6); transform-origin: var(--rkp-focus-x, 30%) var(--rkp-focus-y, 30%); }
+  .rkp .rkp__closeup.is-zooming img { transform: scale(3); }
+  .rkp__tag, .rkp__count { position: absolute; left: 12px; bottom: 12px; background: rgba(255,255,255,.92); color: var(--rkp-ink); padding: 5px 9px; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; pointer-events: none; }
+  .rkp__count { display: none; left: auto; right: 12px; letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+  .rkp__media--other { cursor: default; }
+  .rkp__dots { display: none; }
+  @media (max-width: 989px) {
+    .rkp .product__media-list { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 0; scrollbar-width: none; margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px))); }
+    .rkp .product__media-list::-webkit-scrollbar { display: none; }
+    .rkp .product__media-item, .rkp .product__media-item.rkp__media--lead { flex: 0 0 100%; scroll-snap-align: start; aspect-ratio: 1; }
+    .rkp .rkp__closeup { display: none; }
+    .rkp__count { display: block; }
+    .rkp__dots { display: flex; justify-content: center; gap: 6px; padding-top: 12px; }
+    .rkp__dot { width: 6px; height: 6px; border-radius: 50%; border: 0; padding: 0; background: var(--rkp-line); cursor: pointer; }
+    .rkp__dot.is-active { background: var(--rkp-ink); }
+  }
+
+  /* Buy box */
+  .rkp__buy { position: sticky; top: calc(var(--header-height, 64px) + 20px); display: grid; gap: 20px; }
+  @media (max-width: 989px) { .rkp__buy { position: static; } }
+  .rkp__eyebrow { margin: 0; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--rkp-mute); }
+  .rkp__title { font-family: var(--rkp-serif); font-weight: 400; font-size: clamp(34px, 3.4vw, 46px); line-height: 1.08; margin: 6px 0 0; }
+  .rkp__subtitle { margin: 6px 0 0; color: var(--rkp-mute); font-size: 14px; }
+  .rkp__price-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; }
+  .rkp .price { font-size: 22px; font-variant-numeric: tabular-nums; display: flex; gap: 10px; align-items: baseline; }
+  .rkp .price__compare { font-size: 15px; color: var(--rkp-mute); }
+  .rkp__price-note { margin: 0; font-size: 12.5px; color: var(--rkp-mute); }
+  .rkp__eta { display: flex; gap: 10px; align-items: center; margin: 0; padding: 11px 14px; background: var(--rkp-stone); font-size: 13.5px; }
+  .rkp__eta b { font-weight: 700; }
+  .rkp__perks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; }
+  .rkp__perks li { display: flex; gap: 10px; font-size: 13px; line-height: 1.4; }
+  .rkp__perks b { font-weight: 700; display: block; }
+  .rkp__perks small { display: block; color: var(--rkp-mute); font-size: 12px; }
+  .rkp__perk-dot { flex: none; width: 6px; height: 6px; margin-top: 6px; border-radius: 50%; background: var(--rkp-badge); }
+
+  .rkp__picker fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .rkp__legend { display: flex; width: 100%; align-items: baseline; gap: 6px; margin-bottom: 10px; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  .rkp__legend > span { font-weight: 400; letter-spacing: .02em; text-transform: none; font-size: 13px; }
+  .rkp__size-link { margin-left: auto; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; font-size: 12px; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--rkp-mute); text-decoration: underline; text-underline-offset: 3px; }
+  .rkp__cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  @media (max-width: 420px) { .rkp__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .rkp__cards .variant-option { position: relative; display: block; }
+  .rkp__cards input { position: absolute; opacity: 0; pointer-events: none; }
+  .rkp__cards label { position: relative; display: grid; gap: 1px; height: 100%; padding: 10px 11px 9px; border: 1px solid var(--rkp-line); cursor: pointer; transition: border-color .2s, background .2s; }
+  .rkp__cards label:hover { border-color: var(--rkp-ink); }
+  .rkp__cards input:checked + label { border-color: var(--rkp-ink); background: var(--rkp-stone); box-shadow: inset 0 0 0 1px var(--rkp-ink); }
+  .rkp__cards input:focus-visible + label { outline: 2px solid var(--rkp-ink); outline-offset: 2px; }
+  .rkp__cards .is-unavailable label { color: var(--rkp-mute); }
+  .rkp__cards .variant-option__val { font-size: 13.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .rkp__cards .variant-option__hint { font-size: 11.5px; line-height: 1.3; color: var(--rkp-mute); }
+  .rkp__card-price { font-size: 12px; margin-top: 3px; font-variant-numeric: tabular-nums; }
+  .rkp__badge { position: absolute; top: -8px; left: 8px; background: var(--rkp-badge); color: #fff; font-size: 8.5px; font-weight: 700; letter-spacing: .1em; padding: 2px 6px; border-radius: 8px; text-transform: uppercase; }
+
+  .rkp__addons { margin: 0; }
+  .rkp__addons .addon { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--rkp-line); cursor: pointer; font-size: 13.5px; }
+  .rkp__addons .addon__input { position: absolute; opacity: 0; pointer-events: none; }
+  .rkp__addons .addon__box { flex: none; width: 18px; height: 18px; border: 1px solid var(--rkp-ink); display: grid; place-items: center; color: transparent; margin-top: 1px; }
+  .rkp__addons .addon__input:checked + .addon__box { background: var(--rkp-ink); color: #fff; }
+  .rkp__addons .addon__input:focus-visible + .addon__box { outline: 2px solid var(--rkp-ink); outline-offset: 2px; }
+  .rkp__addon-note { display: block; color: var(--rkp-mute); font-size: 12px; }
+  .rkp__addons .product-addons__total { margin: 8px 0 0; font-size: 12.5px; color: var(--rkp-mute); }
+
+  .rkp__form { display: grid; gap: 10px; }
+  .rkp__buy-row { display: grid; grid-template-columns: auto 1fr; gap: 10px; }
+  .rkp .quantity { display: flex; align-items: center; border: 1px solid var(--rkp-line); height: 52px; }
+  .rkp .quantity__button { width: 40px; height: 100%; display: grid; place-items: center; background: none; border: 0; cursor: pointer; color: var(--rkp-ink); }
+  .rkp .quantity__input { width: 34px; border: 0; text-align: center; font: inherit; background: transparent; -moz-appearance: textfield; }
+  .rkp .quantity__input::-webkit-outer-spin-button, .rkp .quantity__input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .rkp__add { height: 52px; width: 100%; display: flex; align-items: center; justify-content: center; background: var(--rkp-ink); color: #fff; border: 1px solid var(--rkp-ink); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; cursor: pointer; }
+  .rkp__add[disabled], .rkp__add[aria-disabled="true"] { opacity: .45; cursor: not-allowed; }
+  .rkp__dynamic .shopify-payment-button__button { width: 100%; min-height: 52px; border-radius: 0; }
+  .rkp__dynamic .shopify-payment-button__button--unbranded { background: transparent; color: var(--rkp-ink); border: 1px solid var(--rkp-ink); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+  .rkp__dynamic .shopify-payment-button__button--unbranded:hover:not([disabled]) { background: var(--rkp-ink); color: #fff; }
+  .rkp__dynamic .shopify-payment-button__more-options { color: var(--rkp-mute); font-size: 12px; }
+  .rkp .form-status { margin: 0; font-size: 13px; color: #a3261c; }
+
+  .rkp__trust { list-style: none; margin: 0; padding: 14px 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rkp-line); border-bottom: 1px solid var(--rkp-line); }
+  .rkp__trust li { display: grid; justify-items: center; gap: 6px; text-align: center; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rkp-mute); }
+  .rkp__advisor { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; padding: 18px; background: var(--rkp-stone); }
+  .rkp__advisor-title { margin: 0; font-family: var(--rkp-serif); font-size: 19px; }
+  .rkp__advisor-text { margin: 4px 0 0; font-size: 13px; color: var(--rkp-mute); max-width: 32ch; }
+  .rkp__advisor-btn { border: 1px solid var(--rkp-ink); border-radius: 999px; padding: 9px 16px; font-size: 12.5px; color: var(--rkp-ink); text-decoration: none; white-space: nowrap; }
+
+  .rkp__acc details { border-bottom: 1px solid var(--rkp-line); }
+  .rkp__acc details:first-child { border-top: 1px solid var(--rkp-line); }
+  .rkp__acc summary { list-style: none; cursor: pointer; padding: 16px 0; display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  .rkp__acc summary::-webkit-details-marker { display: none; }
+  .rkp__acc summary::after { content: "+"; font-weight: 300; font-size: 20px; line-height: 1; transition: transform .3s; }
+  .rkp__acc details[open] summary::after { transform: rotate(45deg); }
+  .rkp__acc-body { padding-bottom: 18px; font-size: 14px; color: var(--rkp-mute); }
+  .rkp__specs { display: grid; grid-template-columns: auto 1fr; gap: 8px 22px; margin: 0; }
+  .rkp__specs dt { font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--rkp-ink); padding-top: 2px; }
+  .rkp__specs dd { margin: 0; }
+
+  .rkp__story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 6vw, 96px); align-items: center; padding-top: clamp(70px, 9vw, 120px); }
+  .rkp__story-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
+  .rkp__story-text { display: grid; gap: 14px; max-width: 560px; }
+  .rkp__story-text h2, .rkp__story-text h3 { font-family: var(--rkp-serif); font-weight: 400; line-height: 1.12; margin: 8px 0 4px; }
+  @media (max-width: 989px) { .rkp__story { grid-template-columns: minmax(0, 1fr); } }
+
+  .rkp__craft { margin-top: clamp(70px, 9vw, 120px); padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 56px); background: var(--rkp-stone); }
+  .rkp__h2 { font-family: var(--rkp-serif); font-weight: 400; font-size: clamp(30px, 3.2vw, 42px); line-height: 1.1; margin: 8px 0 0; }
+  .rkp__steps { list-style: none; margin: 36px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+  .rkp__steps li { display: grid; gap: 8px; align-content: start; padding-top: 16px; border-top: 1px solid var(--rkp-ink); font-size: 13.5px; color: var(--rkp-mute); }
+  .rkp__steps b { font-family: var(--rkp-serif); font-weight: 400; font-size: 19px; color: var(--rkp-ink); }
+  .rkp__step-n { font-family: var(--rkp-serif); font-size: 30px; line-height: 1; color: var(--rkp-ink); }
+  @media (max-width: 989px) { .rkp__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+  .rkp .sticky-atc { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: #fff; border-top: 1px solid var(--rkp-line); transform: translateY(110%); transition: transform .35s; }
+  .rkp .sticky-atc.is-visible { transform: none; }
+  .rkp .sticky-atc__title { margin: 0; font-family: var(--rkp-serif); font-size: 16px; }
+  .rkp .sticky-atc__price { font-size: 12.5px; color: var(--rkp-mute); font-variant-numeric: tabular-nums; }
+  .rkp .sticky-atc .btn { height: 46px; padding: 0 22px; background: var(--rkp-ink); color: #fff; border: 0; font-size: 11.5px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+  .rkp .sticky-atc .btn[disabled] { opacity: .45; }
+  @media (min-width: 990px) { .rkp .sticky-atc { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .rkp * { transition: none !important; } }
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById('ProductSection-{{ section.id }}');
+    if (!root || root.dataset.rkpReady) return;
+    root.dataset.rkpReady = '1';
+
+    // Delivery window, same rule as the live page (dispatch + transit days from today).
+    var eta = root.querySelector('[data-rkp-eta]');
+    if (eta) {
+      var min = parseInt(root.dataset.etaMin, 10) || 10, max = parseInt(root.dataset.etaMax, 10) || 14;
+      var fmt = function (n) { var d = new Date(); d.setDate(d.getDate() + n); return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short' }); };
+      eta.querySelector('[data-rkp-eta-dates]').textContent = fmt(min) + ' – ' + fmt(max);
+      eta.hidden = false;
+    }
+
+    // Size row in Specifications: "8 x 10 ft · 244 × 305 cm". Runs after global.js on each change.
+    var sizeEl = root.querySelector('[data-rkp-size]');
+    var picker = root.querySelector('[data-variant-picker]');
+    function cm(label) { var m = String(label).match(/(\d+(?:\.\d+)?)\s*[x×]\s*(\d+(?:\.\d+)?)\s*ft/i); return m ? ' · ' + Math.round(m[1] * 30.48) + ' × ' + Math.round(m[2] * 30.48) + ' cm' : ''; }
+    function syncSize() {
+      if (!sizeEl || !picker) return;
+      var checked = picker.querySelector('input:checked');
+      if (checked) sizeEl.textContent = checked.value + cm(checked.value);
+    }
+    if (picker) picker.addEventListener('change', function () { setTimeout(syncSize, 0); });
+    syncSize();
+
+    // "Which size fits?" opens the Rug Experience size guide if that section is on the page.
+    // The Rug Experience section renders after this one, so look it up once the page has loaded.
+    var link = root.querySelector('[data-rkp-open-size]');
+    if (link) {
+      link.addEventListener('click', function () {
+        var guide = document.querySelector('.rkx');
+        if (!guide) return;
+        guide.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var tab = guide.querySelector('.rkx-tab[data-tab="size"]');
+        if (tab) setTimeout(function () { tab.click(); }, 400);
+      });
+      var hideIfMissing = function () { if (!document.querySelector('.rkx')) link.hidden = true; };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', hideIfMissing); else hideIfMissing();
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Product (Rugkari)",
+  "tag": "div",
+  "class": "section-main-product-rugkari",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "header", "content": "Titles and price" },
+    { "type": "checkbox", "id": "show_breadcrumbs", "label": "Show breadcrumbs", "default": true },
+    { "type": "text", "id": "eyebrow", "label": "Small label above title", "default": "RUGKARI" },
+    { "type": "checkbox", "id": "eyebrow_style", "label": "Add style from the product URL (e.g. Traditional)", "default": true },
+    { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Handcrafted pure New Zealand wool - made to order for your room" },
+    { "type": "text", "id": "price_note", "label": "Note next to price", "default": "Inclusive of taxes · free insured shipping" },
+    { "type": "checkbox", "id": "show_eta", "label": "Show delivery estimate", "default": true },
+    { "type": "text", "id": "eta_label", "label": "Delivery estimate text", "default": "Order today, delivery by" },
+    { "type": "number", "id": "eta_min_days", "label": "Delivery from (days after today)", "default": 10 },
+    { "type": "number", "id": "eta_max_days", "label": "Delivery to (days after today)", "default": 14 },
+
+    { "type": "header", "content": "Gallery" },
+    { "type": "checkbox", "id": "show_closeup", "label": "Add a pile close-up tile (desktop)", "default": true },
+    { "type": "number", "id": "closeup_media_index", "label": "Close-up uses photo number (0 = first)", "default": 1 },
+    { "type": "range", "id": "closeup_x", "label": "Close-up focus, left to right", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 30 },
+    { "type": "range", "id": "closeup_y", "label": "Close-up focus, top to bottom", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 30 },
+
+    { "type": "header", "content": "Size cards" },
+    { "type": "textarea", "id": "size_hints", "label": "Size hints (one per line: size | hint)", "default": "3 x 5 ft | Bedside · entryway\n4 x 6 ft | Under a coffee table\n5 x 8 ft | Front legs of a sofa\n6 x 9 ft | Most living rooms\n8 x 10 ft | Full seating on the rug\n9 x 12 ft | 6-seat dining\n10 x 14 ft | Grand rooms\n12 x 15 ft | Open-plan spaces" },
+    { "type": "text", "id": "popular_value", "label": "Badge on this size", "default": "8 x 10 ft" },
+    { "type": "text", "id": "popular_label", "label": "Badge text", "default": "Most popular" },
+    { "type": "text", "id": "size_link_label", "label": "Size guide link (opens Rug Experience)", "default": "Which size fits my room?" },
+
+    { "type": "header", "content": "Add-on" },
+    { "type": "product", "id": "addon_product", "label": "Add-on product", "info": "Its variant names must match the size names exactly, e.g. 3 x 5 ft." },
+    { "type": "text", "id": "addon_handle", "label": "Or add-on product handle", "default": "stain-resistant-coating" },
+    { "type": "text", "id": "addon_label", "label": "Add-on label", "default": "Stain Resistant Coating" },
+    { "type": "text", "id": "addon_note", "label": "Add-on note", "default": "Helps spills bead up so you can blot them away." },
+
+    { "type": "header", "content": "Buy buttons" },
+    { "type": "checkbox", "id": "show_dynamic_checkout", "label": "Show Buy it now button", "default": true },
+
+    { "type": "header", "content": "Advisor card" },
+    { "type": "text", "id": "advisor_title", "label": "Title", "default": "Made to order, made for you" },
+    { "type": "text", "id": "advisor_text", "label": "Text", "default": "Any size, any colourway. Speak with our atelier to shape this rug to your room." },
+    { "type": "text", "id": "advisor_button", "label": "Button text", "default": "Chat with an advisor" },
+    { "type": "url", "id": "advisor_url", "label": "Button link", "info": "For WhatsApp use https://wa.me/91XXXXXXXXXX" },
+
+    { "type": "header", "content": "Below the product" },
+    { "type": "checkbox", "id": "show_story", "label": "Show product description as \"The design\"", "default": true },
+    { "type": "text", "id": "story_eyebrow", "label": "Description label", "default": "The design" },
+    { "type": "number", "id": "story_media_index", "label": "Description photo number (0 = first)", "default": 0 },
+    { "type": "text", "id": "craft_eyebrow", "label": "Steps label", "default": "How your rug is made" },
+    { "type": "text", "id": "craft_heading", "label": "Steps heading", "default": "Four stages, all by hand" },
+    { "type": "range", "id": "padding_bottom", "label": "Space below", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 40 }
+  ],
+  "blocks": [
+    {
+      "type": "perk",
+      "name": "Benefit",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Sink-in softness underfoot" },
+        { "type": "text", "id": "text", "label": "Text", "default": "Dense, hand-finished pure wool pile" }
+      ]
+    },
+    {
+      "type": "trust",
+      "name": "Trust icon",
+      "limit": 4,
+      "settings": [
+        { "type": "select", "id": "icon", "label": "Icon", "default": "truck", "options": [
+          { "value": "truck", "label": "Truck" }, { "value": "pin", "label": "Location" },
+          { "value": "return", "label": "Return" }, { "value": "lock", "label": "Lock" }
+        ] },
+        { "type": "text", "id": "label", "label": "Label", "default": "Free shipping" }
+      ]
+    },
+    {
+      "type": "specs",
+      "name": "Specifications",
+      "limit": 1,
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Specifications" },
+        { "type": "checkbox", "id": "open", "label": "Open by default", "default": false },
+        { "type": "text", "id": "material", "label": "Material", "default": "100% New Zealand wool" },
+        { "type": "text", "id": "technique", "label": "Technique", "default": "Hand-tufted in Bhadohi" },
+        { "type": "text", "id": "pile", "label": "Pile height", "default": "15–20 mm" },
+        { "type": "text", "id": "backing", "label": "Backing", "default": "Cotton foundation" },
+        { "type": "text", "id": "origin", "label": "Origin", "default": "Bhadohi, Uttar Pradesh" }
+      ]
+    },
+    {
+      "type": "panel",
+      "name": "Collapsible text",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading", "default": "Materials & care" },
+        { "type": "checkbox", "id": "open", "label": "Open by default", "default": false },
+        { "type": "richtext", "id": "content", "label": "Text", "default": "<p>Pure New Zealand wool, hand-spun and dyed in small batches. Vacuum gently without a beater bar; blot spills immediately with a dry cloth and use professional cleaning for deep care.</p>" }
+      ]
+    },
+    {
+      "type": "step",
+      "name": "How it is made: step",
+      "limit": 6,
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "Drawn on cloth" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "The design is drawn full size on a cotton cloth stretched on a frame." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product (Rugkari)",
+      "blocks": [
+        { "type": "perk", "settings": { "title": "Sink-in softness underfoot", "text": "Dense, hand-finished pure wool pile" } },
+        { "type": "perk", "settings": { "title": "Warms cold floors", "text": "Natural insulation for marble, tile & concrete" } },
+        { "type": "perk", "settings": { "title": "Made to outlast trends", "text": "Built to last for decades, not seasons" } },
+        { "type": "perk", "settings": { "title": "Hides everyday life", "text": "Wool naturally resists spills, dust & footprints" } },
+        { "type": "trust", "settings": { "icon": "truck", "label": "Free shipping" } },
+        { "type": "trust", "settings": { "icon": "pin", "label": "Pan-India delivery" } },
+        { "type": "trust", "settings": { "icon": "return", "label": "7-day returns" } },
+        { "type": "trust", "settings": { "icon": "lock", "label": "Secure payments" } },
+        { "type": "specs" },
+        { "type": "panel", "settings": { "title": "Materials & care" } },
+        { "type": "panel", "settings": { "title": "Made-to-order & delivery", "content": "<p>Every RUGKARI rug is made to order by our Bhadohi atelier and dispatched in about 10 days. Shipping is free and insured across India, with doorstep delivery, order tracking and a GST invoice on every order.</p>" } },
+        { "type": "panel", "settings": { "title": "Warranty & returns", "content": "<p>Every rug is 100% handmade and backed by our rug warranty against manufacturing defects. If something isn't right, our care team at care@rugkari.com will make it right.</p>" } },
+        { "type": "panel", "settings": { "title": "Certificate of authenticity", "content": "<p>Each rug ships with a signed, numbered Certificate of Authenticity, hand-finished, rolled in cotton cloth and delivered insured to your door.</p>" } },
+        { "type": "step", "settings": { "title": "Drawn on cloth", "text": "The design is drawn full size on a cotton cloth stretched on a frame." } },
+        { "type": "step", "settings": { "title": "Tufted by hand", "text": "Karigars punch wool through the cloth, loop by loop, following the drawing." } },
+        { "type": "step", "settings": { "title": "Backed & sheared", "text": "A cotton backing locks the pile, which is then sheared level by hand." } },
+        { "type": "step", "settings": { "title": "Washed & inspected", "text": "Washed, checked, rolled in cloth and sent insured to your door." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

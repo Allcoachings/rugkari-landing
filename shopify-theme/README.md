@@ -3,6 +3,10 @@
 These files are for the Shopify store (rugkari.com). They are not part of the
 rugs.rugkari.com landing site and are excluded from its deploy via `.deployignore`.
 
+## sections/main-product-rugkari.liquid
+
+The redesigned product page. It reuses the live theme's cart and variant JavaScript, so checkout and tracking keep working. Install steps are in `PRODUCT-PAGE-ROLLOUT.md`.
+
 ## sections/rug-experience.liquid
 
 See `PRODUCT-PAGE-ROLLOUT.md` for checkout and tracking rules before changing the product page.

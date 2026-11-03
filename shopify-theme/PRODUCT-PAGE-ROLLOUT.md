@@ -51,6 +51,32 @@ Settings > Customer events that subscribes to `rug_experience_open` and calls
 
 Tab order: Size guide (default), Texture, Room, 3D. three.js loads only when the 3D tab is opened.
 
+## Installing the new product section
+
+Files:
+- `sections/main-product-rugkari.liquid`: the product page (gallery, buy box, description, steps).
+- `sections/rug-experience.liquid`: size guide, texture, room view, 3D (in that order).
+
+The section uses the live theme's own `global.js` hooks (`data-product-form`,
+`data-variant-picker`, `data-addons`, `.product__media-list`, `.sticky-atc`, `.lightbox`),
+so the cart, cart drawer, add-on, variant URL and sticky bar run on code that already works today.
+
+Steps, on a duplicate of the live theme:
+1. Edit code › Sections › add `main-product-rugkari` and `rug-experience` with these contents.
+2. Customize › Products › Default product: hide the old product section, add
+   "Product (Rugkari)" at the top and "Rug Experience" below it. Keep
+   Recommendations and Recently viewed after them.
+3. In "Product (Rugkari)" set the advisor button link (WhatsApp) and check the add-on handle
+   is `stain-resistant-coating` (its variant names must equal the size names).
+4. Run the test list above, then publish.
+
+Checked before release (3 Nov 2026):
+- Shopify Theme Check: 0 errors, 0 warnings on both sections.
+- Rendered with the real Cantus data and the live `global.js`: size switch updates variant id,
+  price, URL and size row; add-on shows the per-size price (Rs. 1,350 to Rs. 16,200) and is
+  added as its own line; quantity, cart drawer, cart count, sticky bar, hover zoom, lightbox
+  and mobile dots all work; no console errors; no sideways scroll on a 390 px phone.
+
 ## Release steps
 
 1. Duplicate the live theme. Work only on the copy.
