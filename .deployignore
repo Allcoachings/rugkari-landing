@@ -44,3 +44,6 @@ desktop.ini
 *.tmp
 *.orig
 *.rej
+
+# Shopify theme files (deployed to Shopify, not to this site)
+shopify-theme/

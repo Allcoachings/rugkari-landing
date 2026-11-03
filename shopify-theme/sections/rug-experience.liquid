@@ -1,0 +1,925 @@
+{%- comment -%}
+  Rugkari — Rug Experience section (Shopify Online Store 2.0)
+  Add via: Online Store > Themes > Customize > Product page > Add section > "Rug Experience".
+  Tabs: 3D rug (orbit, pile close-up, flip corner to see backing) · In your room
+  (photo / live camera / sample room, drag 4 corners, save photo) · Feel the texture
+  (magnifier) · Size guide (top-down floor plan with real furniture in feet).
+  Optional product metafield custom.flat_image (file, image) = flat top-down rug photo.
+{%- endcomment -%}
+
+{%- liquid
+  assign rk_sizes = ''
+  assign rk_selected = ''
+  for option in product.options_with_values
+    assign oname = option.name | downcase
+    if oname contains 'size'
+      assign rk_sizes = option.values | join: '|'
+      assign rk_selected = option.selected_value
+    endif
+  endfor
+  assign rk_flat = ''
+  if product.metafields.custom.flat_image != blank
+    assign rk_flat = product.metafields.custom.flat_image.value | image_url: width: 2048
+  endif
+  assign rk_room = ''
+  if section.settings.sample_room != blank
+    assign rk_room = section.settings.sample_room | image_url: width: 2000
+  endif
+-%}
+
+<section class="rkx" id="rkx-{{ section.id }}" style="--rkx-accent: {{ section.settings.accent }};" aria-label="{{ section.settings.heading | escape }}">
+  <div class="rkx-wrap page-width">
+    <header class="rkx-head">
+      {%- if section.settings.eyebrow != blank -%}<p class="rkx-eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="rkx-title">{{ section.settings.heading }}</h2>
+      {%- if section.settings.subheading != blank -%}<p class="rkx-sub">{{ section.settings.subheading }}</p>{%- endif -%}
+    </header>
+
+    <div class="rkx-tabs" role="tablist">
+      <span class="rkx-tab-ink" aria-hidden="true"></span>
+      <button type="button" role="tab" class="rkx-tab" data-tab="3d" aria-selected="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3Z"/><path d="m3 7.5 9 4.5 9-4.5M12 12v9"/></svg><span class="rkx-tl">3D rug</span><span class="rkx-ts">3D</span>
+      </button>
+      <button type="button" role="tab" class="rkx-tab" data-tab="room" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5Z"/><path d="M7 21v-4.5l5-2 5 2V21"/></svg><span class="rkx-tl">In your room</span><span class="rkx-ts">Room</span>
+      </button>
+      <button type="button" role="tab" class="rkx-tab" data-tab="zoom" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8M8 10.5h5M10.5 8v5"/></svg><span class="rkx-tl">Feel the texture</span><span class="rkx-ts">Texture</span>
+      </button>
+      <button type="button" role="tab" class="rkx-tab" data-tab="size" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="1.5"/><path d="M7 6v3M11 6v4M15 6v3M19 6v4"/></svg><span class="rkx-tl">Size guide</span><span class="rkx-ts">Size</span>
+      </button>
+    </div>
+
+    <div class="rkx-bar">
+      <div class="rkx-sizes" role="radiogroup" aria-label="Rug size"></div>
+      <div class="rkx-pick" aria-label="Rug photo used"></div>
+    </div>
+
+    <div class="rkx-panel is-active" data-panel="3d" role="tabpanel">
+      <div class="rkx-stage rkx-3d">
+        <div class="rkx-loader"><span></span>Weaving your rug in 3D…</div>
+        <div class="rkx-hint rkx-hint-3d">Drag to turn · scroll or +/− to zoom</div>
+        <div class="rkx-dim" aria-live="polite"></div>
+        <div class="rkx-dock">
+          <button type="button" class="rkx-chip" data-view="angle">Angle</button>
+          <button type="button" class="rkx-chip" data-view="top">Top</button>
+          <button type="button" class="rkx-chip" data-view="close">Pile close-up</button>
+          <button type="button" class="rkx-chip rkx-chip-strong" data-act="flip" aria-pressed="false">Flip corner</button>
+          <span class="rkx-sep"></span>
+          <button type="button" class="rkx-icon" data-act="zout" aria-label="Zoom out">−</button>
+          <button type="button" class="rkx-icon" data-act="zin" aria-label="Zoom in">+</button>
+        </div>
+      </div>
+      <p class="rkx-note">Real proportions for the size you pick. "Flip corner" shows the backing, the way you would check a rug in a showroom.</p>
+    </div>
+
+    <div class="rkx-panel" data-panel="room" role="tabpanel" hidden>
+      <div class="rkx-stage rkx-room">
+        <div class="rkx-room-default" aria-hidden="true"><i class="rkx-win"></i><i class="rkx-floor"></i><i class="rkx-sofa"></i><i class="rkx-plant"></i></div>
+        <img class="rkx-bg" alt="Your room" hidden>
+        <video class="rkx-cam" playsinline muted autoplay hidden></video>
+        <img class="rkx-rug" alt="Rug placed in room" draggable="false">
+        <span class="rkx-h" data-i="0"></span><span class="rkx-h" data-i="1"></span><span class="rkx-h" data-i="2"></span><span class="rkx-h" data-i="3"></span>
+        <div class="rkx-toast" role="status" hidden></div>
+        <div class="rkx-hint rkx-hint-room">Drag the rug to move it · drag the dots to fit it to your floor</div>
+        <div class="rkx-dock rkx-dock-room">
+          <label class="rkx-chip rkx-chip-strong rkx-upload">Upload room photo<input type="file" accept="image/*" hidden></label>
+          <button type="button" class="rkx-chip" data-act="cam">Live camera</button>
+          <button type="button" class="rkx-chip" data-act="sample">Sample room</button>
+          <button type="button" class="rkx-chip" data-act="rot">Rotate 90°</button>
+          <button type="button" class="rkx-chip" data-act="reset">Reset</button>
+          <button type="button" class="rkx-chip" data-act="save">Save photo</button>
+        </div>
+      </div>
+      <div class="rkx-sliders">
+        <label>Rug size in photo<input type="range" min="60" max="150" value="100" data-sl="scale"></label>
+        <label>Match room light<input type="range" min="55" max="130" value="96" data-sl="light"></label>
+      </div>
+    </div>
+
+    <div class="rkx-panel" data-panel="zoom" role="tabpanel" hidden>
+      <div class="rkx-stage rkx-zoom">
+        <img class="rkx-zimg" alt="Rug design, full view" draggable="false">
+        <div class="rkx-lens" aria-hidden="true"></div>
+        <div class="rkx-hint rkx-hint-zoom">Move over the rug (or press and slide on phone) to see the wool up close</div>
+        <div class="rkx-dock">
+          <button type="button" class="rkx-chip is-on" data-z="3">3×</button>
+          <button type="button" class="rkx-chip" data-z="5">5×</button>
+          <button type="button" class="rkx-chip" data-z="8">8×</button>
+        </div>
+      </div>
+      <ul class="rkx-facts">
+        {%- if section.settings.fact_1 != blank -%}<li>{{ section.settings.fact_1 }}</li>{%- endif -%}
+        {%- if section.settings.fact_2 != blank -%}<li>{{ section.settings.fact_2 }}</li>{%- endif -%}
+        {%- if section.settings.fact_3 != blank -%}<li>{{ section.settings.fact_3 }}</li>{%- endif -%}
+      </ul>
+    </div>
+
+    <div class="rkx-panel" data-panel="size" role="tabpanel" hidden>
+      <div class="rkx-stage rkx-size">
+        <svg class="rkx-plan" viewBox="0 0 16 12.5" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Floor plan showing the rug with furniture"></svg>
+        <div class="rkx-dock">
+          <button type="button" class="rkx-chip is-on" data-room="living">Living room</button>
+          <button type="button" class="rkx-chip" data-room="bed">Bedroom</button>
+          <button type="button" class="rkx-chip" data-room="dining">Dining</button>
+        </div>
+      </div>
+      <div class="rkx-verdict" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script type="application/json" class="rkx-data">
+    {
+      "title": {{ product.title | json }},
+      "sizes": {{ rk_sizes | split: '|' | json }},
+      "selected": {{ rk_selected | json }},
+      "flat": {{ rk_flat | json }},
+      "room": {{ rk_room | json }},
+      "pile": {{ section.settings.pile | default: 1 }},
+      "backing": {{ section.settings.backing | json }},
+      "images": [
+        {%- for image in product.images -%}
+          {"src": {{ image | image_url: width: 2048 | json }}, "thumb": {{ image | image_url: width: 160 | json }}, "ratio": {{ image.aspect_ratio | default: 1 }}, "alt": {{ image.alt | json }}}{%- unless forloop.last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+</section>
+
+<style>
+  .rkx{--rkx-ink:#1d1a17;--rkx-mute:#6f675f;--rkx-line:rgba(29,26,23,.12);--rkx-paper:#f7f4ef;--rkx-card:#fff;--rkx-glass:rgba(255,255,255,.78);--rkx-r:18px;color:var(--rkx-ink);padding:clamp(40px,6vw,88px) 0;background:var(--rkx-paper)}
+  .rkx *{box-sizing:border-box}
+  .rkx-wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+  .rkx-head{text-align:center;max-width:640px;margin:0 auto 28px}
+  .rkx-eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rkx-mute);margin:0 0 10px}
+  .rkx-title{font-size:clamp(28px,4vw,44px);line-height:1.08;letter-spacing:-.02em;margin:0 0 12px;font-weight:600}
+  .rkx-sub{color:var(--rkx-mute);font-size:16px;line-height:1.55;margin:0}
+
+  .rkx-tabs{position:relative;display:flex;gap:4px;margin:0 auto 18px;padding:5px;background:#ebe5dc;border-radius:999px;width:max-content;max-width:100%;overflow-x:auto;scrollbar-width:none}
+  .rkx-tabs::-webkit-scrollbar{display:none}
+  .rkx-tab-ink{position:absolute;top:5px;bottom:5px;left:5px;border-radius:999px;background:var(--rkx-card);box-shadow:0 1px 2px rgba(0,0,0,.06),0 4px 14px rgba(0,0,0,.06);transition:transform .45s cubic-bezier(.2,.8,.2,1),width .45s cubic-bezier(.2,.8,.2,1)}
+  .rkx-tab{position:relative;z-index:1;display:flex;align-items:center;gap:8px;border:0;background:none;padding:10px 18px;border-radius:999px;font:inherit;font-size:14px;font-weight:500;color:var(--rkx-mute);cursor:pointer;white-space:nowrap;transition:color .3s}
+  .rkx-tab[aria-selected="true"]{color:var(--rkx-ink)}
+  .rkx-ts{display:none}
+  .rkx-tab svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+
+  .rkx-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+  .rkx-sizes{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px}
+  .rkx-sizes::-webkit-scrollbar{display:none}
+  .rkx-size-btn{flex:none;border:1px solid var(--rkx-line);background:var(--rkx-card);color:var(--rkx-ink);border-radius:10px;padding:8px 12px;font:inherit;font-size:13px;cursor:pointer;transition:all .2s;font-variant-numeric:tabular-nums}
+  .rkx-size-btn:hover{border-color:var(--rkx-ink)}
+  .rkx-size-btn[aria-checked="true"]{background:var(--rkx-accent,#1d1a17);border-color:var(--rkx-accent,#1d1a17);color:#fff}
+  .rkx-pick{display:flex;gap:6px;align-items:center}
+  .rkx-pick:empty{display:none}
+  .rkx-pick small{font-size:12px;color:var(--rkx-mute);margin-right:4px}
+  .rkx-thumb{width:40px;height:40px;border-radius:10px;border:2px solid transparent;padding:0;overflow:hidden;cursor:pointer;background:#ddd;outline-offset:2px}
+  .rkx-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .rkx-thumb[aria-pressed="true"]{border-color:var(--rkx-accent,#1d1a17)}
+
+  .rkx-panel[hidden]{display:none}
+  .rkx-panel.is-active{animation:rkxIn .5s cubic-bezier(.2,.8,.2,1)}
+  @keyframes rkxIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .rkx-stage{position:relative;width:100%;aspect-ratio:16/10;border-radius:var(--rkx-r);overflow:hidden;background:#e9e3da;box-shadow:inset 0 0 0 1px var(--rkx-line);user-select:none;-webkit-user-select:none}
+  .rkx-3d{background:radial-gradient(120% 90% at 50% 0%,#fbf9f6 0%,#ece6dd 55%,#ddd5ca 100%);cursor:grab;touch-action:pan-y}
+  .rkx-3d:active{cursor:grabbing}
+  .rkx-3d canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+  .rkx-loader{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:14px;color:var(--rkx-mute);font-size:14px;transition:opacity .5s}
+  .rkx-loader span{width:34px;height:34px;border-radius:50%;border:2px solid var(--rkx-line);border-top-color:var(--rkx-ink);animation:rkxSpin 1s linear infinite}
+  .rkx-loader.is-done{opacity:0;pointer-events:none}
+  @keyframes rkxSpin{to{transform:rotate(360deg)}}
+  .rkx-hint{position:absolute;top:14px;left:50%;transform:translateX(-50%);background:var(--rkx-glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:7px 14px;border-radius:999px;font-size:12.5px;color:var(--rkx-ink);white-space:nowrap;pointer-events:none;transition:opacity .6s;max-width:calc(100% - 28px);overflow:hidden;text-overflow:ellipsis;z-index:3}
+  .rkx-hint.is-gone{opacity:0}
+  .rkx-dim{position:absolute;top:14px;right:14px;font-size:12px;color:var(--rkx-mute);font-variant-numeric:tabular-nums;z-index:2}
+  .rkx-dock{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;padding:6px;background:var(--rkx-glass);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.12),inset 0 0 0 1px rgba(255,255,255,.6);max-width:calc(100% - 20px);overflow-x:auto;scrollbar-width:none;z-index:4}
+  .rkx-dock::-webkit-scrollbar{display:none}
+  .rkx-chip{flex:none;border:0;background:transparent;color:var(--rkx-ink);font:inherit;font-size:13px;font-weight:500;padding:8px 13px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s;white-space:nowrap}
+  .rkx-chip:hover{background:rgba(0,0,0,.06)}
+  .rkx-chip.is-on,.rkx-chip[aria-pressed="true"]{background:var(--rkx-ink);color:#fff}
+  .rkx-chip-strong{background:var(--rkx-accent,#1d1a17);color:#fff}
+  .rkx-chip-strong:hover{background:var(--rkx-accent,#1d1a17);opacity:.9}
+  .rkx-icon{flex:none;width:34px;height:34px;border-radius:50%;border:0;background:rgba(0,0,0,.05);font:inherit;font-size:18px;line-height:1;cursor:pointer;color:var(--rkx-ink)}
+  .rkx-sep{flex:none;width:1px;height:20px;background:var(--rkx-line);margin:0 2px}
+  .rkx-note{font-size:13px;color:var(--rkx-mute);text-align:center;margin:12px 0 0}
+  .rkx button:focus-visible,.rkx label:focus-within{outline:2px solid var(--rkx-accent,#1d1a17);outline-offset:2px}
+
+  .rkx-room{background:#d9d1c6;touch-action:none}
+  .rkx-room-default,.rkx-bg,.rkx-cam{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .rkx-room-default{background:linear-gradient(180deg,#f1ece5 0%,#e7e0d6 54%,#cdbfae 54.4%,#cdbfae 55.4%,transparent 55.4%);overflow:hidden}
+  .rkx-win{position:absolute;left:8%;top:9%;width:22%;height:38%;background:linear-gradient(160deg,#fffdf8,#f4efe6);box-shadow:inset 0 0 0 6px #fbf8f3,0 0 60px 30px rgba(255,250,238,.55);border-radius:3px}
+  .rkx-win::after{content:"";position:absolute;inset:6px;background:linear-gradient(90deg,transparent 49%,#fbf8f3 49%,#fbf8f3 51%,transparent 51%),linear-gradient(0deg,transparent 49%,#fbf8f3 49%,#fbf8f3 51%,transparent 51%)}
+  .rkx-floor{position:absolute;left:-60%;right:-60%;top:55.4%;height:90%;transform-origin:top;transform:perspective(520px) rotateX(58deg);background:repeating-linear-gradient(90deg,#c7a57c 0 70px,#b8956b 70px 71px,#cdac84 71px 140px,#b48f66 140px 141px,#c39f75 141px 210px,#b8956b 210px 211px),#c7a57c}
+  .rkx-floor::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(60,40,20,.28),transparent 45%),radial-gradient(60% 40% at 25% 10%,rgba(255,248,230,.35),transparent)}
+  .rkx-sofa{position:absolute;right:9%;top:33%;width:40%;height:25%;background:linear-gradient(180deg,#9aa39a,#7f897f);border-radius:14px 14px 6px 6px;box-shadow:0 18px 30px -12px rgba(0,0,0,.35)}
+  .rkx-sofa::before{content:"";position:absolute;left:-5%;right:-5%;bottom:0;height:52%;background:linear-gradient(180deg,#8e978e,#737c73);border-radius:12px 12px 6px 6px}
+  .rkx-plant{position:absolute;left:36%;top:30%;width:6%;height:25%;background:radial-gradient(circle at 50% 30%,#5f7a55 0 38%,transparent 39%),linear-gradient(#b9a58b,#a38d72) bottom/70% 34% no-repeat;border-radius:4px}
+  .rkx-rug{position:absolute;left:0;top:0;transform-origin:0 0;cursor:move;filter:drop-shadow(0 6px 10px rgba(0,0,0,.28));will-change:transform;z-index:1;max-width:none}
+  .rkx-h{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.35),inset 0 0 0 7px var(--rkx-accent,#1d1a17);cursor:grab;z-index:2;touch-action:none}
+  .rkx-h::after{content:"";position:absolute;inset:-12px;border-radius:50%}
+  .rkx-dock-room{bottom:12px}
+  .rkx-toast{position:absolute;left:50%;top:56px;transform:translateX(-50%);background:var(--rkx-ink);color:#fff;font-size:13px;padding:9px 16px;border-radius:12px;z-index:5;max-width:calc(100% - 28px);text-align:center}
+  .rkx-upload{display:inline-flex;align-items:center}
+  .rkx-sliders{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin-top:14px}
+  .rkx-sliders label{display:grid;gap:6px;font-size:13px;color:var(--rkx-mute)}
+  .rkx-sliders input{width:100%;accent-color:var(--rkx-accent,#1d1a17)}
+
+  .rkx-zoom{background:#efe9e1;display:grid;place-items:center;touch-action:none;cursor:none}
+  .rkx-zimg{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);max-width:86%;max-height:76%;width:auto;height:auto;display:block;box-shadow:0 30px 50px -25px rgba(0,0,0,.45);border-radius:2px}
+  .rkx-lens{position:absolute;width:220px;height:220px;border-radius:50%;pointer-events:none;opacity:0;transform:scale(.6);transition:opacity .25s,transform .25s;background-repeat:no-repeat;background-color:#fff;box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 0 0 4px rgba(255,255,255,.95),inset 0 0 30px rgba(0,0,0,.25);z-index:3}
+  .rkx-lens.is-on{opacity:1;transform:scale(1)}
+  .rkx-facts{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;margin:16px 0 0;padding:0;font-size:13.5px;color:var(--rkx-mute)}
+  .rkx-facts li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--rkx-accent,#1d1a17);margin-right:8px;vertical-align:middle}
+
+  .rkx-size{background:#f4efe8;display:grid;place-items:center}
+  .rkx-plan{width:100%;height:100%;padding:14px 14px 70px}
+  .rkx-plan text{font-family:inherit}
+  .rkx-verdict{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px;font-size:14px}
+  .rkx-verdict span{background:var(--rkx-card);border:1px solid var(--rkx-line);border-radius:999px;padding:8px 14px}
+  .rkx-verdict b{font-weight:600}
+
+  @media (max-width:749px){
+    .rkx-stage{aspect-ratio:4/5}
+    .rkx-tab{padding:9px 13px;font-size:13px}
+    .rkx-tab svg{display:none}
+    .rkx-tl{display:none}.rkx-ts{display:inline}
+    .rkx-tabs{width:100%;justify-content:space-between}.rkx-tab{flex:1;justify-content:center}
+    .rkx-sliders{grid-template-columns:1fr}
+    .rkx-lens{width:160px;height:160px}
+    .rkx-dim{top:auto;bottom:70px;right:12px}
+    .rkx-hint{top:10px;font-size:11.5px}
+  }
+  @media (prefers-reduced-motion:reduce){.rkx *{animation:none!important;transition:none!important}}
+</style>
+
+<script>
+(function () {
+  if (window.RKX) { window.RKX.boot(); return; }
+  var THREE_SRC = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+
+  function parseSize(s) {
+    var m = String(s || '').match(/(\d+(?:\.\d+)?)\s*(?:ft|feet|')?\s*[x×*]\s*(\d+(?:\.\d+)?)\s*(cm|ft|feet|')?/i);
+    if (!m) return null;
+    var a = +m[1], b = +m[2];
+    if (m[3] && /cm/i.test(m[3])) { a /= 30.48; b /= 30.48; }
+    return { w: Math.min(a, b), l: Math.max(a, b), label: String(s).trim() };
+  }
+  function abs(u) { return u && u.indexOf('//') === 0 ? 'https:' + u : u; }
+  function fmt(n) { return (Math.round(n * 10) / 10).toString(); }
+  function loadImg(src) {
+    return new Promise(function (res, rej) {
+      var i = new Image(); i.crossOrigin = 'anonymous';
+      i.onload = function () { res(i); }; i.onerror = rej; i.src = src;
+    });
+  }
+  var scriptP = null;
+  function loadThree() {
+    if (window.THREE) return Promise.resolve();
+    if (!scriptP) scriptP = new Promise(function (res, rej) {
+      var s = document.createElement('script'); s.src = THREE_SRC; s.onload = res; s.onerror = rej; document.head.appendChild(s);
+    });
+    return scriptP;
+  }
+
+  /* ---------- Shared rug texture prep: portrait colour canvas + wool pile normal map ---------- */
+  var noiseTile = null;
+  function getNoise() {
+    if (noiseTile) return noiseTile;
+    var n = 256, h = new Float32Array(n * n), i, x, y;
+    for (i = 0; i < h.length; i++) h[i] = Math.random();
+    for (var p = 0; p < 2; p++) {
+      var o = new Float32Array(n * n);
+      for (y = 0; y < n; y++) for (x = 0; x < n; x++) {
+        var s = 0;
+        for (var dy = -1; dy <= 1; dy++) for (var dx = -1; dx <= 1; dx++) s += h[((y + dy + n) % n) * n + ((x + dx + n) % n)];
+        o[y * n + x] = s / 9;
+      }
+      h = o;
+    }
+    var mn = 1, mx = 0;
+    for (i = 0; i < h.length; i++) { if (h[i] < mn) mn = h[i]; if (h[i] > mx) mx = h[i]; }
+    for (i = 0; i < h.length; i++) h[i] = (h[i] - mn) / (mx - mn);
+    noiseTile = { n: n, h: h };
+    return noiseTile;
+  }
+  /* Crop plain studio background around a flat rug photo: returns [x0, y0, x1, y1] in image pixels */
+  function trim(img) {
+    var nw = img.naturalWidth, nh = img.naturalHeight, full = [0, 0, nw, nh];
+    try {
+      var k = 320 / Math.max(nw, nh), w = Math.max(8, Math.round(nw * k)), h = Math.max(8, Math.round(nh * k));
+      var c = document.createElement('canvas'); c.width = w; c.height = h;
+      var x = c.getContext('2d'); x.drawImage(img, 0, 0, w, h);
+      var d = x.getImageData(0, 0, w, h).data;
+      var px = function (i, j) { var o = (j * w + i) * 4; return [d[o], d[o + 1], d[o + 2]]; };
+      var cs = [px(1, 1), px(w - 2, 1), px(1, h - 2), px(w - 2, h - 2)];
+      var bg = [0, 1, 2].map(function (q) { return (cs[0][q] + cs[1][q] + cs[2][q] + cs[3][q]) / 4; });
+      var dist = function (p) { return Math.abs(p[0] - bg[0]) + Math.abs(p[1] - bg[1]) + Math.abs(p[2] - bg[2]); };
+      if (cs.some(function (p) { return dist(p) > 36; })) return full;
+      var colBg = function (i) { var n = 0; for (var j = 0; j < h; j++) if (dist(px(i, j)) > 40) n++; return n / h < 0.04; };
+      var rowBg = function (j) { var n = 0; for (var i = 0; i < w; i++) if (dist(px(i, j)) > 40) n++; return n / w < 0.04; };
+      var l = 0, r = w - 1, t = 0, b = h - 1;
+      while (l < r && colBg(l)) l++;
+      while (r > l && colBg(r)) r--;
+      while (t < b && rowBg(t)) t++;
+      while (b > t && rowBg(b)) b--;
+      if ((r - l) < w * 0.3 || (b - t) < h * 0.3) return full;
+      var pad = 1.5;
+      return [Math.max(0, (l + pad) / k), Math.max(0, (t + pad) / k), Math.min(nw, (r + 1 - pad) / k), Math.min(nh, (b + 1 - pad) / k)];
+    } catch (e) { return full; }
+  }
+  var rugCache = {};
+  function prepRug(src) {
+    if (rugCache[src]) return rugCache[src];
+    rugCache[src] = loadImg(src).then(function (img) {
+      var W = 1024, H = 1536, c = document.createElement('canvas'); c.width = W; c.height = H;
+      var x = c.getContext('2d');
+      var cr = trim(img), cw = cr[2] - cr[0], ch = cr[3] - cr[1];
+      var land = cw > ch * 1.05;
+      if (land) { x.save(); x.translate(W, 0); x.rotate(Math.PI / 2); x.drawImage(img, cr[0], cr[1], cw, ch, 0, 0, H, W); x.restore(); }
+      else x.drawImage(img, cr[0], cr[1], cw, ch, 0, 0, W, H);
+      var out = { canvas: c, normal: null, edge: [205, 196, 184], url: null, zoom: src };
+      try { var zc = document.createElement('canvas'); zc.width = Math.round(cw); zc.height = Math.round(ch); zc.getContext('2d').drawImage(img, cr[0], cr[1], cw, ch, 0, 0, zc.width, zc.height); out.zoom = zc.toDataURL('image/jpeg', 0.92); } catch (e) {}
+      try { out.url = c.toDataURL('image/jpeg', 0.9); } catch (e) { out.url = src; return out; }
+      var d = x.getImageData(0, 0, W, H).data, L = new Float32Array(W * H), i, px, py;
+      var er = 0, eg = 0, eb = 0, ec = 0;
+      for (py = 0; py < H; py++) for (px = 0; px < W; px++) {
+        i = (py * W + px) * 4;
+        L[py * W + px] = (d[i] * 0.299 + d[i + 1] * 0.587 + d[i + 2] * 0.114) / 255;
+        if (px < 6 || py < 6 || px > W - 7 || py > H - 7) { er += d[i]; eg += d[i + 1]; eb += d[i + 2]; ec++; }
+      }
+      out.edge = [er / ec, eg / ec, eb / ec];
+      var nz = getNoise(), nn = nz.n, nh = nz.h;
+      var Hh = new Float32Array(W * H);
+      for (py = 0; py < H; py++) for (px = 0; px < W; px++) {
+        var k = py * W + px, lb = L[k];
+        if (px > 0 && px < W - 1 && py > 0 && py < H - 1) lb = (L[k] * 4 + L[k - 1] + L[k + 1] + L[k - W] + L[k + W]) / 8;
+        Hh[k] = nh[(py % nn) * nn + (px % nn)] * 0.9 + lb * 0.55;
+      }
+      var nc = document.createElement('canvas'); nc.width = W; nc.height = H;
+      var nx = nc.getContext('2d'), id = nx.createImageData(W, H), dd = id.data, st = 5.5;
+      for (py = 0; py < H; py++) for (px = 0; px < W; px++) {
+        var k2 = py * W + px;
+        var gx = (Hh[py * W + Math.min(W - 1, px + 1)] - Hh[py * W + Math.max(0, px - 1)]) * st;
+        var gy = (Hh[Math.min(H - 1, py + 1) * W + px] - Hh[Math.max(0, py - 1) * W + px]) * st;
+        var ln = Math.sqrt(gx * gx + gy * gy + 1), j = k2 * 4;
+        dd[j] = (-gx / ln * 0.5 + 0.5) * 255; dd[j + 1] = (gy / ln * 0.5 + 0.5) * 255; dd[j + 2] = (1 / ln * 0.5 + 0.5) * 255; dd[j + 3] = 255;
+      }
+      nx.putImageData(id, 0, 0);
+      out.normal = nc;
+      return out;
+    });
+    return rugCache[src];
+  }
+
+  /* ---------- Projective transform helpers (room view) ---------- */
+  function adj(m) { return [m[4]*m[8]-m[5]*m[7], m[2]*m[7]-m[1]*m[8], m[1]*m[5]-m[2]*m[4], m[5]*m[6]-m[3]*m[8], m[0]*m[8]-m[2]*m[6], m[2]*m[3]-m[0]*m[5], m[3]*m[7]-m[4]*m[6], m[1]*m[6]-m[0]*m[7], m[0]*m[4]-m[1]*m[3]]; }
+  function mul(a, b) { var c = [], i, j, k, s; for (i = 0; i < 3; i++) for (j = 0; j < 3; j++) { s = 0; for (k = 0; k < 3; k++) s += a[3*i+k] * b[3*k+j]; c[3*i+j] = s; } return c; }
+  function mulv(m, v) { return [m[0]*v[0]+m[1]*v[1]+m[2]*v[2], m[3]*v[0]+m[4]*v[1]+m[5]*v[2], m[6]*v[0]+m[7]*v[1]+m[8]*v[2]]; }
+  function basis(p) { var m = [p[0], p[2], p[4], p[1], p[3], p[5], 1, 1, 1]; var v = mulv(adj(m), [p[6], p[7], 1]); return mul(m, [v[0], 0, 0, 0, v[1], 0, 0, 0, v[2]]); }
+  function homography(src, dst) { return mul(basis(dst), adj(basis(src))); }
+  function project(m, x, y) { var v = mulv(m, [x, y, 1]); return [v[0] / v[2], v[1] / v[2]]; }
+
+  function init(root) {
+    if (root.dataset.rkxReady) return;
+    root.dataset.rkxReady = '1';
+    var $ = function (s) { return root.querySelector(s); };
+    var $$ = function (s) { return Array.prototype.slice.call(root.querySelectorAll(s)); };
+    var data = {};
+    try { data = JSON.parse($('.rkx-data').textContent); } catch (e) { return; }
+    var images = (data.images || []).map(function (im) { return { src: abs(im.src), thumb: abs(im.thumb || im.src), ratio: +im.ratio || 1, alt: im.alt || '' }; });
+    if (!images.length && !data.flat) { root.hidden = true; return; }
+
+    var sizes = (data.sizes || []).map(parseSize).filter(Boolean);
+    if (!sizes.length) sizes = [{ w: 5, l: 8, label: '5 x 8 ft' }];
+    var state = {
+      size: sizes.filter(function (s) { return s.label === data.selected; })[0] || sizes[Math.min(2, sizes.length - 1)],
+      img: null, tab: '3d', rug: null
+    };
+    function pickFlat() {
+      if (data.flat) return abs(data.flat);
+      var f = images.filter(function (i) { return /flat|top|full|design|overhead/i.test(i.alt); })[0];
+      if (f) return f.src;
+      f = images.filter(function (i) { return i.ratio < 0.8 || i.ratio > 1.25; })[0];
+      return (f || images[1] || images[0]).src;
+    }
+    state.img = pickFlat();
+
+    /* ----- Tabs ----- */
+    var ink = $('.rkx-tab-ink');
+    function moveInk() {
+      var t = $('.rkx-tab[aria-selected="true"]'); if (!t) return;
+      ink.style.width = t.offsetWidth + 'px';
+      ink.style.transform = 'translateX(' + (t.offsetLeft - 5) + 'px)';
+    }
+    $$('.rkx-tab').forEach(function (b) {
+      b.addEventListener('click', function () { setTab(b.dataset.tab); });
+    });
+    function setTab(t) {
+      state.tab = t;
+      $$('.rkx-tab').forEach(function (b) { b.setAttribute('aria-selected', b.dataset.tab === t ? 'true' : 'false'); });
+      $$('.rkx-panel').forEach(function (p) { var on = p.dataset.panel === t; p.hidden = !on; p.classList.toggle('is-active', on); });
+      moveInk();
+      if (t === '3d') threeView.start(); else threeView.stop();
+      if (t === 'room') room.init();
+      if (t === 'zoom') zoom.init();
+      if (t === 'size') plan.draw();
+      if (t !== 'room') room.stopCam();
+    }
+    window.addEventListener('resize', moveInk);
+    setTimeout(moveInk, 50);
+
+    /* ----- Size chips + theme variant sync ----- */
+    var sizeBox = $('.rkx-sizes');
+    sizes.forEach(function (s) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'rkx-size-btn'; b.setAttribute('role', 'radio');
+      b.textContent = s.label.replace(/\s*ft$/i, '') + ' ft';
+      b.addEventListener('click', function () { setSize(s, true); });
+      s.btn = b; sizeBox.appendChild(b);
+    });
+    function setSize(s, fromUser) {
+      state.size = s;
+      sizes.forEach(function (x) { if (x.btn) x.btn.setAttribute('aria-checked', x === s ? 'true' : 'false'); });
+      threeView.resize(); room.onSize(); plan.draw();
+      if (fromUser) syncTheme(s.label);
+    }
+    function syncTheme(label) {
+      var radios = Array.prototype.slice.call(document.querySelectorAll('input[type="radio"]'));
+      var r = radios.filter(function (i) { return i.value === label && !root.contains(i); })[0];
+      if (r) { if (!r.checked) r.click(); return; }
+      var sels = Array.prototype.slice.call(document.querySelectorAll('select'));
+      for (var i = 0; i < sels.length; i++) {
+        var sel = sels[i];
+        if (root.contains(sel)) continue;
+        for (var j = 0; j < sel.options.length; j++) if (sel.options[j].value === label) {
+          if (sel.value !== label) { sel.value = label; sel.dispatchEvent(new Event('change', { bubbles: true })); }
+          return;
+        }
+      }
+    }
+    document.addEventListener('change', function (e) {
+      var t = e.target; if (!t || root.contains(t)) return;
+      var v = t.value; if (!v) return;
+      var m = sizes.filter(function (s) { return s.label === v; })[0];
+      if (m && m !== state.size) setSize(m, false);
+    });
+
+    /* ----- Photo picker ----- */
+    var pick = $('.rkx-pick');
+    if (images.length > 1 && !data.flat) {
+      var lab = document.createElement('small'); lab.textContent = 'Rug photo'; pick.appendChild(lab);
+      images.forEach(function (im) {
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'rkx-thumb';
+        b.setAttribute('aria-label', 'Use this photo of the rug');
+        b.innerHTML = '<img alt="" loading="lazy">'; b.firstChild.src = im.thumb;
+        b.addEventListener('click', function () { setImg(im.src); });
+        im.btn = b; pick.appendChild(b);
+      });
+    }
+    function setImg(src) {
+      state.img = src;
+      images.forEach(function (im) { if (im.btn) im.btn.setAttribute('aria-pressed', im.src === src ? 'true' : 'false'); });
+      state.rug = prepRug(src);
+      threeView.setTexture(); room.setTexture(); zoom.setImg(); plan.draw();
+    }
+
+    /* =========================== 3D VIEW =========================== */
+    var threeView = (function () {
+      var host = $('.rkx-3d'), loader = $('.rkx-loader'), dimEl = $('.rkx-dim'), hint = $('.rkx-hint-3d');
+      var T, renderer, scene, cam, group, front, back, sides = [], geo, base, matF, matB, edgeMat;
+      var ready = false, running = false, inView = true, raf = 0;
+      var cur = { th: 0.55, ph: 0.95, d: 14, tx: 0, tz: 0 }, tgt = { th: 0.55, ph: 0.95, d: 14, tx: 0, tz: 0 };
+      var fold = 0, foldT = 0, auto = true, lastUser = 0, booting = false;
+      var THICK = 0.05;
+
+      function boot() {
+        if (booting) return; booting = true;
+        Promise.all([loadThree(), state.rug]).then(function (r) {
+          T = window.THREE;
+          renderer = new T.WebGLRenderer({ antialias: true, alpha: true });
+          renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+          renderer.outputEncoding = T.sRGBEncoding;
+          renderer.toneMapping = T.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+          renderer.shadowMap.enabled = true; renderer.shadowMap.type = T.PCFSoftShadowMap;
+          host.insertBefore(renderer.domElement, host.firstChild);
+          scene = new T.Scene();
+          cam = new T.PerspectiveCamera(32, 1, 0.05, 300);
+          scene.add(new T.HemisphereLight(0xfffaf2, 0xb9ab99, 0.72));
+          var key = new T.DirectionalLight(0xfff3e2, 1.05); key.position.set(-9, 7, 5); key.castShadow = true;
+          key.shadow.mapSize.set(2048, 2048); key.shadow.bias = -0.0004; key.shadow.radius = 6;
+          var sc = key.shadow.camera; sc.left = -14; sc.right = 14; sc.top = 14; sc.bottom = -14; sc.near = 1; sc.far = 50;
+          scene.add(key);
+          var rim = new T.DirectionalLight(0xdfe8ff, 0.32); rim.position.set(8, 5, -7); scene.add(rim);
+          var floor = new T.Mesh(new T.PlaneGeometry(120, 120), new T.ShadowMaterial({ opacity: 0.2 }));
+          floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+          group = new T.Group(); scene.add(group);
+          matF = new T.MeshStandardMaterial({ roughness: 0.96, metalness: 0, side: T.FrontSide });
+          var bc = document.createElement('canvas'); bc.width = bc.height = 64;
+          var bx = bc.getContext('2d'); bx.fillStyle = data.backing || '#e9e1d2'; bx.fillRect(0, 0, 64, 64);
+          bx.strokeStyle = 'rgba(120,100,70,.28)'; bx.lineWidth = 1;
+          for (var i = 0; i < 64; i += 4) { bx.beginPath(); bx.moveTo(i + .5, 0); bx.lineTo(i + .5, 64); bx.stroke(); bx.beginPath(); bx.moveTo(0, i + .5); bx.lineTo(64, i + .5); bx.stroke(); }
+          var bt = new T.CanvasTexture(bc); bt.wrapS = bt.wrapT = T.RepeatWrapping; bt.encoding = T.sRGBEncoding;
+          matB = new T.MeshStandardMaterial({ map: bt, roughness: 1, side: T.BackSide });
+          edgeMat = new T.MeshStandardMaterial({ roughness: 1 });
+          ready = true;
+          setTexture(); build();
+          loader.classList.add('is-done');
+          bindInput();
+          new ResizeObserver(fit).observe(host); fit();
+          if ('IntersectionObserver' in window) new IntersectionObserver(function (e) { inView = e[0].isIntersecting; if (inView) loop(); }).observe(host);
+          if (state.tab === '3d') start();
+        }).catch(function () {
+          loader.innerHTML = 'The 3D view could not load on this device. Try the other tabs.';
+        });
+      }
+      function setTexture() {
+        if (!ready) return;
+        state.rug.then(function (r) {
+          var tex = new T.CanvasTexture(r.canvas); tex.encoding = T.sRGBEncoding; tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+          if (matF.map) matF.map.dispose(); matF.map = tex;
+          if (r.normal) { var nt = new T.CanvasTexture(r.normal); if (matF.normalMap) matF.normalMap.dispose(); matF.normalMap = nt; matF.normalScale = new T.Vector2(1.15 * (data.pile || 1), 1.15 * (data.pile || 1)); }
+          edgeMat.color.setRGB(r.edge[0] / 255, r.edge[1] / 255, r.edge[2] / 255).convertSRGBToLinear().multiplyScalar(0.82);
+          matF.needsUpdate = true; edgeMat.needsUpdate = true;
+        });
+      }
+      function build() {
+        if (!ready) return;
+        var w = state.size.w, l = state.size.l;
+        if (geo) geo.dispose();
+        while (group.children.length) group.remove(group.children[0]);
+        geo = new T.PlaneGeometry(w, l, 60, 90); geo.rotateX(-Math.PI / 2); geo.translate(0, THICK, 0);
+        base = Float32Array.from(geo.attributes.position.array);
+        front = new T.Mesh(geo, matF); front.castShadow = true; front.receiveShadow = true;
+        back = new T.Mesh(geo, matB); back.castShadow = true;
+        group.add(front, back);
+        if (matB.map) matB.map.repeat.set(w * 3, l * 3);
+        sides = [];
+        [[w, 0, l / 2], [w, 0, -l / 2], [l, Math.PI / 2, w / 2], [l, Math.PI / 2, -w / 2]].forEach(function (s, i) {
+          var m = new T.Mesh(new T.PlaneGeometry(s[0], THICK), edgeMat);
+          m.rotation.y = s[1] + (i % 2 ? Math.PI : 0);
+          if (s[1]) m.position.set(s[2], THICK / 2, 0); else m.position.set(0, THICK / 2, s[2]);
+          group.add(m); sides.push(m);
+        });
+        if (fold > 0.001) deform(fold);
+        dimEl.textContent = fmt(w) + ' × ' + fmt(l) + ' ft  ·  ' + Math.round(w * 30.48) + ' × ' + Math.round(l * 30.48) + ' cm';
+        setView(currentView, true);
+      }
+      function deform(a) {
+        var p = geo.attributes.position.array, w = state.size.w, l = state.size.l;
+        var len = Math.hypot(w, l), dx = w / len, dz = l / len;
+        var s = a * Math.min(w, l) * 0.38, cx = w / 2, cz = l / 2;
+        var Px = cx - dx * s, Pz = cz - dz * s, R = Math.max(s, 1e-4) / (Math.PI * 0.82);
+        for (var i = 0; i < p.length; i += 3) {
+          var x = base[i], y = base[i + 1], z = base[i + 2];
+          var t = (x - Px) * dx + (z - Pz) * dz;
+          if (t > 0 && a > 0.001) {
+            var th = t / R, sn = R * Math.sin(th);
+            p[i] = x - dx * t + dx * sn; p[i + 2] = z - dz * t + dz * sn; p[i + 1] = y + R * (1 - Math.cos(th));
+          } else { p[i] = x; p[i + 1] = y; p[i + 2] = z; }
+        }
+        geo.attributes.position.needsUpdate = true; geo.computeVertexNormals();
+        sides.forEach(function (m) { m.visible = a < 0.02; });
+      }
+      var currentView = 'angle';
+      function setView(v, instant) {
+        currentView = v;
+        var w = state.size.w, l = state.size.l, m = Math.max(w, l);
+        $$('[data-view]').forEach(function (b) { b.classList.toggle('is-on', b.dataset.view === v); });
+        if (v === 'top') { tgt.th = 0; tgt.ph = 0.06; tgt.d = m * 2.25 + 2; tgt.tx = 0; tgt.tz = 0; auto = false; }
+        else if (v === 'close') { tgt.th = 0.85; tgt.ph = 1.2; tgt.d = 2.1; tgt.tx = w * 0.36; tgt.tz = l * 0.36; auto = false; }
+        else { tgt.th = 0.55; tgt.ph = 0.95; tgt.d = m * 1.85 + 2.5; tgt.tx = 0; tgt.tz = 0; auto = true; }
+        var asp = cam ? cam.aspect : 1.6;
+        if (v !== 'close' && asp < 1.2) tgt.d *= Math.pow(1.2 / asp, 0.85);
+        if (instant) { cur.th = tgt.th; cur.ph = tgt.ph; cur.d = tgt.d; cur.tx = tgt.tx; cur.tz = tgt.tz; }
+        loop();
+      }
+      function bindInput() {
+        var c = renderer.domElement, ptrs = {}, lastX = 0, lastY = 0, pinch = 0;
+        c.addEventListener('pointerdown', function (e) {
+          ptrs[e.pointerId] = [e.clientX, e.clientY]; lastX = e.clientX; lastY = e.clientY;
+          auto = false; lastUser = Date.now(); hint.classList.add('is-gone');
+          if (e.pointerType === 'mouse') c.setPointerCapture(e.pointerId);
+        });
+        c.addEventListener('pointermove', function (e) {
+          if (!ptrs[e.pointerId]) return;
+          ptrs[e.pointerId] = [e.clientX, e.clientY];
+          var ids = Object.keys(ptrs);
+          if (ids.length === 2) {
+            var a = ptrs[ids[0]], b = ptrs[ids[1]], d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+            if (pinch) tgt.d = Math.min(60, Math.max(1.4, tgt.d * pinch / d)); pinch = d; return;
+          }
+          tgt.th -= (e.clientX - lastX) * 0.008;
+          if (e.pointerType === 'mouse') tgt.ph = Math.min(1.42, Math.max(0.04, tgt.ph - (e.clientY - lastY) * 0.006));
+          lastX = e.clientX; lastY = e.clientY; lastUser = Date.now(); loop();
+        });
+        function up(e) { delete ptrs[e.pointerId]; pinch = 0; }
+        c.addEventListener('pointerup', up); c.addEventListener('pointercancel', up); c.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') up(e); });
+        c.addEventListener('wheel', function (e) {
+          e.preventDefault(); auto = false; lastUser = Date.now();
+          tgt.d = Math.min(60, Math.max(1.4, tgt.d * (1 + e.deltaY * 0.0012))); loop();
+        }, { passive: false });
+      }
+      $$('[data-view]').forEach(function (b) { b.addEventListener('click', function () { setView(b.dataset.view); }); });
+      root.querySelector('[data-act="flip"]').addEventListener('click', function () {
+        foldT = foldT ? 0 : 1; this.setAttribute('aria-pressed', foldT ? 'true' : 'false');
+        if (foldT && currentView === 'top') setView('angle');
+        loop();
+      });
+      root.querySelector('[data-act="zin"]').addEventListener('click', function () { tgt.d = Math.max(1.4, tgt.d * 0.8); auto = false; loop(); });
+      root.querySelector('[data-act="zout"]').addEventListener('click', function () { tgt.d = Math.min(60, tgt.d * 1.25); loop(); });
+
+      function fit() {
+        if (!renderer) return;
+        var w = host.clientWidth, h = host.clientHeight;
+        var was = cam.aspect; renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix(); if (Math.abs(was - cam.aspect) > 0.05) setView(currentView, true); loop();
+      }
+      function frame() {
+        raf = 0;
+        if (!running || !inView) return;
+        if (auto) tgt.th += 0.0016;
+        else if (currentView === 'angle' && Date.now() - lastUser > 7000) auto = true;
+        var k = 0.1, moving = false;
+        ['th', 'ph', 'd', 'tx', 'tz'].forEach(function (q) { var df = tgt[q] - cur[q]; if (Math.abs(df) > 1e-4) moving = true; cur[q] += df * k; });
+        if (Math.abs(foldT - fold) > 0.001) { fold += (foldT - fold) * 0.08; deform(fold); moving = true; }
+        var sp = Math.sin(cur.ph);
+        cam.position.set(cur.tx + cur.d * sp * Math.sin(cur.th), cur.d * Math.cos(cur.ph), cur.tz + cur.d * sp * Math.cos(cur.th));
+        cam.lookAt(cur.tx, 0, cur.tz);
+        renderer.render(scene, cam);
+        if (moving || auto) raf = requestAnimationFrame(frame);
+      }
+      function loop() { if (!raf && ready && running && inView) raf = requestAnimationFrame(frame); }
+      function start() { running = true; if (!ready) boot(); else { fit(); loop(); } }
+      function stop() { running = false; }
+      return { start: start, stop: stop, resize: function () { build(); }, setTexture: function () { setTexture(); } };
+    })();
+
+    /* =========================== ROOM VIEW =========================== */
+    var room = (function () {
+      var stage = $('.rkx-room'), rugEl = $('.rkx-rug'), bg = $('.rkx-bg'), video = $('.rkx-cam'), def = $('.rkx-room-default');
+      var hs = $$('.rkx-h'), hint = $('.rkx-hint-room');
+      var pts = null, IW = 1000, IH = 1500, rot = 0, scale = 1, light = 0.96, stream = null, inited = false;
+
+      function defaults() {
+        var W = stage.clientWidth, H = stage.clientHeight, r = state.size.w / state.size.l;
+        var longAcross = rot % 2 === 0;
+        var wide = longAcross ? 0.6 : 0.6 * Math.max(0.55, r * 1.25);
+        var cx = 0.47, near = 0.84, far = 0.6, depth = longAcross ? 0.6 : 0.42;
+        var farY = near - (near - far) * (depth / 0.6);
+        var nw = wide, fw = wide * 0.62;
+        return [[(cx - fw / 2) * W, farY * H], [(cx + fw / 2) * W, farY * H], [(cx + nw / 2) * W, near * H], [(cx - nw / 2) * W, near * H]];
+      }
+      function apply() {
+        if (!pts) return;
+        var c = centroid(), q = pts.map(function (p) { return [c[0] + (p[0] - c[0]) * scale, c[1] + (p[1] - c[1]) * scale]; });
+        var o = [q[(0 + rot) % 4], q[(1 + rot) % 4], q[(2 + rot) % 4], q[(3 + rot) % 4]];
+        var m = homography([0, 0, IW, 0, IW, IH, 0, IH], [o[0][0], o[0][1], o[1][0], o[1][1], o[2][0], o[2][1], o[3][0], o[3][1]]);
+        for (var i = 0; i < 9; i++) m[i] /= m[8];
+        rugEl.style.width = IW + 'px'; rugEl.style.height = IH + 'px';
+        rugEl.style.transform = 'matrix3d(' + [m[0], m[3], 0, m[6], m[1], m[4], 0, m[7], 0, 0, 1, 0, m[2], m[5], 0, m[8]].join(',') + ')';
+        rugEl.style.filter = 'brightness(' + light + ') drop-shadow(0 6px 10px rgba(0,0,0,.28))';
+        hs.forEach(function (h, i) { h.style.left = q[i][0] + 'px'; h.style.top = q[i][1] + 'px'; });
+        state.roomQuad = o;
+      }
+      function centroid() { var x = 0, y = 0; pts.forEach(function (p) { x += p[0]; y += p[1]; }); return [x / 4, y / 4]; }
+      function setTexture() { state.rug.then(function (r) { rugEl.src = r.url; }); }
+      function init() {
+        if (!inited) {
+          inited = true; setTexture();
+          if (data.room) useImage(abs(data.room));
+          bind();
+          new ResizeObserver(function (e) {
+            var cr = e[0].contentRect; if (!cr.width) return;
+            if (!pts || !stage._w) pts = defaults();
+            else { var sx = cr.width / stage._w, sy = cr.height / stage._h; pts = pts.map(function (p) { return [p[0] * sx, p[1] * sy]; }); }
+            stage._w = cr.width; stage._h = cr.height; apply();
+          }).observe(stage);
+        }
+      }
+      function onSize() { if (inited) { pts = defaults(); scale = 1; root.querySelector('[data-sl="scale"]').value = 100; apply(); } }
+      function bind() {
+        var drag = null;
+        function loc(e) { var r = stage.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+        hs.forEach(function (h, i) {
+          h.addEventListener('pointerdown', function (e) { e.preventDefault(); h.setPointerCapture(e.pointerId); drag = { type: 'h', i: i }; hint.classList.add('is-gone'); });
+        });
+        rugEl.addEventListener('pointerdown', function (e) { e.preventDefault(); rugEl.setPointerCapture(e.pointerId); drag = { type: 'm', p: loc(e) }; hint.classList.add('is-gone'); });
+        stage.addEventListener('pointermove', function (e) {
+          if (!drag) return; var p = loc(e);
+          if (drag.type === 'h') {
+            if (scale !== 1) {
+              var c = centroid();
+              pts = pts.map(function (q) { return [c[0] + (q[0] - c[0]) * scale, c[1] + (q[1] - c[1]) * scale]; });
+              scale = 1; root.querySelector('[data-sl="scale"]').value = 100;
+            }
+            pts[drag.i] = [Math.max(-200, Math.min(stage.clientWidth + 200, p[0])), Math.max(-200, Math.min(stage.clientHeight + 200, p[1]))];
+          } else {
+            var dx = p[0] - drag.p[0], dy = p[1] - drag.p[1]; drag.p = p;
+            pts = pts.map(function (q) { return [q[0] + dx, q[1] + dy]; });
+          }
+          apply();
+        });
+        function end() { drag = null; }
+        stage.addEventListener('pointerup', end); stage.addEventListener('pointercancel', end);
+        root.querySelector('.rkx-upload input').addEventListener('change', function () {
+          var f = this.files && this.files[0]; if (!f) return; stopCam(); useImage(URL.createObjectURL(f)); this.value = '';
+        });
+        root.querySelector('[data-act="cam"]').addEventListener('click', startCam);
+        root.querySelector('[data-act="sample"]').addEventListener('click', function () { stopCam(); if (data.room) useImage(abs(data.room)); else { bg.hidden = true; def.hidden = false; } });
+        root.querySelector('[data-act="rot"]').addEventListener('click', function () { rot = (rot + 1) % 4; if (rot % 2 === 1) pts = defaults(); apply(); });
+        root.querySelector('[data-act="reset"]').addEventListener('click', function () { rot = 0; scale = 1; root.querySelector('[data-sl="scale"]').value = 100; pts = defaults(); apply(); });
+        root.querySelector('[data-act="save"]').addEventListener('click', save);
+        root.querySelector('[data-sl="scale"]').addEventListener('input', function () { scale = this.value / 100; apply(); });
+        root.querySelector('[data-sl="light"]').addEventListener('input', function () { light = this.value / 100; apply(); });
+      }
+      var toastT = 0;
+      function toast(msg) { var t = root.querySelector('.rkx-toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(function () { t.hidden = true; }, 4200); }
+      function useImage(src) { bg.crossOrigin = 'anonymous'; bg.src = src; bg.hidden = false; def.hidden = true; video.hidden = true; }
+      function startCam() {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { toast('Camera is not available in this browser. Upload a photo of your room instead.'); return; }
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } }, audio: false }).then(function (s) {
+          stream = s; video.srcObject = s; video.hidden = false; bg.hidden = true; def.hidden = true; video.play();
+          root.querySelector('[data-act="cam"]').classList.add('is-on');
+        }).catch(function () { toast('Camera access was blocked. Allow it in your browser, or upload a photo of your room.'); });
+      }
+      function stopCam() {
+        if (stream) { stream.getTracks().forEach(function (t) { t.stop(); }); stream = null; }
+        video.hidden = true; var b = root.querySelector('[data-act="cam"]'); if (b) b.classList.remove('is-on');
+      }
+      function drawCover(ctx, src, sw, sh, W, H) {
+        var s = Math.max(W / sw, H / sh), dw = sw * s, dh = sh * s; ctx.drawImage(src, (W - dw) / 2, (H - dh) / 2, dw, dh);
+      }
+      function tri(ctx, img, s0, s1, s2, d0, d1, d2) {
+        ctx.save(); ctx.beginPath();
+        var cx = (d0[0] + d1[0] + d2[0]) / 3, cy = (d0[1] + d1[1] + d2[1]) / 3;
+        [d0, d1, d2].forEach(function (d, i) { var x = d[0] + (d[0] - cx) * 0.02, y = d[1] + (d[1] - cy) * 0.02; i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); });
+        ctx.closePath(); ctx.clip();
+        var x1 = s1[0] - s0[0], y1 = s1[1] - s0[1], x2 = s2[0] - s0[0], y2 = s2[1] - s0[1];
+        var u1 = d1[0] - d0[0], v1 = d1[1] - d0[1], u2 = d2[0] - d0[0], v2 = d2[1] - d0[1], det = x1 * y2 - x2 * y1;
+        var a = (u1 * y2 - u2 * y1) / det, b = (u2 * x1 - u1 * x2) / det, c = (v1 * y2 - v2 * y1) / det, d = (v2 * x1 - v1 * x2) / det;
+        ctx.transform(a, c, b, d, d0[0] - a * s0[0] - b * s0[1], d0[1] - c * s0[0] - d * s0[1]);
+        ctx.drawImage(img, 0, 0); ctx.restore();
+      }
+      function save() {
+        state.rug.then(function (r) {
+          var W = stage.clientWidth, H = stage.clientHeight, k = 2, cv = document.createElement('canvas');
+          cv.width = W * k; cv.height = H * k; var ctx = cv.getContext('2d'); ctx.scale(k, k);
+          if (!video.hidden && video.videoWidth) drawCover(ctx, video, video.videoWidth, video.videoHeight, W, H);
+          else if (!bg.hidden && bg.naturalWidth) drawCover(ctx, bg, bg.naturalWidth, bg.naturalHeight, W, H);
+          else { var g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#f1ece5'); g.addColorStop(0.55, '#e7e0d6'); g.addColorStop(0.555, '#c7a57c'); g.addColorStop(1, '#b8956b'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H); }
+          var img = r.canvas, iw = img.width, ih = img.height, o = state.roomQuad;
+          var m = homography([0, 0, iw, 0, iw, ih, 0, ih], [o[0][0], o[0][1], o[1][0], o[1][1], o[2][0], o[2][1], o[3][0], o[3][1]]);
+          ctx.save(); ctx.filter = 'brightness(' + light + ')';
+          var N = 18;
+          for (var gy = 0; gy < N; gy++) for (var gx = 0; gx < N; gx++) {
+            var sx0 = iw * gx / N, sy0 = ih * gy / N, sx1 = iw * (gx + 1) / N, sy1 = ih * (gy + 1) / N;
+            var a = project(m, sx0, sy0), b = project(m, sx1, sy0), c = project(m, sx1, sy1), d = project(m, sx0, sy1);
+            tri(ctx, img, [sx0, sy0], [sx1, sy0], [sx1, sy1], a, b, c);
+            tri(ctx, img, [sx0, sy0], [sx1, sy1], [sx0, sy1], a, c, d);
+          }
+          ctx.restore();
+          ctx.font = '600 14px system-ui, sans-serif'; ctx.fillStyle = 'rgba(255,255,255,.92)'; ctx.fillText((data.title || 'Rug') + ' · ' + state.size.label, 14, H - 16);
+          var a = document.createElement('a'); a.download = 'rug-in-my-room.jpg';
+          try { a.href = cv.toDataURL('image/jpeg', 0.92); a.click(); } catch (e) { toast('This photo could not be saved here. Take a screenshot instead.'); }
+        });
+      }
+      return { init: init, onSize: onSize, setTexture: function () { if (inited) setTexture(); }, stopCam: stopCam };
+    })();
+
+    /* =========================== TEXTURE ZOOM =========================== */
+    var zoom = (function () {
+      var stage = $('.rkx-zoom'), img = $('.rkx-zimg'), lens = $('.rkx-lens'), hint = $('.rkx-hint-zoom'), Z = 3, inited = false;
+      function setImg() { state.rug.then(function (r) { img.src = r.zoom; lens.style.backgroundImage = 'url("' + r.zoom + '")'; }); }
+      function move(e) {
+        var r = img.getBoundingClientRect(), s = stage.getBoundingClientRect();
+        var x = e.clientX - r.left, y = e.clientY - r.top;
+        if (x < 0 || y < 0 || x > r.width || y > r.height) { lens.classList.remove('is-on'); return; }
+        var lw = lens.offsetWidth, lift = e.pointerType === 'touch' ? lw * 0.65 : 0;
+        lens.classList.add('is-on'); hint.classList.add('is-gone');
+        lens.style.left = (e.clientX - s.left - lw / 2) + 'px'; lens.style.top = (e.clientY - s.top - lw / 2 - lift) + 'px';
+        lens.style.backgroundSize = (r.width * Z) + 'px ' + (r.height * Z) + 'px';
+        lens.style.backgroundPosition = (lw / 2 - x * Z) + 'px ' + (lw / 2 - y * Z) + 'px';
+      }
+      function init() {
+        if (inited) return; inited = true; setImg();
+        stage.addEventListener('pointermove', move);
+        stage.addEventListener('pointerdown', move);
+        stage.addEventListener('pointerleave', function () { lens.classList.remove('is-on'); });
+        stage.addEventListener('pointerup', function (e) { if (e.pointerType !== 'mouse') lens.classList.remove('is-on'); });
+        $$('[data-z]').forEach(function (b) { b.addEventListener('click', function (e) { e.stopPropagation(); Z = +b.dataset.z; $$('[data-z]').forEach(function (x) { x.classList.toggle('is-on', x === b); }); }); });
+      }
+      return { init: init, setImg: function () { if (inited) setImg(); } };
+    })();
+
+    /* =========================== SIZE GUIDE =========================== */
+    var plan = (function () {
+      var svg = $('.rkx-plan'), verdict = $('.rkx-verdict'), kind = 'living', NS = 'http://www.w3.org/2000/svg';
+      var RW = 16, RH = 12.5;
+      var layouts = {
+        living: { center: [8, 6.2], items: [
+          { x: 4.25, y: 1.0, w: 7.5, h: 3.0, r: 0.35, label: 'Sofa 7.5 ft' },
+          { x: 6.0, y: 5.4, w: 4.0, h: 2.0, r: 0.2, label: 'Coffee table' },
+          { x: 1.0, y: 5.0, w: 2.8, h: 2.8, r: 0.4, label: 'Chair' },
+          { x: 12.2, y: 5.0, w: 2.8, h: 2.8, r: 0.4, label: 'Chair' },
+          { x: 5.5, y: 10.6, w: 5.0, h: 1.4, r: 0.1, label: 'TV unit' } ] },
+        bed: { center: [8, 5.6], items: [
+          { x: 5.5, y: 0.6, w: 5.0, h: 6.7, r: 0.3, label: 'Queen bed 5 × 6.5 ft' },
+          { x: 3.6, y: 0.6, w: 1.6, h: 1.4, r: 0.15, label: '' },
+          { x: 10.8, y: 0.6, w: 1.6, h: 1.4, r: 0.15, label: '' },
+          { x: 0.6, y: 9.4, w: 4.0, h: 2.0, r: 0.1, label: 'Wardrobe' } ] },
+        dining: { center: [8, 6.25], items: [
+          { x: 5.0, y: 4.75, w: 6.0, h: 3.0, r: 0.25, label: '6-seater table' },
+          { x: 5.6, y: 3.2, w: 1.5, h: 1.5, r: 0.3 }, { x: 7.25, y: 3.2, w: 1.5, h: 1.5, r: 0.3 }, { x: 8.9, y: 3.2, w: 1.5, h: 1.5, r: 0.3 },
+          { x: 5.6, y: 7.8, w: 1.5, h: 1.5, r: 0.3 }, { x: 7.25, y: 7.8, w: 1.5, h: 1.5, r: 0.3 }, { x: 8.9, y: 7.8, w: 1.5, h: 1.5, r: 0.3 } ] }
+      };
+      function el(n, a, parent) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); (parent || svg).appendChild(e); return e; }
+      function draw() {
+        if (state.tab !== 'size') return;
+        while (svg.firstChild) svg.removeChild(svg.firstChild);
+        var L = layouts[kind], s = state.size;
+        var defs = el('defs', {});
+        var pat = el('pattern', { id: 'rkx-grid-' + root.id, width: 1, height: 1, patternUnits: 'userSpaceOnUse' }, defs);
+        el('path', { d: 'M1 0H0V1', fill: 'none', stroke: 'rgba(29,26,23,.10)', 'stroke-width': 0.02 }, pat);
+        el('rect', { x: 0, y: 0, width: RW, height: RH, fill: '#fbf8f4' });
+        el('rect', { x: 0, y: 0, width: RW, height: RH, fill: 'url(#rkx-grid-' + root.id + ')' });
+        el('rect', { x: 0, y: 0, width: RW, height: RH, fill: 'none', stroke: '#1d1a17', 'stroke-width': 0.12 });
+        var rw = s.l, rh = s.w;
+        var x = L.center[0] - rw / 2, y = L.center[1] - rh / 2;
+        var g = el('g', {});
+        el('rect', { x: x + 0.08, y: y + 0.12, width: rw, height: rh, fill: 'rgba(0,0,0,.12)', rx: 0.05 }, g);
+        var clip = el('clipPath', { id: 'rkx-clip-' + root.id }, defs);
+        el('rect', { x: x, y: y, width: rw, height: rh }, clip);
+        var ig = el('g', { 'clip-path': 'url(#rkx-clip-' + root.id + ')' }, g);
+        var im = el('image', { x: 0, y: 0, width: rh, height: rw, preserveAspectRatio: 'none', transform: 'translate(' + (x + rw) + ' ' + y + ') rotate(90)' }, ig);
+        state.rug.then(function (r) { im.setAttribute('href', r.url); });
+        el('rect', { x: x, y: y, width: rw, height: rh, fill: 'none', stroke: 'rgba(0,0,0,.25)', 'stroke-width': 0.04 }, g);
+        L.items.forEach(function (it) {
+          el('rect', { x: it.x, y: it.y, width: it.w, height: it.h, rx: it.r, fill: 'rgba(255,255,255,.72)', stroke: '#1d1a17', 'stroke-width': 0.05 });
+          if (it.label) { var t = el('text', { x: it.x + it.w / 2, y: it.y + it.h / 2 + 0.13, 'text-anchor': 'middle', 'font-size': 0.36, fill: '#1d1a17' }); t.textContent = it.label; }
+        });
+        var lbl = fmt(s.w) + ' × ' + fmt(s.l) + ' ft', lw = lbl.length * 0.2 + 0.5;
+        el('rect', { x: x + rw / 2 - lw / 2, y: y + rh - 0.82, width: lw, height: 0.6, rx: 0.3, fill: '#1d1a17' });
+        var lt = el('text', { x: x + rw / 2, y: y + rh - 0.4, 'text-anchor': 'middle', 'font-size': 0.34, 'font-weight': 600, fill: '#fff' }); lt.textContent = lbl;
+        var sc = el('text', { x: RW - 0.3, y: 0.55, 'text-anchor': 'end', 'font-size': 0.32, fill: '#6f675f' }); sc.textContent = 'Room 16 × 12.5 ft · 1 square = 1 ft';
+        verdict.innerHTML = '';
+        advice(kind, s).forEach(function (a) { var sp = document.createElement('span'); sp.innerHTML = a; verdict.appendChild(sp); });
+      }
+      function advice(k, s) {
+        var out = [];
+        if (k === 'living') {
+          if (s.l >= 9) out.push('<b>Great fit:</b> front legs of the sofa and both chairs rest on the rug');
+          else if (s.l >= 7.5) out.push('<b>Good fit:</b> front legs of the sofa rest on the rug');
+          else out.push('<b>Accent size:</b> sits under the coffee table only');
+          out.push('Most living rooms: <b>6 × 9 or 8 × 10 ft</b>');
+        } else if (k === 'bed') {
+          if (s.l >= 9 && s.w >= 8) out.push('<b>Great fit:</b> rug shows on both sides and at the foot of the bed');
+          else if (s.l >= 8) out.push('<b>Good fit:</b> soft landing on both sides of the bed');
+          else out.push('<b>Small for a queen bed:</b> best used as a bedside runner');
+          out.push('Queen / king bed: <b>8 × 10 or 9 × 12 ft</b>');
+        } else {
+          if (s.l >= 9 && s.w >= 7) out.push('<b>Great fit:</b> chairs stay on the rug even when pulled out');
+          else out.push('<b>Too small:</b> chair legs will catch the rug edge');
+          out.push('6-seater table: <b>8 × 10 ft or larger</b>');
+        }
+        return out;
+      }
+      $$('[data-room]').forEach(function (b) { b.addEventListener('click', function () { kind = b.dataset.room; $$('[data-room]').forEach(function (x) { x.classList.toggle('is-on', x === b); }); draw(); }); });
+      return { draw: draw };
+    })();
+
+    state.rug = prepRug(state.img);
+    images.forEach(function (im) { if (im.btn) im.btn.setAttribute('aria-pressed', im.src === state.img ? 'true' : 'false'); });
+    setSize(state.size, false);
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); setTab('3d'); } }, { rootMargin: '300px' });
+      io.observe(root);
+    } else setTab('3d');
+  }
+
+  window.RKX = {
+    boot: function () { Array.prototype.slice.call(document.querySelectorAll('.rkx')).forEach(init); }
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', window.RKX.boot); else window.RKX.boot();
+  document.addEventListener('shopify:section:load', window.RKX.boot);
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Rug Experience",
+  "tag": "div",
+  "class": "section-rug-experience",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Small label", "default": "Experience it before it arrives" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "See it, turn it, feel it" },
+    { "type": "textarea", "id": "subheading", "label": "Subheading", "default": "Turn the rug in 3D, place it on your own floor, look closely at the wool and check the size against real furniture." },
+    { "type": "color", "id": "accent", "label": "Accent colour", "default": "#1d1a17" },
+    { "type": "image_picker", "id": "sample_room", "label": "Sample room photo (empty floor works best)" },
+    { "type": "range", "id": "pile", "label": "Pile depth in 3D", "min": 0.4, "max": 2, "step": 0.1, "default": 1 },
+    { "type": "color", "id": "backing", "label": "Backing colour (shown on Flip corner)", "default": "#e9e1d2" },
+    { "type": "text", "id": "fact_1", "label": "Texture fact 1", "default": "100% New Zealand wool" },
+    { "type": "text", "id": "fact_2", "label": "Texture fact 2", "default": "Handmade by artisans in India" },
+    { "type": "text", "id": "fact_3", "label": "Texture fact 3", "default": "Soft, dense pile that springs back" }
+  ],
+  "presets": [{ "name": "Rug Experience" }]
+}
+{% endschema %}
