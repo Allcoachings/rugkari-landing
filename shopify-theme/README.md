@@ -5,14 +5,16 @@ rugs.rugkari.com landing site and are excluded from its deploy via `.deployignor
 
 ## sections/rug-experience.liquid
 
+See `PRODUCT-PAGE-ROLLOUT.md` for checkout and tracking rules before changing the product page.
+
 An interactive section for product pages with four tabs:
 
-1. **3D rug**: the rug at its real proportions for the selected size, with a wool pile
-   texture and a pile close-up view. "Flip corner" curls a corner to show the backing.
-2. **In your room**: upload a room photo, use the live phone camera, or use the sample
+1. **Size guide** (opens first): a top-down floor plan in feet (living room, bedroom, dining) with fit advice.
+2. **Feel the texture**: a magnifier (3x / 5x / 8x) over the flat rug photo.
+3. **In your room**: upload a room photo, use the live phone camera, or use the sample
    room. Drag the rug and its 4 corner dots to fit the floor, match the lighting, and save a photo.
-3. **Feel the texture**: a magnifier (3x / 5x / 8x) over the flat rug photo.
-4. **Size guide**: a top-down floor plan in feet (living room, bedroom, dining) with fit advice.
+4. **3D rug** (last): the rug at its real proportions with a wool pile texture and a pile
+   close-up. "Flip corner" curls a corner to show the backing. three.js loads only when this tab opens.
 
 The size chips stay in sync with the product form's Size option (in both directions).
 

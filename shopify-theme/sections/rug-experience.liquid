@@ -37,17 +37,17 @@
 
     <div class="rkx-tabs" role="tablist">
       <span class="rkx-tab-ink" aria-hidden="true"></span>
-      <button type="button" role="tab" class="rkx-tab" data-tab="3d" aria-selected="true">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3Z"/><path d="m3 7.5 9 4.5 9-4.5M12 12v9"/></svg><span class="rkx-tl">3D rug</span><span class="rkx-ts">3D</span>
-      </button>
-      <button type="button" role="tab" class="rkx-tab" data-tab="room" aria-selected="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5Z"/><path d="M7 21v-4.5l5-2 5 2V21"/></svg><span class="rkx-tl">In your room</span><span class="rkx-ts">Room</span>
+      <button type="button" role="tab" class="rkx-tab" data-tab="size" aria-selected="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="1.5"/><path d="M7 6v3M11 6v4M15 6v3M19 6v4"/></svg><span class="rkx-tl">Size guide</span><span class="rkx-ts">Size</span>
       </button>
       <button type="button" role="tab" class="rkx-tab" data-tab="zoom" aria-selected="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8M8 10.5h5M10.5 8v5"/></svg><span class="rkx-tl">Feel the texture</span><span class="rkx-ts">Texture</span>
       </button>
-      <button type="button" role="tab" class="rkx-tab" data-tab="size" aria-selected="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="1.5"/><path d="M7 6v3M11 6v4M15 6v3M19 6v4"/></svg><span class="rkx-tl">Size guide</span><span class="rkx-ts">Size</span>
+      <button type="button" role="tab" class="rkx-tab" data-tab="room" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9.5Z"/><path d="M7 21v-4.5l5-2 5 2V21"/></svg><span class="rkx-tl">In your room</span><span class="rkx-ts">Room</span>
+      </button>
+      <button type="button" role="tab" class="rkx-tab" data-tab="3d" aria-selected="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3Z"/><path d="m3 7.5 9 4.5 9-4.5M12 12v9"/></svg><span class="rkx-tl">3D rug</span><span class="rkx-ts">3D</span>
       </button>
     </div>
 
@@ -56,22 +56,34 @@
       <div class="rkx-pick" aria-label="Rug photo used"></div>
     </div>
 
-    <div class="rkx-panel is-active" data-panel="3d" role="tabpanel">
-      <div class="rkx-stage rkx-3d">
-        <div class="rkx-loader"><span></span>Weaving your rug in 3D…</div>
-        <div class="rkx-hint rkx-hint-3d">Drag to turn · scroll or +/− to zoom</div>
-        <div class="rkx-dim" aria-live="polite"></div>
+    <div class="rkx-panel is-active" data-panel="size" role="tabpanel">
+      <div class="rkx-stage rkx-size">
+        <svg class="rkx-plan" viewBox="0 0 16 12.5" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Floor plan showing the rug with furniture"></svg>
         <div class="rkx-dock">
-          <button type="button" class="rkx-chip" data-view="angle">Angle</button>
-          <button type="button" class="rkx-chip" data-view="top">Top</button>
-          <button type="button" class="rkx-chip" data-view="close">Pile close-up</button>
-          <button type="button" class="rkx-chip rkx-chip-strong" data-act="flip" aria-pressed="false">Flip corner</button>
-          <span class="rkx-sep"></span>
-          <button type="button" class="rkx-icon" data-act="zout" aria-label="Zoom out">−</button>
-          <button type="button" class="rkx-icon" data-act="zin" aria-label="Zoom in">+</button>
+          <button type="button" class="rkx-chip is-on" data-room="living">Living room</button>
+          <button type="button" class="rkx-chip" data-room="bed">Bedroom</button>
+          <button type="button" class="rkx-chip" data-room="dining">Dining</button>
         </div>
       </div>
-      <p class="rkx-note">Real proportions for the size you pick. "Flip corner" shows the backing, the way you would check a rug in a showroom.</p>
+      <div class="rkx-verdict" aria-live="polite"></div>
+    </div>
+
+    <div class="rkx-panel" data-panel="zoom" role="tabpanel" hidden>
+      <div class="rkx-stage rkx-zoom">
+        <img class="rkx-zimg" alt="Rug design, full view" draggable="false">
+        <div class="rkx-lens" aria-hidden="true"></div>
+        <div class="rkx-hint rkx-hint-zoom">Move over the rug (or press and slide on phone) to see the wool up close</div>
+        <div class="rkx-dock">
+          <button type="button" class="rkx-chip is-on" data-z="3">3×</button>
+          <button type="button" class="rkx-chip" data-z="5">5×</button>
+          <button type="button" class="rkx-chip" data-z="8">8×</button>
+        </div>
+      </div>
+      <ul class="rkx-facts">
+        {%- if section.settings.fact_1 != blank -%}<li>{{ section.settings.fact_1 }}</li>{%- endif -%}
+        {%- if section.settings.fact_2 != blank -%}<li>{{ section.settings.fact_2 }}</li>{%- endif -%}
+        {%- if section.settings.fact_3 != blank -%}<li>{{ section.settings.fact_3 }}</li>{%- endif -%}
+      </ul>
     </div>
 
     <div class="rkx-panel" data-panel="room" role="tabpanel" hidden>
@@ -98,34 +110,22 @@
       </div>
     </div>
 
-    <div class="rkx-panel" data-panel="zoom" role="tabpanel" hidden>
-      <div class="rkx-stage rkx-zoom">
-        <img class="rkx-zimg" alt="Rug design, full view" draggable="false">
-        <div class="rkx-lens" aria-hidden="true"></div>
-        <div class="rkx-hint rkx-hint-zoom">Move over the rug (or press and slide on phone) to see the wool up close</div>
+    <div class="rkx-panel" data-panel="3d" role="tabpanel" hidden>
+      <div class="rkx-stage rkx-3d">
+        <div class="rkx-loader"><span></span>Weaving your rug in 3D…</div>
+        <div class="rkx-hint rkx-hint-3d">Drag to turn · scroll or +/− to zoom</div>
+        <div class="rkx-dim" aria-live="polite"></div>
         <div class="rkx-dock">
-          <button type="button" class="rkx-chip is-on" data-z="3">3×</button>
-          <button type="button" class="rkx-chip" data-z="5">5×</button>
-          <button type="button" class="rkx-chip" data-z="8">8×</button>
+          <button type="button" class="rkx-chip" data-view="angle">Angle</button>
+          <button type="button" class="rkx-chip" data-view="top">Top</button>
+          <button type="button" class="rkx-chip" data-view="close">Pile close-up</button>
+          <button type="button" class="rkx-chip rkx-chip-strong" data-act="flip" aria-pressed="false">Flip corner</button>
+          <span class="rkx-sep"></span>
+          <button type="button" class="rkx-icon" data-act="zout" aria-label="Zoom out">−</button>
+          <button type="button" class="rkx-icon" data-act="zin" aria-label="Zoom in">+</button>
         </div>
       </div>
-      <ul class="rkx-facts">
-        {%- if section.settings.fact_1 != blank -%}<li>{{ section.settings.fact_1 }}</li>{%- endif -%}
-        {%- if section.settings.fact_2 != blank -%}<li>{{ section.settings.fact_2 }}</li>{%- endif -%}
-        {%- if section.settings.fact_3 != blank -%}<li>{{ section.settings.fact_3 }}</li>{%- endif -%}
-      </ul>
-    </div>
-
-    <div class="rkx-panel" data-panel="size" role="tabpanel" hidden>
-      <div class="rkx-stage rkx-size">
-        <svg class="rkx-plan" viewBox="0 0 16 12.5" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Floor plan showing the rug with furniture"></svg>
-        <div class="rkx-dock">
-          <button type="button" class="rkx-chip is-on" data-room="living">Living room</button>
-          <button type="button" class="rkx-chip" data-room="bed">Bedroom</button>
-          <button type="button" class="rkx-chip" data-room="dining">Dining</button>
-        </div>
-      </div>
-      <div class="rkx-verdict" aria-live="polite"></div>
+      <p class="rkx-note">Real proportions for the size you pick. "Flip corner" shows the backing, the way you would check a rug in a showroom.</p>
     </div>
   </div>
 
@@ -392,7 +392,7 @@
     if (!sizes.length) sizes = [{ w: 5, l: 8, label: '5 x 8 ft' }];
     var state = {
       size: sizes.filter(function (s) { return s.label === data.selected; })[0] || sizes[Math.min(2, sizes.length - 1)],
-      img: null, tab: '3d', rug: null
+      img: null, tab: 'size', rug: null
     };
     function pickFlat() {
       if (data.flat) return abs(data.flat);
@@ -413,8 +413,15 @@
     $$('.rkx-tab').forEach(function (b) {
       b.addEventListener('click', function () { setTab(b.dataset.tab); });
     });
+    var seen = {};
+    function track(t) {
+      // Shopify standard custom event: visible to Customer Events pixels (e.g. Meta trackCustom), never fires on its own
+      if (seen[t]) return; seen[t] = true;
+      try { if (window.Shopify && Shopify.analytics && Shopify.analytics.publish) Shopify.analytics.publish('rug_experience_open', { tab: t, product: data.title || '' }); } catch (e) {}
+    }
     function setTab(t) {
       state.tab = t;
+      track(t);
       $$('.rkx-tab').forEach(function (b) { b.setAttribute('aria-selected', b.dataset.tab === t ? 'true' : 'false'); });
       $$('.rkx-panel').forEach(function (p) { var on = p.dataset.panel === t; p.hidden = !on; p.classList.toggle('is-active', on); });
       moveInk();
@@ -889,9 +896,9 @@
     images.forEach(function (im) { if (im.btn) im.btn.setAttribute('aria-pressed', im.src === state.img ? 'true' : 'false'); });
     setSize(state.size, false);
     if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); setTab('3d'); } }, { rootMargin: '300px' });
+      var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) { io.disconnect(); setTab('size'); } }, { rootMargin: '300px' });
       io.observe(root);
-    } else setTab('3d');
+    } else setTab('size');
   }
 
   window.RKX = {
