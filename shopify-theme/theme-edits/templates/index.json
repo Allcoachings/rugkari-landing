@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/342_49bd8e7a36-cr-maze-blu-4x5-1-2400.jpg",
+            "eyebrow": "Bhadohi · Est. 1980",
+            "heading": "Knotted by hand. Kept for generations.",
+            "text": "Heirloom rugs from our family atelier — made to order in pure New Zealand wool.",
+            "cta_label": "Shop the atelier's favourites",
+            "cta_link": "shopify://collections/frontpage"
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/711_77e7f7e5c5-elde6-bla-henriklundell-20-1-2400.jpg",
+            "eyebrow": "The signature collection",
+            "heading": "Rugs that leave the rectangle behind.",
+            "text": "Sculpted Forms — silhouettes drawn on the loom, carved by hand.",
+            "cta_label": "Discover Sculpted Forms",
+            "cta_link": "shopify://collections/unshaped-rugs"
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/443_121b70835f-loop-gree-clementpascal-soho-ny-3-2400.jpg",
+            "eyebrow": "Made to measure",
+            "heading": "Your room, your size, your loom.",
+            "text": "Every design woven to order, from 3'×5' to 10'×14'.",
+            "cta_label": "Begin with the room",
+            "cta_link": "shopify://collections/living-room-rugs"
+          }
+        }
+      },
+      "block_order": ["slide-1", "slide-2", "slide-3"],
+      "settings": {
+        "height": "large",
+        "overlay_opacity": 35,
+        "alignment": "left",
+        "cta_style": "underline",
+        "autoplay": true,
+        "autoplay_speed": 4
+      }
+    },
+    "shop_by_room": {
+      "type": "collection-list",
+      "blocks": {
+        "tile-1": {
+          "type": "collection",
+          "settings": { "collection": "living-room-rugs", "title": "The Living Room" }
+        },
+        "tile-2": {
+          "type": "collection",
+          "settings": { "collection": "bedroom-rugs", "title": "The Bedroom" }
+        },
+        "tile-3": {
+          "type": "collection",
+          "settings": { "collection": "dining-room-rugs", "title": "The Dining Room" }
+        },
+        "tile-4": {
+          "type": "collection",
+          "settings": { "collection": "kids-room-rugs", "title": "The Kids Room", "image": "shopify://shop_images/eurus.jpg" }
+        },
+        "tile-5": {
+          "type": "collection",
+          "settings": { "collection": "study-rugs", "title": "The Study", "image": "shopify://shop_images/neptune.jpg" }
+        },
+        "tile-6": {
+          "type": "collection",
+          "settings": { "collection": "entryway-rugs", "title": "The Entryway" }
+        }
+      },
+      "block_order": ["tile-1", "tile-2", "tile-3", "tile-4", "tile-5", "tile-6"],
+      "settings": {
+        "heading": "Begin with the room",
+        "subtext": "A rug sets the room's quiet center. Start where you live.",
+        "layout": "carousel",
+        "image_ratio": "portrait",
+        "label_position": "overlay"
+      }
+    },
+    "shop_by_style": {
+      "type": "collection-list",
+      "blocks": {
+        "s1": { "type": "collection", "settings": { "collection": "abstract-rugs", "title": "Abstract" } },
+        "s2": { "type": "collection", "settings": { "collection": "geometric-rugs", "title": "Geometric" } },
+        "s3": { "type": "collection", "settings": { "collection": "traditional-rugs", "title": "Traditional" } },
+        "s4": { "type": "collection", "settings": { "collection": "modern-rugs", "title": "Modern" } },
+        "s5": { "type": "collection", "settings": { "collection": "floral-rugs", "title": "Floral" } },
+        "s6": { "type": "collection", "settings": { "collection": "solid-rugs", "title": "Solid" } },
+        "s7": { "type": "collection", "settings": { "collection": "unshaped-rugs", "title": "Sculpted Forms" } }
+      },
+      "block_order": ["s1", "s2", "s3", "s4", "s5", "s6", "s7"],
+      "settings": {
+        "eyebrow": "Shop by style",
+        "heading": "A language of pattern",
+        "layout": "carousel",
+        "image_ratio": "portrait",
+        "label_position": "overlay",
+        "use_product_image": false
+      }
+    },
+    "shop_by_craft": {
+      "type": "collection-list",
+      "blocks": {
+        "w2": { "type": "collection", "settings": { "collection": "hand-tufted", "title": "Hand-Tufted" } },
+        "w3": { "type": "collection", "settings": { "collection": "hand-loom", "title": "Handwoven" } }
+      },
+      "block_order": ["w2", "w3"],
+      "settings": {
+        "eyebrow": "The craft",
+        "heading": "Two ways of making",
+        "layout": "grid",
+        "image_ratio": "portrait",
+        "label_position": "overlay"
+      }
+    },
+    "fresh_from_loom": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Fresh from the loom",
+        "eyebrow": "New arrivals",
+        "collection": "unshaped-rugs",
+        "products_to_show": 6,
+        "columns": 3,
+        "layout": "grid",
+        "card_style": "editorial",
+        "show_quick_add": false,
+        "show_view_all": false
+      }
+    },
+    "bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "eyebrow": "Bestsellers",
+        "heading": "The atelier's most requested",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "columns": 3,
+        "layout": "carousel",
+        "card_style": "standard",
+        "show_quick_add": false,
+        "show_view_all": true
+      }
+    },
+    "signature": {
+      "type": "collection-story-split",
+      "settings": {
+        "eyebrow": "The signature collection",
+        "heading": "Sculpted Forms",
+        "narrative": "<p>Rugs that leave the rectangle behind. Each silhouette is drawn on the loom, carved by hand, and bound edge by edge in our Bhadohi workshop — no two outlines ever quite alike.</p>",
+        "cta_label": "Discover Sculpted Forms",
+        "collection": "unshaped-rugs",
+        "image_position": "left",
+        "products_to_show": 4
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "q1": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": "The rug arrived rolled in cloth, smelling faintly of wool. Three years on, it is the first thing guests ask about.",
+            "author": "Meera, New Delhi"
+          }
+        },
+        "q2": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": "We measured twice and still called the atelier — they sketched our floor plan and chose the size with us. That kind of care is rare.",
+            "author": "Arjun & Tara, Mumbai"
+          }
+        },
+        "q3": {
+          "type": "testimonial",
+          "settings": {
+            "stars": 5,
+            "quote": "You can feel where a hand has been. Our third RUGKARI piece, and each one quietly different.",
+            "author": "Lakshmi, Bengaluru"
+          }
+        }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": {
+        "eyebrow": "In their homes",
+        "heading": "Quiet rooms, kind words",
+        "secondary_background": true
+      }
+    },
+    "promise": {
+      "type": "multicolumn",
+      "blocks": {
+        "p1": { "type": "column", "settings": { "icon": "medal", "title": "100% handmade", "text": "Hand-knotted, tufted & woven in Bhadohi. Never power-loomed." } },
+        "p2": { "type": "column", "settings": { "icon": "leaf", "title": "Pure New Zealand wool", "text": "Naturally soft, warm and stain-resistant underfoot." } },
+        "p3": { "type": "column", "settings": { "icon": "shield", "title": "10-year warranty", "text": "Our craftsmanship guarantee on every single rug." } },
+        "p4": { "type": "column", "settings": { "icon": "check", "title": "15-day returns", "text": "Inspect it in your space. Not right? Return it within 15 days." } }
+      },
+      "block_order": ["p1", "p2", "p3", "p4"],
+      "settings": {
+        "eyebrow": "Why RUGKARI",
+        "heading": "The RUGKARI promise",
+        "secondary_background": true
+      }
+    },
+    "brand_story": {
+      "type": "image-with-text",
+      "settings": {
+        "image": "shopify://shop_images/355_db215b8de9-elde-bla-henrik-lundell-09-1-2400.jpg",
+        "layout": "image_left",
+        "eyebrow": "Since 1980",
+        "heading": "Four generations at the loom",
+        "text": "<p>From one loom in Bhadohi to four generations of karigars — the same hands still tie every knot. Made slowly, backed for 10 years.</p>",
+        "button_label": "Our story",
+        "button_link": "/pages/our-story",
+        "full_bleed": true
+      }
+    },
+    "seo_text": {
+      "type": "expandable-seo-text",
+      "blocks": {
+        "b1": {
+          "type": "seo_block",
+          "settings": {
+            "subheading": "Hand-knotted rugs for the living room, bedroom and dining room",
+            "body": "<p>RUGKARI makes handmade rugs in Bhadohi, India's carpet capital, in pure New Zealand wool. Explore <a href=\"/collections/living-room-rugs\">living room rugs</a>, <a href=\"/collections/bedroom-rugs\">bedroom rugs</a> and <a href=\"/collections/dining-room-rugs\">dining room rugs</a> — each piece made to order by four generations of master karigars.</p>"
+          }
+        },
+        "b2": {
+          "type": "seo_block",
+          "settings": {
+            "subheading": "Choosing between hand-knotted, hand-tufted and handwoven",
+            "body": "<p><a href=\"/collections/hand-knotted\">Hand-knotted rugs</a> are tied knot by knot for heirloom durability. <a href=\"/collections/hand-tufted\">Hand-tufted rugs</a> offer a plush pile and arrive sooner. <a href=\"/collections/hand-loom\">Handwoven rugs</a> are flatwoven on wooden looms for a clean, quiet surface.</p>"
+          }
+        },
+        "b3": {
+          "type": "seo_block",
+          "settings": {
+            "subheading": "Rug sizes from 3'×5' to 10'×14'",
+            "body": "<p>Every RUGKARI design is made to measure in standard sizes from 3'×5' to 10'×14', with free insured shipping across India and a GST invoice on every order.</p>"
+          }
+        },
+        "b4": {
+          "type": "seo_block",
+          "settings": {
+            "subheading": "Abstract, geometric, traditional and sculpted designs",
+            "body": "<p>Browse <a href=\"/collections/abstract-rugs\">abstract</a>, <a href=\"/collections/geometric-rugs\">geometric</a>, <a href=\"/collections/traditional-rugs\">traditional</a>, <a href=\"/collections/modern-rugs\">modern</a>, <a href=\"/collections/floral-rugs\">floral</a> and <a href=\"/collections/solid-rugs\">solid</a> designs — or our signature <a href=\"/collections/unshaped-rugs\">Sculpted Forms</a>, rugs that leave the rectangle behind.</p>"
+          }
+        }
+      },
+      "block_order": ["b1", "b2", "b3", "b4"],
+      "settings": {
+        "page_h1": "Handmade Rugs from Bhadohi — Hand-Knotted, Hand-Tufted & Handwoven"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "eyebrow": "Letters from the loom",
+        "heading": "Occasional notes from Bhadohi",
+        "text": "New pieces, atelier stories, nothing more. Never more than one note a week.",
+        "inverse": false
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "shop_by_style",
+    "shop_by_craft",
+    "shop_by_room",
+    "fresh_from_loom",
+    "bestsellers",
+    "signature",
+    "brand_story",
+    "testimonials",
+    "promise",
+    "seo_text",
+    "newsletter"
+  ]
+}

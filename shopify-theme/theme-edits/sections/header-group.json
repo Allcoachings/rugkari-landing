@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "Header group",
+  "type": "header",
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "a1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "truck",
+            "text": "Free insured shipping across India",
+            "link": ""
+          }
+        },
+        "a2": {
+          "type": "announcement",
+          "settings": {
+            "icon": "medal",
+            "text": "100% handmade in Bhadohi since 1980",
+            "link": ""
+          }
+        },
+        "a4": {
+          "type": "announcement",
+          "settings": {
+            "icon": "return",
+            "text": "Easy 15-day returns, no questions asked",
+            "link": ""
+          }
+        },
+        "a5": {
+          "type": "announcement",
+          "settings": {
+            "icon": "shield",
+            "text": "10-year craftsmanship warranty",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "a2",
+        "a4",
+        "a5"
+      ],
+      "settings": {
+        "dismissible": false,
+        "rotate_speed": 4
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_width": 140,
+        "menu": "rugkari-main"
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}
