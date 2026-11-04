@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-rugkari",
+      "blocks": {
+        "perk_1": {
+          "type": "perk",
+          "settings": {
+            "title": "Sink-in softness underfoot",
+            "text": "Dense, hand-finished pure wool pile"
+          }
+        },
+        "perk_2": {
+          "type": "perk",
+          "settings": {
+            "title": "Warms cold floors",
+            "text": "Natural insulation for marble, tile & concrete"
+          }
+        },
+        "perk_3": {
+          "type": "perk",
+          "settings": {
+            "title": "Made to outlast trends",
+            "text": "Built to last for decades, not seasons"
+          }
+        },
+        "perk_4": {
+          "type": "perk",
+          "settings": {
+            "title": "Hides everyday life",
+            "text": "Wool naturally resists spills, dust & footprints"
+          }
+        },
+        "trust_1": {
+          "type": "trust",
+          "settings": {
+            "icon": "truck",
+            "label": "Free shipping"
+          }
+        },
+        "trust_2": {
+          "type": "trust",
+          "settings": {
+            "icon": "pin",
+            "label": "Pan-India delivery"
+          }
+        },
+        "trust_3": {
+          "type": "trust",
+          "settings": {
+            "icon": "return",
+            "label": "15-day returns"
+          }
+        },
+        "trust_4": {
+          "type": "trust",
+          "settings": {
+            "icon": "lock",
+            "label": "Secure payments"
+          }
+        },
+        "specs_1": {
+          "type": "specs",
+          "settings": {}
+        },
+        "panel_1": {
+          "type": "panel",
+          "settings": {
+            "title": "Materials & care"
+          }
+        },
+        "panel_2": {
+          "type": "panel",
+          "settings": {
+            "title": "Made-to-order & delivery",
+            "content": "<p>Every RUGKARI rug is made to order by our Bhadohi atelier and dispatched in about 10 days. Shipping is free and insured across India, with doorstep delivery, order tracking and a GST invoice on every order.</p>"
+          }
+        },
+        "panel_3": {
+          "type": "panel",
+          "settings": {
+            "title": "Warranty & returns",
+            "content": "<p>Every rug is 100% handmade and backed by a 10-year warranty against manufacturing defects. Not right for your room? Return it within 15 days of delivery. Our care team at care@rugkari.com will help with either.</p>"
+          }
+        },
+        "panel_4": {
+          "type": "panel",
+          "settings": {
+            "title": "Certificate of authenticity",
+            "content": "<p>Each rug ships with a signed, numbered Certificate of Authenticity, hand-finished, rolled in cotton cloth and delivered insured to your door.</p>"
+          }
+        },
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "Drawn on cloth",
+            "text": "The design is drawn full size on a cotton cloth stretched on a frame."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "Tufted by hand",
+            "text": "Karigars punch wool through the cloth, loop by loop, following the drawing."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "Backed & sheared",
+            "text": "A cotton backing locks the pile, which is then sheared level by hand."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "title": "Washed & inspected",
+            "text": "Washed, checked, rolled in cloth and sent insured to your door."
+          }
+        }
+      },
+      "block_order": [
+        "perk_1",
+        "perk_2",
+        "perk_3",
+        "perk_4",
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4",
+        "specs_1",
+        "panel_1",
+        "panel_2",
+        "panel_3",
+        "panel_4",
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "advisor_url": "https://wa.me/917348515188"
+      }
+    },
+    "rug_experience": {
+      "type": "rug-experience",
+      "settings": {}
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "eyebrow": "Keep exploring",
+        "heading": "You may also like",
+        "products_to_show": 8,
+        "columns": 4
+      }
+    },
+    "recently_viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "heading": "Recently viewed"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rug_experience",
+    "recommendations",
+    "recently_viewed"
+  ]
+}
