@@ -104,7 +104,7 @@
       "delivery_estimate_html": "Order today, delivery by <strong>{{ from }} – {{ to }}</strong>",
       "cod_available": "Pan-India delivery available",
       "secure_payments": "100% secure payments — UPI, Cards, Netbanking & EMI",
-      "easy_returns": "Easy 15-day returns, no questions asked",
+      "easy_returns": "15-day returns on manufacturing defects",
       "gst_invoice": "GST invoice with every order",
       "quick_add": "Quick add",
       "choose_options": "Choose options",

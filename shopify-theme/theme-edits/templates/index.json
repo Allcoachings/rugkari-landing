@@ -210,7 +210,7 @@
         "p1": { "type": "column", "settings": { "icon": "medal", "title": "100% handmade", "text": "Hand-knotted, tufted & woven in Bhadohi. Never power-loomed." } },
         "p2": { "type": "column", "settings": { "icon": "leaf", "title": "Pure New Zealand wool", "text": "Naturally soft, warm and stain-resistant underfoot." } },
         "p3": { "type": "column", "settings": { "icon": "shield", "title": "10-year warranty", "text": "Our craftsmanship guarantee on every single rug." } },
-        "p4": { "type": "column", "settings": { "icon": "check", "title": "15-day returns", "text": "Inspect it in your space. Not right? Return it within 15 days." } }
+        "p4": { "type": "column", "settings": { "icon": "check", "title": "15-day returns", "text": "Inspect it in your space. Found a manufacturing defect? Return it within 15 days." } }
       },
       "block_order": ["p1", "p2", "p3", "p4"],
       "settings": {
